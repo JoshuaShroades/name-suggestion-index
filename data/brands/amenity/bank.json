@@ -14378,18 +14378,6 @@
       }
     },
     {
-      "displayName": "VÚB banka",
-      "locationSet": {"include": ["sk"]},
-      "matchNames": ["vub bank", "vseobecna uverova banka"],
-      "tags": {
-        "amenity": "bank",
-        "brand": "VÚB banka",
-        "brand:short": "VÚB",
-        "brand:wikidata": "Q12778981",
-        "name": "VÚB banka"
-      }
-    },
-    {
       "displayName": "VTB Armenia",
       "id": "vtb-9c44ae",
       "locationSet": {"include": ["am"]},
@@ -14404,6 +14392,22 @@
         "name:en": "VTB",
         "name:hy": "ՎՏԲ",
         "name:ru": "ВТБ"
+      }
+    },
+    {
+      "displayName": "VÚB banka",
+      "id": "vubbanka-6a1dfb",
+      "locationSet": {"include": ["sk"]},
+      "matchNames": [
+        "vseobecna uverova banka",
+        "vub bank"
+      ],
+      "tags": {
+        "amenity": "bank",
+        "brand": "VÚB banka",
+        "brand:short": "VÚB",
+        "brand:wikidata": "Q12778981",
+        "name": "VÚB banka"
       }
     },
     {

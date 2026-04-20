@@ -10,17 +10,6 @@
   },
   "items": [
     {
-      "displayName": "Ptáček",
-      "locationSet": {"include": ["cz", "sk"]},
-      "preserveTags": ["^name"],
-      "tags": {
-        "brand": "Ptáček",
-        "brand:wikidata": "Q58195153",
-        "name": "Ptáček",
-        "shop": "bathroom_furnishing"
-      }
-    },
-    {
       "displayName": "Easy Bathrooms",
       "id": "easybathrooms-72592f",
       "locationSet": {"include": ["gb"]},
@@ -72,6 +61,18 @@
         "brand": "Kohler",
         "brand:wikidata": "Q6426036",
         "name": "Kohler",
+        "shop": "bathroom_furnishing"
+      }
+    },
+    {
+      "displayName": "Ptáček",
+      "id": "ptacek-c15e11",
+      "locationSet": {"include": ["cz", "sk"]},
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "Ptáček",
+        "brand:wikidata": "Q58195153",
+        "name": "Ptáček",
         "shop": "bathroom_furnishing"
       }
     },

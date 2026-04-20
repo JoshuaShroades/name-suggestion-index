@@ -73,6 +73,16 @@
       }
     },
     {
+      "displayName": "GECO",
+      "id": "geco-e6d891",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "GECO",
+        "name": "GECO",
+        "shop": "newsagent"
+      }
+    },
+    {
       "displayName": "Hudson News",
       "id": "hudsonnews-a0252c",
       "locationSet": {"include": ["ca", "us"]},

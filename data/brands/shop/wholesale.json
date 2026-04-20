@@ -5,17 +5,6 @@
   },
   "items": [
     {
-      "displayName": "Ptáček",
-      "locationSet": {"include": ["cz", "sk"]},
-      "preserveTags": ["^name"],
-      "tags": {
-        "brand": "Ptáček",
-        "brand:wikidata": "Q58195153",
-        "name": "Ptáček",
-        "shop": "wholesale"
-      }
-    },
-    {
       "displayName": "Bestway",
       "id": "bestway-650ac6",
       "locationSet": {"include": ["gb"]},
@@ -315,6 +304,18 @@
         "brand": "Mix Mateus",
         "brand:wikidata": "Q134776544",
         "name": "Mix Mateus",
+        "shop": "wholesale"
+      }
+    },
+    {
+      "displayName": "Ptáček",
+      "id": "ptacek-66d7f7",
+      "locationSet": {"include": ["cz", "sk"]},
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "Ptáček",
+        "brand:wikidata": "Q58195153",
+        "name": "Ptáček",
         "shop": "wholesale"
       }
     },

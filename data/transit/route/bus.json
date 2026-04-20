@@ -12937,9 +12937,16 @@
     },
     {
       "displayName": "NBus",
-      "id": "nbus-1fc942",
+      "id": "nbus-776f67",
       "locationSet": {
-        "include": ["es-na.geojson", "es-z.geojson", "es-so.geojson", "es-lo.geojson", "es-vi.geojson", "es-ss.geojson"]
+        "include": [
+          "es-lo.geojson",
+          "es-na.geojson",
+          "es-so.geojson",
+          "es-ss.geojson",
+          "es-vi.geojson",
+          "es-z.geojson"
+        ]
       },
       "tags": {
         "network": "NBus",
