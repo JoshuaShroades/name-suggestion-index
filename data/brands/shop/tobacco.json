@@ -57,9 +57,11 @@
         "include": ["cz", "de", "sk"]
       },
       "matchNames": [
+        "geco tabak",
         "geco tabak tisk",
         "geco tabak tlac"
       ],
+      "matchTags": ["shop/newsagent"],
       "preserveTags": ["^name"],
       "tags": {
         "brand": "Geco",
