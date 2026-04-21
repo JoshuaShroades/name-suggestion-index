@@ -5925,8 +5925,10 @@
     },
     {
       "displayName": "Metropolitan Police Service",
-      "id": "metropolitanpoliceservice-a0f939",
-      "locationSet": {"include": ["gb-eng"]},
+      "id": "metropolitanpoliceservice-b31211",
+      "locationSet": {
+        "include": ["gb-lon.geojson"]
+      },
       "tags": {
         "operator": "Metropolitan Police Service",
         "operator:wikidata": "Q1139213",
