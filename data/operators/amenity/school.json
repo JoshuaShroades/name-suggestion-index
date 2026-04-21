@@ -45,6 +45,16 @@
   },
   "items": [
     {
+      "displayName": "The Blessed Edward Bamber Catholic Multi Academy Trust",
+      "locationSet": {"include": ["gb-eng"]},
+      "tags": {
+        "amenity": "school",
+        "operator": "The Blessed Edward Bamber Catholic Multi Academy Trust",
+        "operator:type": "private",
+        "operator:wikidata": "Q122683151"
+      }
+    },
+    {
       "displayName": "Abbotsford School District",
       "id": "abbotsfordschooldistrict-ac5479",
       "locationSet": {
