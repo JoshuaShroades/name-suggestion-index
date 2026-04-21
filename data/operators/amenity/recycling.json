@@ -531,6 +531,28 @@
       }
     },
     {
+      "displayName": "Apparel Impact",
+      "id": "apparelimpact-60bb23",
+      "locationSet": {
+        "include": [
+          "us-ct.geojson",
+          "us-ma.geojson",
+          "us-me.geojson",
+          "us-nh.geojson",
+          "us-ny.geojson",
+          "us-vt.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "recycling",
+        "operator": "Apparel Impact",
+        "operator:wikidata": "Q139497922",
+        "recycling_type": "container",
+        "recycling:clothes": "yes",
+        "recycling:shoes": "yes"
+      }
+    },
+    {
       "displayName": "APR GmbH",
       "id": "aprgmbh-dfb6ae",
       "locationSet": {
