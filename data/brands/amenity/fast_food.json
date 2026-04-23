@@ -737,6 +737,7 @@
     },
     {
       "displayName": "Belchicken",
+      "id": "belchicken-43a8cb",
       "locationSet": {
         "include": ["be", "de", "fx", "it", "pt"]
       },
@@ -1944,9 +1945,8 @@
     },
     {
       "displayName": "Chicken Spot",
-      "locationSet": {
-        "include": ["fx"]
-      },
+      "id": "chickenspot-11ef38",
+      "locationSet": {"include": ["fx"]},
       "tags": {
         "amenity": "fast_food",
         "brand": "Chicken Spot",
@@ -6547,6 +6547,7 @@
     },
     {
       "displayName": "Master Poulet",
+      "id": "masterpoulet-11ef38",
       "locationSet": {"include": ["fx"]},
       "tags": {
         "amenity": "fast_food",
