@@ -736,6 +736,21 @@
       }
     },
     {
+      "displayName": "Belchicken",
+      "locationSet": {
+        "include": ["be", "de", "fx", "it", "pt"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Belchicken",
+        "brand:wikidata": "Q139504961",
+        "cuisine": "chicken",
+        "diet:halal": "only",
+        "name": "Belchicken",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Bembos",
       "id": "bembos-654705",
       "locationSet": {"include": ["pe"]},
@@ -1924,6 +1939,21 @@
         "cuisine": "chicken",
         "diet:halal": "yes",
         "name": "Chicken Shop",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Chicken Spot",
+      "locationSet": {
+        "include": ["fx"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Chicken Spot",
+        "brand:wikidata": "Q133872934",
+        "cuisine": "chicken",
+        "diet:halal": "only",
+        "name": "Chicken Spot",
         "takeaway": "yes"
       }
     },
@@ -6512,6 +6542,19 @@
         "brand:wikidata": "Q6779125",
         "cuisine": "chicken",
         "name": "Mary Brown's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Master Poulet",
+      "locationSet": {"include": ["fx"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Master Poulet",
+        "brand:wikidata": "Q139504926",
+        "cuisine": "chicken",
+        "diet:halal": "only",
+        "name": "Master Poulet",
         "takeaway": "yes"
       }
     },
