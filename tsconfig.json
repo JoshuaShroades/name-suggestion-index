@@ -2,7 +2,7 @@
   "compilerOptions": {
     // Language and Environment
     "target": "ES2022",
-    "lib": ["ESNext", "DOM"],
+    "lib": ["ESNext"],
 
     // Modules
     "module": "ESNext",
