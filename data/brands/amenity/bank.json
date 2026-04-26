@@ -5829,6 +5829,20 @@
       }
     },
     {
+      "displayName": "Cooperative Bank of Kenya",
+      "locationSet": {
+        "include": [
+          "ke"
+        ]
+      },
+      "tags": {
+        "amenity": "bank",
+        "name": "Cooperative Bank of Kenya",
+        "brand": "Cooperative Bank of Kenya",
+        "brand:wikidata": "Q5167875"
+      }
+    },
+    {
       "displayName": "Coventry Building Society",
       "id": "coventrybuildingsociety-e1e9d0",
       "locationSet": {"include": ["gb"]},
