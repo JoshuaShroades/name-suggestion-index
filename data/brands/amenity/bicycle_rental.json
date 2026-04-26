@@ -1813,8 +1813,8 @@
         "brand": "Gira",
         "brand:wikidata": "Q65049332",
         "operator": "EMEL",
-        "operator:wikidata": "Q30256831",
-        "operator:type": "public"
+        "operator:type": "public",
+        "operator:wikidata": "Q30256831"
       }
     },
     {
@@ -3300,6 +3300,22 @@
       }
     },
     {
+      "displayName": "PubliBike Velospot (Region Bern)",
+      "id": "publibikevelospot-a8de7e",
+      "locationSet": {
+        "include": [[7.45, 46.95, 10]]
+      },
+      "tags": {
+        "amenity": "bicycle_rental",
+        "brand": "PubliBike Velospot",
+        "brand:wikidata": "Q138003595",
+        "network": "Velo Region Bern",
+        "operator": "PubliBike AG",
+        "operator:type": "private",
+        "operator:wikidata": "Q3555363"
+      }
+    },
+    {
       "displayName": "PubliBike Velospot (Région de Nyon)",
       "id": "publibikevelospot-61be25",
       "locationSet": {
@@ -3342,22 +3358,6 @@
         "brand": "PubliBike Velospot",
         "brand:wikidata": "Q138003595",
         "network": "Sion",
-        "operator": "PubliBike AG",
-        "operator:type": "private",
-        "operator:wikidata": "Q3555363"
-      }
-    },
-    {
-      "displayName": "PubliBike Velospot (Region Bern)",
-      "id": "publibikevelospot-a8de7e",
-      "locationSet": {
-        "include": [[7.45, 46.95, 10]]
-      },
-      "tags": {
-        "amenity": "bicycle_rental",
-        "brand": "PubliBike Velospot",
-        "brand:wikidata": "Q138003595",
-        "network": "Velo Region Bern",
         "operator": "PubliBike AG",
         "operator:type": "private",
         "operator:wikidata": "Q3555363"

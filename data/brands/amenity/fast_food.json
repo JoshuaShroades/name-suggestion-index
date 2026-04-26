@@ -5811,8 +5811,8 @@
     },
     {
       "displayName": "Krousty Sabaïdi",
+      "id": "kroustysabaidi-11ef38",
       "locationSet": {"include": ["fx"]},
-      "matchNames": ["Krousty Sabaidi"],
       "tags": {
         "amenity": "fast_food",
         "brand": "Krousty Sabaïdi",
@@ -10606,8 +10606,10 @@
     },
     {
       "displayName": "Tasty Crousty",
-      "id": "tastycrousty-11ef38",
-      "locationSet": {"include": ["fx", "be", "dz"]},
+      "id": "tastycrousty-863c99",
+      "locationSet": {
+        "include": ["be", "dz", "fx"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Tasty Crousty",

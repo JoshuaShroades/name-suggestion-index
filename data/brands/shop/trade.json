@@ -7,18 +7,6 @@
   },
   "items": [
     {
-      "displayName": "Pro-Doma",
-      "locationSet": {"include": ["cz"]},
-      "matchNames": ["pro-doma stavebniny"],
-      "preserveTags": ["^name"],
-      "tags": {
-        "brand": "Pro-Doma",
-        "brand:wikidata": "Q58218819",
-        "name": "Pro-Doma",
-        "shop": "trade"
-      }
-    },
-    {
       "displayName": "84 Lumber",
       "id": "84lumber-4e950c",
       "locationSet": {"include": ["us"]},
@@ -980,16 +968,29 @@
       }
     },
     {
+      "displayName": "Pro-Doma",
+      "id": "prodoma-0d3493",
+      "locationSet": {"include": ["cz"]},
+      "matchNames": ["pro-doma stavebniny"],
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "Pro-Doma",
+        "brand:wikidata": "Q58218819",
+        "name": "Pro-Doma",
+        "shop": "trade"
+      }
+    },
+    {
       "displayName": "Ptáček",
       "id": "ptacek-8ec304",
       "locationSet": {"include": ["cz", "sk"]},
       "matchNames": [
         "instalatercentrum ptacek",
-        "ptacek instalatercentrum",
         "instalaterske centrum ptacek",
-        "ptacek instalaterske centrum",
-        "ptacek - topeni, voda, plyn",
         "ptacek - kurenie, voda, plyn",
+        "ptacek - topeni, voda, plyn",
+        "ptacek instalatercentrum",
+        "ptacek instalaterske centrum"
       ],
       "preserveTags": ["^name"],
       "tags": {

@@ -29,16 +29,6 @@
   },
   "items": [
     {
-      "displayName": "IDS BBSK",
-      "locationSet": {"include": ["sk"]},
-      "tags": {
-        "network": "Integrovaný dopravný systém Banskobystrického samosprávneho kraja",
-        "network:short": "IDS BBSK",
-        "network:wikidata": "Q135087991",
-        "route": "bus"
-      }
-    },
-    {
       "displayName": "A-Welle",
       "id": "awelle-ba16da",
       "locationSet": {"include": ["ch"]},
@@ -7860,6 +7850,17 @@
       }
     },
     {
+      "displayName": "IDS BBSK",
+      "id": "integrovanydopravnysystembanskobystrickehosamospravnehokraja-51c51c",
+      "locationSet": {"include": ["sk"]},
+      "tags": {
+        "network": "Integrovaný dopravný systém Banskobystrického samosprávneho kraja",
+        "network:short": "IDS BBSK",
+        "network:wikidata": "Q135087991",
+        "route": "bus"
+      }
+    },
+    {
       "displayName": "IDS BK",
       "id": "idsbk-c89aa8",
       "locationSet": {
@@ -12832,6 +12833,23 @@
       }
     },
     {
+      "displayName": "Nadwiślańska Komunikacja Autobusowa",
+      "id": "nadwislanskakomunikacjaautobusowa-c14885",
+      "locationSet": {
+        "include": ["pl-14.geojson"]
+      },
+      "matchNames": [
+        "opgp",
+        "otwockie przewozy gminno-powiatowe"
+      ],
+      "tags": {
+        "network": "Nadwiślańska Komunikacja Autobusowa",
+        "network:short": "NKA",
+        "network:wikidata": "Q136485442",
+        "route": "bus"
+      }
+    },
+    {
       "displayName": "NAHBUS Nordwestmecklenburg GmbH",
       "id": "nahbusnordwestmecklenburggmbh-ca3a73",
       "locationSet": {
@@ -13781,23 +13799,6 @@
       "tags": {
         "network": "OTS",
         "network:wikidata": "Q7114759",
-        "route": "bus"
-      }
-    },
-    {
-      "displayName": "Nadwiślańska Komunikacja Autobusowa",
-      "id": "nadwislanskakomunikacjaautobusowa-c14885",
-      "locationSet": {
-        "include": ["pl-14.geojson"]
-      },
-      "matchNames": [
-        "Otwockie Przewozy Gminno-Powiatowe",
-        "OPGP"
-      ],
-      "tags": {
-        "network": "Nadwiślańska Komunikacja Autobusowa",
-        "network:short": "NKA",
-        "network:wikidata": "Q136485442",
         "route": "bus"
       }
     },

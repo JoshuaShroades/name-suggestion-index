@@ -236,6 +236,7 @@
     },
     {
       "displayName": "La Fabrique Cookies",
+      "id": "lafabriquecookies-e3c6a0",
       "locationSet": {"include": ["fx", "lu"]},
       "tags": {
         "brand": "La Fabrique Cookies",
@@ -246,7 +247,8 @@
     },
     {
       "displayName": "Laura Todd",
-      "locationSet": {"include": ["fx", "be"]},
+      "id": "lauratodd-ec1344",
+      "locationSet": {"include": ["be", "fx"]},
       "tags": {
         "brand": "Laura Todd",
         "brand:wikidata": "Q138313277",
@@ -293,16 +295,6 @@
       }
     },
     {
-      "displayName": "Miss Cookies Coffee",
-      "locationSet": {"include": ["fx"]},
-      "tags": {
-        "brand": "Miss Cookies Coffee",
-        "brand:wikidata": "Q139505114",
-        "name": "Miss Cookies Coffee",
-        "shop": "pastry"
-      }
-    },
-    {
       "displayName": "Mio Amore",
       "id": "mioamore-77ae94",
       "locationSet": {"include": ["in"]},
@@ -315,6 +307,17 @@
         "name:en": "Mio Amore",
         "shop": "pastry",
         "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Miss Cookies Coffee",
+      "id": "misscookiescoffee-8e6242",
+      "locationSet": {"include": ["fx"]},
+      "tags": {
+        "brand": "Miss Cookies Coffee",
+        "brand:wikidata": "Q139505114",
+        "name": "Miss Cookies Coffee",
+        "shop": "pastry"
       }
     },
     {

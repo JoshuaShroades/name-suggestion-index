@@ -131,16 +131,6 @@
       }
     },
     {
-      "displayName": "MarketVita",
-      "locationSet": {"include": ["pl"]},
-      "tags": {
-        "brand": "MarketVita",
-        "brand:wikidata": "Q118958720",
-        "name": "MarketVita",
-        "shop": "supermarket"
-      }
-    },
-    {
       "displayName": "Acme",
       "id": "acme-dde59d",
       "locationSet": {"include": ["us"]},
@@ -985,8 +975,8 @@
         "brand": "Biocoop",
         "brand:wikidata": "Q2904039",
         "name": "Biocoop",
-        "shop": "supermarket",
-        "organic": "only"
+        "organic": "only",
+        "shop": "supermarket"
       }
     },
     {
@@ -997,8 +987,8 @@
         "brand": "Biomonde",
         "brand:wikidata": "Q120801927",
         "name": "Biomonde",
-        "shop": "supermarket",
-        "organic": "only"
+        "organic": "only",
+        "shop": "supermarket"
       }
     },
     {
@@ -5208,6 +5198,17 @@
         "brand": "Market Street",
         "brand:wikidata": "Q119405196",
         "name": "Market Street",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "displayName": "MarketVita",
+      "id": "marketvita-9e6a6c",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "MarketVita",
+        "brand:wikidata": "Q118958720",
+        "name": "MarketVita",
         "shop": "supermarket"
       }
     },

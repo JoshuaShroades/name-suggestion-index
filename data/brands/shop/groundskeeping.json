@@ -6,6 +6,7 @@
   "items": [
     {
       "displayName": "Hecht",
+      "id": "hecht-9aa91c",
       "locationSet": {"include": ["cz", "sk"]},
       "tags": {
         "brand": "Hecht",

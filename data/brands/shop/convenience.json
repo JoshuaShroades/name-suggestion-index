@@ -57,20 +57,6 @@
   },
   "items": [
     {
-      "displayName": "Trefa",
-      "locationSet": {"include": ["cz"]},
-      "matchNames": ["trefa supermarket", "supermarket trefa"],
-      "preserveTags": ["^name"],
-      "tags": {
-        "brand": "Trefa",
-        "brand:wikidata": "Q139412781",
-        "name": "Trefa",
-        "operator": "Jednota, spotřební družstvo České Budějovice",
-        "operator:wikidata": "Q58196204",
-        "shop": "convenience"
-      }
-    },
-    {
       "displayName": "10-11",
       "id": "1011-ead397",
       "locationSet": {"include": ["is"]},
@@ -1880,26 +1866,6 @@
         "brand": "Delikatesy Sezam",
         "brand:wikidata": "Q120173828",
         "name": "Delikatesy Sezam",
-        "shop": "convenience"
-      }
-    },
-    {
-      "displayName": "Minivita Market",
-      "locationSet": {"include": ["pl"]},
-      "tags": {
-        "brand": "Minivita Market",
-        "brand:wikidata": "Q119660457",
-        "name": "Minivita Market",
-        "shop": "convenience"
-      }
-    },
-    {
-      "displayName": "MarketVita Express",
-      "locationSet": {"include": ["pl"]},
-      "tags": {
-        "brand": "MarketVita Express",
-        "brand:wikidata": "Q118958725",
-        "name": "MarketVita Express",
         "shop": "convenience"
       }
     },
@@ -3727,6 +3693,17 @@
       }
     },
     {
+      "displayName": "MarketVita Express",
+      "id": "marketvitaexpress-95f41b",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "MarketVita Express",
+        "brand:wikidata": "Q118958725",
+        "name": "MarketVita Express",
+        "shop": "convenience"
+      }
+    },
+    {
       "displayName": "Martín Martín",
       "id": "martinmartin-dd9aae",
       "locationSet": {"include": ["es"]},
@@ -4052,6 +4029,17 @@
         "brand": "Minit Mart",
         "brand:wikidata": "Q18154470",
         "name": "Minit Mart",
+        "shop": "convenience"
+      }
+    },
+    {
+      "displayName": "Minivita Market",
+      "id": "minivitamarket-95f41b",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Minivita Market",
+        "brand:wikidata": "Q119660457",
+        "name": "Minivita Market",
         "shop": "convenience"
       }
     },
@@ -6215,6 +6203,24 @@
         "brand": "Treats",
         "brand:wikidata": "Q131626530",
         "name": "Treats",
+        "shop": "convenience"
+      }
+    },
+    {
+      "displayName": "Trefa",
+      "id": "trefa-a7773e",
+      "locationSet": {"include": ["cz"]},
+      "matchNames": [
+        "supermarket trefa",
+        "trefa supermarket"
+      ],
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "Trefa",
+        "brand:wikidata": "Q139412781",
+        "name": "Trefa",
+        "operator": "Jednota, spotřební družstvo České Budějovice",
+        "operator:wikidata": "Q58196204",
         "shop": "convenience"
       }
     },

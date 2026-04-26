@@ -3205,16 +3205,13 @@
     },
     {
       "displayName": "Hass",
-      "locationSet": {
-        "include": [
-          "ke"
-        ]
-      },
-        "tags": {
+      "id": "hass-1cae22",
+      "locationSet": {"include": ["ke"]},
+      "tags": {
         "amenity": "fuel",
-        "name": "Hass",
         "brand": "Hass",
-        "brand:wikidata": "Q30587816"
+        "brand:wikidata": "Q30587816",
+        "name": "Hass"
       }
     },
     {
