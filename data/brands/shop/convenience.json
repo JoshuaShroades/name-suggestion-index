@@ -7896,6 +7896,19 @@
       }
     },
     {
+      "displayName": "Около",
+      "id": "okolo-e33fbc",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "Около",
+        "brand:wikidata": "Q139555162",
+        "name": "Около",
+        "name:en": "Okolo",
+        "name:ru": "Около",
+        "shop": "convenience"
+      }
+    },
+    {
       "displayName": "Оптовичок",
       "id": "303083-023e9c",
       "locationSet": {"include": ["ua"]},
@@ -8313,6 +8326,19 @@
         "name:uk": "Хіт! Експрес",
         "operator": "ООО «Евроторг»",
         "ref:vatin": "101168736",
+        "shop": "convenience"
+      }
+    },
+    {
+      "displayName": "Ярче!",
+      "id": "yarche-e33fbc",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "brand": "Ярче!",
+        "brand:wikidata": "Q102254456",
+        "name": "Ярче!",
+        "name:en": "Yarche!",
+        "name:ru": "Ярче!",
         "shop": "convenience"
       }
     },
