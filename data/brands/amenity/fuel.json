@@ -3204,6 +3204,20 @@
       }
     },
     {
+      "displayName": "Hass",
+      "locationSet": {
+        "include": [
+          "ke"
+        ]
+      },
+        "tags": {
+        "amenity": "fuel",
+        "name": "Hass",
+        "brand": "Hass",
+        "brand:wikidata": "Q30587816"
+      }
+    },
+    {
       "displayName": "Hele",
       "id": "hele-45054e",
       "locationSet": {"include": ["us-hi"]},
