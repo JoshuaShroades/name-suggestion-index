@@ -103,6 +103,17 @@
       }
     },
     {
+      "displayName": "Sapp Brothers Travel Center",
+      "id": "sappbrotherstravelcenter-35c0ca",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Sapp Bros.",
+        "brand:wikidata": "Q137965281",
+        "highway": "services",
+        "name": "Sapp Brothers Travel Center"
+      }
+    },
+    {
       "displayName": "Serways",
       "id": "serways-86c4b3",
       "locationSet": {"include": ["de"]},
@@ -110,13 +121,15 @@
         "brand": "Serways",
         "brand:wikidata": "Q111372965",
         "highway": "services",
-        "operator": "Autobahn Tank & Rast Gruppe GmbH & Co. KG"
+        "operator": "Autobahn Tank & Rast Gruppe GmbH & Co. KG",
+        "operator:wikidata": "Q131898738"
       }
     },
     {
       "displayName": "TA",
       "id": "ta-35c0ca",
       "locationSet": {"include": ["us"]},
+      "matchNames": ["ta travel center"],
       "tags": {
         "brand": "TA",
         "brand:wikidata": "Q7835892",
@@ -133,7 +146,8 @@
         "brand": "Tank & Rast",
         "brand:wikidata": "Q2392800",
         "highway": "services",
-        "operator": "Autobahn Tank & Rast Gruppe GmbH & Co. KG"
+        "operator": "Autobahn Tank & Rast Gruppe GmbH & Co. KG",
+        "operator:wikidata": "Q131898738"
       }
     },
     {

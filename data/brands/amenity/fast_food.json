@@ -3,15 +3,15 @@
     "path": "brands/amenity/fast_food",
     "exclude": {
       "generic": [
-        "^(bistro|buffet|büfé|comida r[aá]pida|fast food|food court|kantine|frituur|imbiss|kiosk|lanchonete)$",
+        "^(bistro|comida r[aá]pida|fast food|food court|kantine|frituur|imbiss|kiosk|lanchonete)$",
+        "^(buffet|büfé|bufet)$",
         "^(pizz(eri)?a|fish (and|&) chips|tacos)$",
+        "^(snack(s)?( bar)?|concession stand)$",
         "^(бистро|пиццерия|столовая|ша(ве|у)рма)$",
-        "^bufet$",
         "^caf[eé](t[eé]r[ií]a)?$",
         "^d[oö]ner( kebab)?$",
         "^fri[tz]erie$",
         "^kebab( house)?$",
-        "^snack(s)?( bar)?$",
         "^sushi\\s?(bar|house)?$",
         "^кебаб$",
         "^чебуреки$",
@@ -20,7 +20,7 @@
       ],
       "named": [
         "^(ali baba|antalya|asia[ -](bistro|imbiss|wok)|(berlin|city) döner|china garden|city (grill|pizza)|kebabai|kfc/taco bell)$",
-        "^(marmaris|mei & mei|pizza (house|time))$",
+        "^(marmaris|mei & mei|pizza (house|point|time))$",
         "^(pizza|döner) king$",
         "^(pronto|bella) pizza$",
         "^(早点|早餐店)$",
@@ -50,6 +50,31 @@
       }
     },
     {
+      "displayName": "21風味館",
+      "id": "21plus-60a4d5",
+      "locationSet": {"include": ["tw"]},
+      "matchNames": [
+        "21 century",
+        "21世紀西式健康快速餐廳",
+        "21世紀風味館",
+        "二十一世紀生活事業股份有限公司"
+      ],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "21風味館",
+        "brand:en": "21Plus",
+        "brand:wikidata": "Q28416350",
+        "brand:zh": "21風味館",
+        "cuisine": "chicken",
+        "name": "21風味館",
+        "name:en": "21Plus",
+        "name:zh": "21風味館",
+        "operator": "統一超商",
+        "operator:wikidata": "Q4642867",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "241 Pizza",
       "id": "241pizza-e49d2e",
       "locationSet": {"include": ["ca"]},
@@ -68,6 +93,7 @@
       "locationSet": {
         "include": ["id", "my", "sg"]
       },
+      "matchNames": ["4fingers"],
       "tags": {
         "amenity": "fast_food",
         "brand": "4Fingers Crispy Chicken",
@@ -103,6 +129,20 @@
         "amenity": "fast_food",
         "brand": "A&W",
         "brand:wikidata": "Q2818848",
+        "cuisine": "burger",
+        "name": "A&W",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "A&W (Malaysia)",
+      "id": "aandw-627b23",
+      "locationSet": {"include": ["my"]},
+      "matchNames": ["a&w malaysia"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "A&W",
+        "brand:wikidata": "Q132858554",
         "cuisine": "burger",
         "name": "A&W",
         "takeaway": "yes"
@@ -174,10 +214,25 @@
       }
     },
     {
-      "displayName": "Al's Beef",
-      "id": "alsbeef-0e88aa",
+      "displayName": "Aire de restauration Costco",
+      "id": "airederestaurationcostco-32490c",
       "locationSet": {
-        "include": ["us-il.geojson"]
+        "include": ["ca-qc.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Costco",
+        "brand:wikidata": "Q715583",
+        "cuisine": "hot_dog;pizza;sandwich",
+        "name": "Aire de restauration Costco",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Al's Beef",
+      "id": "alsbeef-6bb90c",
+      "locationSet": {
+        "include": ["us-il-cook_county.geojson"]
       },
       "tags": {
         "amenity": "fast_food",
@@ -235,6 +290,34 @@
       }
     },
     {
+      "displayName": "All'Antico Vinaio",
+      "id": "allanticovinaio-6b6fb0",
+      "locationSet": {
+        "include": ["ae", "gb-eng", "it", "us"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "All'Antico Vinaio",
+        "brand:wikidata": "Q136350648",
+        "cuisine": "sandwich",
+        "name": "All'Antico Vinaio",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Aloha Poké",
+      "id": "alohapoke-34e6e8",
+      "locationSet": {"include": ["es"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Aloha Poké",
+        "brand:wikidata": "Q95691125",
+        "cuisine": "poke",
+        "name": "Aloha Poké",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Aloha Pokē Co",
       "id": "alohapokeco-6b3f2b",
       "locationSet": {
@@ -287,6 +370,22 @@
         "brand:wikidata": "Q119993570",
         "cuisine": "american",
         "name": "American Deli",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Amigos",
+      "id": "amigos-041fc3",
+      "locationSet": {
+        "include": ["us-ne.geojson"]
+      },
+      "preserveTags": ["^name"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Amigos",
+        "brand:wikidata": "Q104878696",
+        "cuisine": "tex-mex",
+        "name": "Amigos",
         "takeaway": "yes"
       }
     },
@@ -373,6 +472,24 @@
       }
     },
     {
+      "displayName": "Art Lunch",
+      "id": "artlunch-58d77e",
+      "locationSet": {"include": ["am", "ru"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Art Lunch",
+        "brand:en": "Art Lunch",
+        "brand:hy": "Արտ Լանչ",
+        "brand:wikidata": "Q138317516",
+        "cuisine": "armenian;european",
+        "fast_food": "cafeteria",
+        "name": "Art Lunch",
+        "name:en": "Art Lunch",
+        "name:hy": "Արտ Լանչ",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Asiahung",
       "id": "asiahung-6ea233",
       "locationSet": {"include": ["de"]},
@@ -416,8 +533,10 @@
     },
     {
       "displayName": "B-Bop's",
-      "id": "bbops-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "bbops-185cf2",
+      "locationSet": {
+        "include": ["us-ia.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "B-Bop's",
@@ -530,8 +649,21 @@
         "amenity": "fast_food",
         "brand": "Baliwag",
         "brand:wikidata": "Q120755696",
-        "cuisine": "barbecue;filipino",
+        "cuisine": "barbecue;filipino;chicken",
         "name": "Baliwag",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Barberitos",
+      "id": "barberitos-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Barberitos",
+        "brand:wikidata": "Q4859607",
+        "cuisine": "mexican",
+        "name": "Barberitos",
         "takeaway": "yes"
       }
     },
@@ -604,6 +736,22 @@
       }
     },
     {
+      "displayName": "Belchicken",
+      "id": "belchicken-43a8cb",
+      "locationSet": {
+        "include": ["be", "de", "fx", "it", "pt"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Belchicken",
+        "brand:wikidata": "Q139504961",
+        "cuisine": "chicken",
+        "diet:halal": "only",
+        "name": "Belchicken",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Bembos",
       "id": "bembos-654705",
       "locationSet": {"include": ["pe"]},
@@ -613,6 +761,19 @@
         "brand:wikidata": "Q466971",
         "cuisine": "burger",
         "name": "Bembos",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Benedetti's Pizza",
+      "id": "benedettispizza-15d9cd",
+      "locationSet": {"include": ["mx"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Benedetti's Pizza",
+        "brand:wikidata": "Q4887212",
+        "cuisine": "pizza",
+        "name": "Benedetti's Pizza",
         "takeaway": "yes"
       }
     },
@@ -696,6 +857,21 @@
       }
     },
     {
+      "displayName": "Bill Miller Bar-B-Q",
+      "id": "billmillerbarbq-1e257d",
+      "locationSet": {
+        "include": ["us-tx.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Bill Miller Bar-B-Q",
+        "brand:wikidata": "Q4910194",
+        "cuisine": "barbecue",
+        "name": "Bill Miller Bar-B-Q",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Billy Tacos",
       "id": "billytacos-b4e8f3",
       "locationSet": {"include": ["it"]},
@@ -710,8 +886,14 @@
     },
     {
       "displayName": "Biscuitville",
-      "id": "biscuitville-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "biscuitville-79825c",
+      "locationSet": {
+        "include": [
+          "us-nc.geojson",
+          "us-sc.geojson",
+          "us-va.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Biscuitville",
@@ -736,8 +918,14 @@
     },
     {
       "displayName": "Blake's Lotaburger",
-      "id": "blakeslotaburger-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "blakeslotaburger-15ba98",
+      "locationSet": {
+        "include": [
+          "us-az.geojson",
+          "us-nm.geojson",
+          "us-tx.geojson"
+        ]
+      },
       "matchNames": ["lota' burger"],
       "tags": {
         "amenity": "fast_food",
@@ -862,6 +1050,19 @@
       }
     },
     {
+      "displayName": "Bollywood Kebab",
+      "id": "bollywoodkebab-3eab78",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Bollywood Kebab",
+        "brand:wikidata": "Q134985138",
+        "cuisine": "kebab",
+        "name": "Bollywood Kebab",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Boojum",
       "id": "boojum-1b23ec",
       "locationSet": {
@@ -880,7 +1081,6 @@
       "displayName": "Booster Juice",
       "id": "boosterjuice-e49d2e",
       "locationSet": {"include": ["ca"]},
-      "matchTags": ["shop/beverages"],
       "tags": {
         "amenity": "fast_food",
         "brand": "Booster Juice",
@@ -980,8 +1180,10 @@
     },
     {
       "displayName": "Brown's Chicken",
-      "id": "brownschicken-dbdcb8",
-      "locationSet": {"include": ["il"]},
+      "id": "brownschicken-0e88aa",
+      "locationSet": {
+        "include": ["us-il.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Brown's Chicken",
@@ -1038,6 +1240,21 @@
       }
     },
     {
+      "displayName": "Buddy's Pizza",
+      "id": "buddyspizza-d6ff93",
+      "locationSet": {
+        "include": ["us-mi.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Buddy's Pizza",
+        "brand:wikidata": "Q4984775",
+        "cuisine": "pizza",
+        "name": "Buddy's Pizza",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Bufkes",
       "id": "bufkes-60a83c",
       "locationSet": {"include": ["nl"]},
@@ -1051,9 +1268,31 @@
       }
     },
     {
+      "displayName": "Bumpers",
+      "id": "bumpers-d6ff93",
+      "locationSet": {
+        "include": ["us-mi.geojson"]
+      },
+      "matchNames": ["bumpers drive-in"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Bumpers",
+        "brand:wikidata": "Q108523527",
+        "cuisine": "american",
+        "name": "Bumpers",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Buona",
-      "id": "buona-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "buona-8ba3f5",
+      "locationSet": {
+        "include": [
+          "us-il.geojson",
+          "us-in.geojson",
+          "us-wi.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Buona",
@@ -1065,17 +1304,28 @@
     },
     {
       "displayName": "Burger King",
-      "id": "burgerking-890dec",
+      "id": "burgerking-f206b9",
       "locationSet": {
         "include": ["001"],
-        "exclude": [[-88.3726, 39.4818, 32], "au"]
+        "exclude": [
+          [-88.3726, 39.4818, 32],
+          "au",
+          "by",
+          "cn",
+          "ge",
+          "jp",
+          "kr",
+          "kz",
+          "ru",
+          "tw"
+        ]
       },
       "matchNames": [
         "burger king brasil",
         "burger king españa",
         "burguer king"
       ],
-      "note": "There is a non-branded Burger King in Mattoon, Illinois, USA, which is excluded. The chain is called 'Hungry Jacks' in Australia.",
+      "note": "There is a non-branded Burger King in Mattoon, Illinois, USA, which is excluded. The chain is called 'Hungry Jacks' in Australia. See also #11097, #4817",
       "tags": {
         "amenity": "fast_food",
         "brand": "Burger King",
@@ -1100,8 +1350,13 @@
     },
     {
       "displayName": "Burger Street",
-      "id": "burgerstreet-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "burgerstreet-1ab7d8",
+      "locationSet": {
+        "include": [
+          "us-ok.geojson",
+          "us-tx.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Burger Street",
@@ -1121,6 +1376,22 @@
         "brand:wikidata": "Q19589751",
         "cuisine": "burger",
         "name": "Burger Urge",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Burgeranch",
+      "id": "burgeranch-dbdcb8",
+      "locationSet": {"include": ["il"]},
+      "matchNames": ["burger ranch"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Burgeranch",
+        "brand:wikidata": "Q950269",
+        "cuisine": "burger",
+        "name": "בורגראנץ'",
+        "name:en": "Burgeranch",
+        "name:he": "בורגראנץ'",
         "takeaway": "yes"
       }
     },
@@ -1229,8 +1500,13 @@
     },
     {
       "displayName": "Burgerville",
-      "id": "burgerville-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "burgerville-c26124",
+      "locationSet": {
+        "include": [
+          "us-or.geojson",
+          "us-wa.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Burgerville",
@@ -1270,8 +1546,10 @@
     },
     {
       "displayName": "Bush's Chicken",
-      "id": "bushschicken-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "bushschicken-1e257d",
+      "locationSet": {
+        "include": ["us-tx.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Bush's Chicken",
@@ -1330,8 +1608,14 @@
     },
     {
       "displayName": "California Fish Grill",
-      "id": "californiafishgrill-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "californiafishgrill-63b571",
+      "locationSet": {
+        "include": [
+          "us-az.geojson",
+          "us-ca.geojson",
+          "us-nv.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "California Fish Grill",
@@ -1660,6 +1944,20 @@
       }
     },
     {
+      "displayName": "Chicken Spot",
+      "id": "chickenspot-11ef38",
+      "locationSet": {"include": ["fx"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Chicken Spot",
+        "brand:wikidata": "Q133872934",
+        "cuisine": "chicken",
+        "diet:halal": "only",
+        "name": "Chicken Spot",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Chicken Star",
       "id": "chickenstar-33d36e",
       "locationSet": {"include": ["ph"]},
@@ -1742,10 +2040,10 @@
     },
     {
       "displayName": "China Wok",
-      "id": "chinawok-76be89",
+      "id": "chinawok-dd5f2a",
       "locationSet": {
         "include": ["001"],
-        "exclude": ["cn", "de", "hk", "pl", "tw"]
+        "exclude": ["cn", "de", "pl", "tw"]
       },
       "tags": {
         "amenity": "fast_food",
@@ -1783,6 +2081,20 @@
         "brand:wikidata": "Q17065023",
         "cuisine": "chicken",
         "name": "Chooks to Go",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "ChopChop",
+      "id": "chopchop-72e24f",
+      "locationSet": {"include": ["se"]},
+      "matchNames": ["chopchop asian express"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "ChopChop",
+        "brand:wikidata": "Q104631081",
+        "cuisine": "asian",
+        "name": "ChopChop",
         "takeaway": "yes"
       }
     },
@@ -1831,11 +2143,8 @@
     },
     {
       "displayName": "Chungchun",
-      "id": "chungchun-c08753",
-      "locationSet": {
-        "include": ["ca"],
-        "exclude": ["kr"]
-      },
+      "id": "chungchun-e49d2e",
+      "locationSet": {"include": ["ca"]},
       "tags": {
         "amenity": "fast_food",
         "brand": "Chungchun Rice Dog",
@@ -1851,17 +2160,49 @@
     },
     {
       "displayName": "Church's Chicken",
-      "id": "churchschicken-9b2018",
+      "id": "churchschicken-484ae5",
       "locationSet": {
-        "include": ["001"],
-        "exclude": ["pl"]
+        "include": ["ca", "gy", "mx", "tt", "us"]
       },
+      "matchNames": [
+        "church's texas chicken",
+        "church's texas chicken®"
+      ],
       "tags": {
         "amenity": "fast_food",
         "brand": "Church's Chicken",
         "brand:wikidata": "Q1089932",
         "cuisine": "chicken",
         "name": "Church's Chicken",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Çiğköftem",
+      "id": "cigkoftem-7c8ccc",
+      "locationSet": {
+        "include": [
+          "at",
+          "be",
+          "bg",
+          "de",
+          "es",
+          "fr",
+          "gb",
+          "hu",
+          "nl",
+          "pl",
+          "tr"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Çiğköftem",
+        "brand:wikidata": "Q106597459",
+        "cuisine": "turkish",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "name": "Çiğköftem",
         "takeaway": "yes"
       }
     },
@@ -1990,6 +2331,28 @@
       }
     },
     {
+      "displayName": "Cosechas",
+      "id": "cosechas-a14b1c",
+      "locationSet": {
+        "include": [
+          "br",
+          "co",
+          "cr",
+          "pa",
+          "tw",
+          "us-fl.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Cosechas",
+        "brand:wikidata": "Q128305751",
+        "cuisine": "juice",
+        "name": "Cosechas",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Così",
       "id": "cosi-4d2ff4",
       "locationSet": {"include": ["us"]},
@@ -2018,7 +2381,7 @@
     },
     {
       "displayName": "Costco Food Court",
-      "id": "costcofoodcourt-2909a2",
+      "id": "costcofoodcourt-438182",
       "locationSet": {
         "include": [
           "au",
@@ -2029,7 +2392,8 @@
           "mx",
           "tw",
           "us"
-        ]
+        ],
+        "exclude": ["ca-qc.geojson"]
       },
       "tags": {
         "amenity": "fast_food",
@@ -2054,15 +2418,47 @@
       }
     },
     {
+      "displayName": "Cottage Inn Pizza",
+      "id": "cottageinnpizza-d6ff93",
+      "locationSet": {
+        "include": ["us-mi.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Cottage Inn Pizza",
+        "brand:wikidata": "Q16988753",
+        "cuisine": "pizza",
+        "name": "Cottage Inn Pizza",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Cousins Subs",
-      "id": "cousinssubs-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "cousinssubs-41b898",
+      "locationSet": {
+        "include": [
+          "us-in.geojson",
+          "us-wi.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Cousins Subs",
         "brand:wikidata": "Q5178843",
         "cuisine": "sandwich",
         "name": "Cousins Subs",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Crispy King",
+      "id": "crispyking-33d36e",
+      "locationSet": {"include": ["ph"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Crispy King",
+        "cuisine": "chicken",
+        "name": "Crispy King",
         "takeaway": "yes"
       }
     },
@@ -2158,8 +2554,21 @@
         "amenity": "fast_food",
         "brand": "Dairy Queen",
         "brand:wikidata": "Q1141226",
-        "cuisine": "ice_cream;burger",
+        "cuisine": "ice_cream;burger;chicken",
         "name": "Dairy Queen",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Daisy's",
+      "id": "daisys-72e24f",
+      "locationSet": {"include": ["se"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Daisy's",
+        "brand:wikidata": "Q10466019",
+        "cuisine": "burger",
+        "name": "Daisy's",
         "takeaway": "yes"
       }
     },
@@ -2178,8 +2587,10 @@
     },
     {
       "displayName": "Dave's Hot Chicken",
-      "id": "daveshotchicken-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "daveshotchicken-e4cf42",
+      "locationSet": {
+        "include": ["gb-eng", "us"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Dave's Hot Chicken",
@@ -2275,6 +2686,32 @@
       }
     },
     {
+      "displayName": "DiBella's Subs",
+      "id": "dibellassubs-cea589",
+      "locationSet": {
+        "include": [
+          "us-ct.geojson",
+          "us-ky.geojson",
+          "us-mi.geojson",
+          "us-ny.geojson",
+          "us-oh.geojson",
+          "us-pa.geojson"
+        ]
+      },
+      "matchNames": [
+        "dibella's",
+        "dibella's old fashioned submarines"
+      ],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "DiBella's Subs",
+        "brand:wikidata": "Q5269976",
+        "cuisine": "sandwich",
+        "name": "DiBella's Subs",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Dig",
       "id": "dig-4d2ff4",
       "locationSet": {"include": ["us"]},
@@ -2365,15 +2802,35 @@
       }
     },
     {
+      "displayName": "Doggis",
+      "id": "doggis-71bd8c",
+      "locationSet": {"include": ["cl"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Doggis",
+        "cuisine": "burger;hot_dog",
+        "name": "Doggis",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Domino's",
-      "id": "dominos-609f2a",
+      "id": "dominos-16ff25",
       "locationSet": {
         "include": ["001"],
-        "exclude": ["by", "cn", "jp", "kz", "ru"]
+        "exclude": [
+          "by",
+          "cn",
+          "jp",
+          "kz",
+          "ru",
+          "tw"
+        ]
       },
       "matchNames": [
         "domino's australia",
         "domino's pizza",
+        "domino's pizza (nsr)",
         "domino's pizza india"
       ],
       "tags": {
@@ -2466,7 +2923,7 @@
         "amenity": "fast_food",
         "brand": "DQ Grill & Chill",
         "brand:wikidata": "Q1141226",
-        "cuisine": "ice_cream;burger",
+        "cuisine": "ice_cream;burger;chicken",
         "name": "DQ Grill & Chill",
         "takeaway": "yes"
       }
@@ -2530,7 +2987,7 @@
     },
     {
       "displayName": "Dunkin'",
-      "id": "dunkin-e46fb5",
+      "id": "dunkin-945f15",
       "locationSet": {
         "include": ["001"],
         "exclude": [
@@ -2539,6 +2996,7 @@
           "cn",
           "eg",
           "es",
+          "ge",
           "kw",
           "lb",
           "om",
@@ -2606,19 +3064,6 @@
         "brand:wikidata": "Q5329751",
         "cuisine": "pizza",
         "name": "East of Chicago Pizza",
-        "takeaway": "yes"
-      }
-    },
-    {
-      "displayName": "EAT.",
-      "id": "eat-45095e",
-      "locationSet": {"include": ["gb"]},
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "EAT.",
-        "brand:wikidata": "Q5331219",
-        "cuisine": "sandwich",
-        "name": "EAT.",
         "takeaway": "yes"
       }
     },
@@ -2691,6 +3136,23 @@
       }
     },
     {
+      "displayName": "Eggdrop",
+      "id": "eggdrop-78ed48",
+      "locationSet": {"include": ["kr", "th"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Eggdrop",
+        "brand:en": "Eggdrop",
+        "brand:ko": "에그드랍",
+        "brand:wikidata": "Q133044923",
+        "cuisine": "sandwich",
+        "name": "Eggdrop",
+        "name:en": "Eggdrop",
+        "name:ko": "에그드랍",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Eggslut",
       "id": "eggslut-26c4d5",
       "locationSet": {
@@ -2734,6 +3196,19 @@
         "cuisine": "burger",
         "name": "El Corral",
         "official_name": "Hamburguesas El Corral",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "El Jannah",
+      "id": "eljannah-d43c69",
+      "locationSet": {"include": ["au"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "El Jannah",
+        "brand:wikidata": "Q96377069",
+        "cuisine": "chicken",
+        "name": "El Jannah",
         "takeaway": "yes"
       }
     },
@@ -2844,6 +3319,19 @@
       }
     },
     {
+      "displayName": "Etiler Marmaris",
+      "id": "etilermarmaris-8ef00c",
+      "locationSet": {"include": ["tr"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Etiler Marmaris",
+        "brand:wikidata": "Q136088046",
+        "cuisine": "kebab",
+        "name": "Etiler Marmaris",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Everbowl",
       "id": "everbowl-4d2ff4",
       "locationSet": {"include": ["us"]},
@@ -2885,6 +3373,18 @@
         "brand:wikidata": "Q109328830",
         "cuisine": "salad",
         "name": "Evergreens",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "EVOS",
+      "id": "evos-d0294b",
+      "locationSet": {"include": ["uz"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "EVOS",
+        "cuisine": "burger;hot_dog",
+        "name": "EVOS",
         "takeaway": "yes"
       }
     },
@@ -2974,14 +3474,35 @@
     },
     {
       "displayName": "Farmer Boys",
-      "id": "farmerboys-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "farmerboys-63b571",
+      "locationSet": {
+        "include": [
+          "us-az.geojson",
+          "us-ca.geojson",
+          "us-nv.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Farmer Boys",
         "brand:wikidata": "Q5435711",
         "cuisine": "burger",
         "name": "Farmer Boys",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Farmer J",
+      "id": "farmerj-8bf212",
+      "locationSet": {
+        "include": ["gb-lon.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Farmer J",
+        "brand:wikidata": "Q118611346",
+        "cuisine": "regional",
+        "name": "Farmer J",
         "takeaway": "yes"
       }
     },
@@ -3000,23 +3521,6 @@
       }
     },
     {
-      "displayName": "Fasfú Burgers",
-      "id": "fasfuburgers-d62fc7",
-      "locationSet": {
-        "include": ["co", "es", "mx", "pe"]
-      },
-      "matchNames": ["fasf"],
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Fasfú Burgers",
-        "brand:wikidata": "Q109324172",
-        "cuisine": "burger",
-        "delivery": "yes",
-        "name": "Fasfú Burgers",
-        "takeaway": "yes"
-      }
-    },
-    {
       "displayName": "Fat Bastard Burrito",
       "id": "fatbastardburrito-e49d2e",
       "locationSet": {"include": ["ca"]},
@@ -3027,6 +3531,24 @@
         "cuisine": "mexican",
         "name": "Fat Bastard Burrito",
         "official_name": "Fat Bastard Burrito Co.",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Fat Phill's",
+      "id": "fatphills-60a83c",
+      "locationSet": {"include": ["nl"]},
+      "matchNames": [
+        "fat phil's",
+        "fat phil's diner",
+        "fat phill's diner"
+      ],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Fat Phill's",
+        "brand:wikidata": "Q135116671",
+        "cuisine": "burger",
+        "name": "Fat Phill's",
         "takeaway": "yes"
       }
     },
@@ -3154,25 +3676,30 @@
     },
     {
       "displayName": "Five Guys",
-      "id": "fiveguys-ffd618",
+      "id": "fiveguys-f701a8",
       "locationSet": {
         "include": [
           "ae",
+          "at",
           "au",
           "be",
+          "bh",
           "ca",
+          "cn",
           "de",
           "es",
           "fr",
           "gb",
-          "hk",
           "ie",
           "it",
+          "kr",
           "kw",
           "lu",
+          "my",
           "nl",
           "qa",
           "sa",
+          "se",
           "sg",
           "us"
         ]
@@ -3194,7 +3721,7 @@
       "tags": {
         "amenity": "fast_food",
         "brand": "Five Star Chicken",
-        "brand:wikidata": "Q124374267",
+        "brand:wikidata": "Q127784422",
         "cuisine": "chicken",
         "delivery": "yes",
         "name": "Five Star Chicken",
@@ -3245,6 +3772,21 @@
         "brand:wikidata": "Q118149812",
         "cuisine": "burger",
         "name": "Food Solutions",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Foodmaker",
+      "id": "foodmaker-f0110d",
+      "locationSet": {
+        "include": ["be", "fx", "nl"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Foodmaker",
+        "brand:wikidata": "Q133859069",
+        "cuisine": "salad",
+        "name": "Foodmaker",
         "takeaway": "yes"
       }
     },
@@ -3344,8 +3886,10 @@
     },
     {
       "displayName": "Freebirds",
-      "id": "freebirds-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "freebirds-1e257d",
+      "locationSet": {
+        "include": ["us-tx.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Freebirds",
@@ -3424,17 +3968,36 @@
     },
     {
       "displayName": "Froots",
-      "id": "froots-d17423",
-      "locationSet": {
-        "include": ["gu", "tc"],
-        "exclude": ["pl"]
-      },
+      "id": "froots-9b3bc4",
+      "locationSet": {"include": ["gu", "tc"]},
       "tags": {
         "amenity": "fast_food",
         "brand": "Froots",
         "brand:wikidata": "Q96203860",
         "cuisine": "juice;salad",
         "name": "Froots",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Fruitisimo",
+      "id": "fruitisimo-e1906a",
+      "locationSet": {
+        "include": [
+          "at",
+          "cz",
+          "de",
+          "hu",
+          "pl",
+          "sk"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Fruitisimo",
+        "brand:wikidata": "Q102226697",
+        "cuisine": "juice",
+        "name": "Fruitisimo",
         "takeaway": "yes"
       }
     },
@@ -3474,6 +4037,19 @@
         "brand:wikidata": "Q5515791",
         "cuisine": "pizza",
         "name": "Gabriel Pizza",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Gagawa",
+      "id": "gagawa-f6eb08",
+      "locationSet": {"include": ["es", "pt"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Gagawa",
+        "brand:wikidata": "Q132156132",
+        "cuisine": "chicken",
+        "name": "Gagawa",
         "takeaway": "yes"
       }
     },
@@ -3557,8 +4133,10 @@
     },
     {
       "displayName": "Gino's Pizza & Spaghetti House (West Virginia)",
-      "id": "ginospizzaandspaghettihouse-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "ginospizzaandspaghettihouse-74856e",
+      "locationSet": {
+        "include": ["us-wv.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Gino's Pizza & Spaghetti House",
@@ -3616,9 +4194,27 @@
       }
     },
     {
+      "displayName": "GO Grill",
+      "id": "gogrill-1fab0a",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "GO Grill",
+        "brand:wikidata": "Q137165486",
+        "name": "GO Grill",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Gold Star Chili",
-      "id": "goldstarchili-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "goldstarchili-2fbc6d",
+      "locationSet": {
+        "include": [
+          "us-in.geojson",
+          "us-ky.geojson",
+          "us-oh.geojson"
+        ]
+      },
       "tags": {
         "alt_name": "Gold Star",
         "amenity": "fast_food",
@@ -3671,8 +4267,13 @@
     },
     {
       "displayName": "Good Times",
-      "id": "goodtimes-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "goodtimes-b40047",
+      "locationSet": {
+        "include": [
+          "us-co.geojson",
+          "us-wy.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Good Times",
@@ -3717,12 +4318,26 @@
       "displayName": "Great American Cookies",
       "id": "greatamericancookies-4d2ff4",
       "locationSet": {"include": ["us"]},
+      "matchNames": ["nestlé toll house café"],
       "tags": {
         "amenity": "fast_food",
         "brand": "Great American Cookies",
         "brand:wikidata": "Q5598629",
         "cuisine": "cookies",
         "name": "Great American Cookies",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Great Wraps",
+      "id": "greatwraps-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Great Wraps",
+        "brand:wikidata": "Q5600272",
+        "cuisine": "burrito",
+        "name": "Great Wraps",
         "takeaway": "yes"
       }
     },
@@ -3743,6 +4358,7 @@
       "displayName": "Greggs",
       "id": "greggs-45095e",
       "locationSet": {"include": ["gb"]},
+      "matchTags": ["craft/bakery"],
       "tags": {
         "amenity": "fast_food",
         "brand": "Greggs",
@@ -3793,9 +4409,9 @@
     },
     {
       "displayName": "Guzman y Gomez",
-      "id": "guzmanygomez-2f4cab",
+      "id": "guzmanygomez-8cc1c5",
       "locationSet": {
-        "include": ["au", "jp", "sg"]
+        "include": ["au", "jp", "sg", "us"]
       },
       "tags": {
         "amenity": "fast_food",
@@ -3816,6 +4432,25 @@
         "brand:wikidata": "Q2504930",
         "cuisine": "middle_eastern",
         "name": "Habib's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Habit Burger & Grill",
+      "id": "habitburgerandgrill-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "matchNames": [
+        "the habit burger",
+        "the habit burger grill"
+      ],
+      "tags": {
+        "alt_name": "Habit Burger Grill",
+        "amenity": "fast_food",
+        "brand": "Habit Burger & Grill",
+        "brand:wikidata": "Q18158741",
+        "cuisine": "burger",
+        "name": "Habit Burger & Grill",
+        "short_name": "Habit",
         "takeaway": "yes"
       }
     },
@@ -3855,15 +4490,15 @@
       "tags": {
         "amenity": "fast_food",
         "brand": "Hallo Pizza",
-        "brand:wikidata": "Q1571798",
+        "brand:wikidata": "Q839466",
         "cuisine": "pizza",
         "name": "Hallo Pizza",
         "takeaway": "yes"
       }
     },
     {
-      "displayName": "Hangry Joe's Hot Chicken",
-      "id": "hangryjoeshotchicken-10afbb",
+      "displayName": "Hangry Joe's Hot Chicken & Wings",
+      "id": "hangryjoeshotchickenandwings-10afbb",
       "locationSet": {
         "include": [
           "us-al.geojson",
@@ -3895,10 +4530,10 @@
       "matchNames": ["hangry joe's"],
       "tags": {
         "amenity": "fast_food",
-        "brand": "Hangry Joe's Hot Chicken",
+        "brand": "Hangry Joe's Hot Chicken & Wings",
         "brand:wikidata": "Q131378216",
         "cuisine": "chicken",
-        "name": "Hangry Joe's Hot Chicken",
+        "name": "Hangry Joe's Hot Chicken & Wings",
         "takeaway": "yes"
       }
     },
@@ -3973,6 +4608,19 @@
       }
     },
     {
+      "displayName": "Haus des Döners",
+      "id": "hausdesdoners-6ea233",
+      "locationSet": {"include": ["de"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Haus des Döners",
+        "brand:wikidata": "Q133461235",
+        "cuisine": "kebab",
+        "name": "Haus des Döners",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Hell Pizza",
       "id": "hell-6fb486",
       "locationSet": {
@@ -4024,6 +4672,26 @@
       }
     },
     {
+      "displayName": "HNT",
+      "id": "hnt-e88a25",
+      "locationSet": {
+        "include": ["br", "us-fl.geojson"]
+      },
+      "matchNames": [
+        "hnt chicken",
+        "hot 'n tender",
+        "hot 'n tender chicken"
+      ],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "HNT",
+        "brand:wikidata": "Q85765387",
+        "cuisine": "chicken",
+        "name": "HNT",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "HokBen",
       "id": "hokben-034122",
       "locationSet": {"include": ["id"]},
@@ -4034,6 +4702,19 @@
         "brand:wikidata": "Q5877948",
         "cuisine": "japanese",
         "name": "HokBen",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Home Burgers",
+      "id": "homeburgers-9bc101",
+      "locationSet": {"include": ["co"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Home Burgers",
+        "brand:wikidata": "Q133522137",
+        "cuisine": "burger",
+        "name": "Home Burgers",
         "takeaway": "yes"
       }
     },
@@ -4155,7 +4836,7 @@
         "brand:wikidata": "Q5943909",
         "cuisine": "pizza",
         "name": "Hunt Brothers Pizza",
-        "takeaway": "yes"
+        "takeaway": "only"
       }
     },
     {
@@ -4187,11 +4868,107 @@
       }
     },
     {
-      "displayName": "IKEA Restaurant",
-      "id": "ikearestaurant-e6e63a",
+      "displayName": "IKEA Bistro",
+      "id": "ikeabistro-e746e6",
       "locationSet": {
-        "include": ["001"],
-        "exclude": ["cn"]
+        "include": [
+          "ae",
+          "at",
+          "au",
+          "bh",
+          "ca",
+          "ch",
+          "cn",
+          "cz",
+          "de",
+          "dk",
+          "es",
+          "fi",
+          "fr",
+          "gb",
+          "hr",
+          "hu",
+          "ie",
+          "in",
+          "it",
+          "jo",
+          "jp",
+          "kr",
+          "kw",
+          "ma",
+          "mx",
+          "my",
+          "no",
+          "nz",
+          "pl",
+          "pt",
+          "ro",
+          "rs",
+          "sa",
+          "se",
+          "sg",
+          "si",
+          "sk",
+          "us"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "IKEA",
+        "brand:wikidata": "Q54078",
+        "cuisine": "swedish",
+        "name": "IKEA Bistro",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "IKEA Restaurant",
+      "id": "ikearestaurant-15fdc5",
+      "locationSet": {
+        "include": [
+          "ae",
+          "at",
+          "au",
+          "bh",
+          "ca",
+          "ch",
+          "cz",
+          "de",
+          "dk",
+          "eg",
+          "es",
+          "fi",
+          "fr",
+          "gb",
+          "hr",
+          "hu",
+          "ie",
+          "in",
+          "it",
+          "jo",
+          "jp",
+          "kr",
+          "kw",
+          "ma",
+          "mx",
+          "my",
+          "no",
+          "nz",
+          "ph",
+          "pl",
+          "pt",
+          "qa",
+          "ro",
+          "rs",
+          "sa",
+          "se",
+          "sg",
+          "si",
+          "sk",
+          "th",
+          "tr",
+          "us"
+        ]
       },
       "tags": {
         "amenity": "fast_food",
@@ -4220,8 +4997,14 @@
     },
     {
       "displayName": "Imo's Pizza",
-      "id": "imospizza-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "imospizza-0bee0a",
+      "locationSet": {
+        "include": [
+          "us-il.geojson",
+          "us-ks.geojson",
+          "us-mo.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Imo's Pizza",
@@ -4381,8 +5164,10 @@
     },
     {
       "displayName": "Jersey Mike's Subs",
-      "id": "jerseymikessubs-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "jerseymikessubs-53d9d9",
+      "locationSet": {
+        "include": ["ca", "mx", "us"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Jersey Mike's Subs",
@@ -4482,6 +5267,34 @@
       }
     },
     {
+      "displayName": "Juan Pollo",
+      "id": "juanpollo-ffd771",
+      "locationSet": {
+        "include": ["us-ca.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Juan Pollo",
+        "brand:wikidata": "Q6300799",
+        "cuisine": "chicken;mexican",
+        "name": "Juan Pollo",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Jugo Juice",
+      "id": "jugojuice-e49d2e",
+      "locationSet": {"include": ["ca"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Jugo Juice",
+        "brand:wikidata": "Q119705456",
+        "cuisine": "juice",
+        "name": "Jugo Juice",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Juice It Up!",
       "id": "juiceitup-4d2ff4",
       "locationSet": {"include": ["us"]},
@@ -4496,8 +5309,14 @@
     },
     {
       "displayName": "Juice Press",
-      "id": "juicepress-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "juicepress-6bd87d",
+      "locationSet": {
+        "include": [
+          "us-ma.geojson",
+          "us-nv.geojson",
+          "us-ny-new_york_city.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Juice Press",
@@ -4509,8 +5328,10 @@
     },
     {
       "displayName": "JuiceLand",
-      "id": "juiceland-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "juiceland-1e257d",
+      "locationSet": {
+        "include": ["us-tx.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "JuiceLand",
@@ -4557,6 +5378,19 @@
         "brand:wikidata": "Q118139675",
         "cuisine": "juice",
         "name": "Jump Juice",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Jureskogs",
+      "id": "jureskogs-72e24f",
+      "locationSet": {"include": ["se"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Jureskogs",
+        "brand:wikidata": "Q70613310",
+        "cuisine": "burger",
+        "name": "Jureskogs",
         "takeaway": "yes"
       }
     },
@@ -4670,8 +5504,21 @@
       }
     },
     {
+      "displayName": "Keva Juice",
+      "id": "kevajuice-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Keva Juice",
+        "brand:wikidata": "Q116547357",
+        "cuisine": "juice",
+        "name": "Keva Juice",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "KFC",
-      "id": "kfc-9cadb7",
+      "id": "kfc-434abc",
       "locationSet": {
         "include": ["001"],
         "exclude": [
@@ -4680,7 +5527,7 @@
           "ca-qc.geojson",
           "cn",
           "eg",
-          "hk",
+          "ge",
           "in",
           "iq",
           "jo",
@@ -4689,7 +5536,6 @@
           "lb",
           "ly",
           "ma",
-          "mo",
           "om",
           "pk",
           "qa",
@@ -4698,6 +5544,7 @@
           "sy",
           "tn",
           "tw",
+          "vn",
           "ye"
         ]
       },
@@ -4741,6 +5588,22 @@
       }
     },
     {
+      "displayName": "KFC (Việt Nam)",
+      "id": "kfc-434b12",
+      "locationSet": {"include": ["vn"]},
+      "tags": {
+        "alt_name": "Gà Rán Kentucky",
+        "alt_name:en": "Kentucky Fried Chicken",
+        "alt_name:vi": "Gà Rán Kentucky",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "cuisine": "fried_chicken",
+        "name": "KFC",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Kilimanjaro",
       "id": "kilimanjaro-3eb11d",
       "locationSet": {"include": ["ng"]},
@@ -4750,6 +5613,25 @@
         "brand:wikidata": "Q28453128",
         "cuisine": "nigerian",
         "name": "Kilimanjaro",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Kineya Mugimaru",
+      "id": "kineyamugimaru-e4cf42",
+      "locationSet": {
+        "include": ["gb-eng", "us"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Kineya Mugimaru",
+        "brand:en": "Kineya Mugimaru",
+        "brand:ja": "杵屋麦丸",
+        "brand:wikidata": "Q117213524",
+        "cuisine": "udon",
+        "name": "Kineya Mugimaru",
+        "name:en": "Kineya Mugimaru",
+        "name:ja": "杵屋麦丸",
         "takeaway": "yes"
       }
     },
@@ -4886,7 +5768,7 @@
     },
     {
       "displayName": "Krispy Kreme",
-      "id": "krispykreme-cfc9da",
+      "id": "krispykreme-3d3675",
       "locationSet": {
         "include": ["001"],
         "exclude": [
@@ -4894,6 +5776,8 @@
           "bh",
           "cn",
           "eg",
+          "jp",
+          "kr",
           "kw",
           "lb",
           "pl",
@@ -4922,6 +5806,19 @@
         "brand:wikidata": "Q65087447",
         "cuisine": "chicken",
         "name": "Krispy Krunchy Chicken",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Krousty Sabaïdi",
+      "id": "kroustysabaidi-11ef38",
+      "locationSet": {"include": ["fx"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Krousty Sabaïdi",
+        "brand:wikidata": "Q137054195",
+        "cuisine": "asian",
+        "name": "Krousty Sabaïdi",
         "takeaway": "yes"
       }
     },
@@ -5065,6 +5962,20 @@
       }
     },
     {
+      "displayName": "La Donuteria",
+      "id": "ladonuteria-369100",
+      "locationSet": {"include": ["145", "150"]},
+      "tags": {
+        "alt_name": "La Donuteria",
+        "amenity": "fast_food",
+        "brand": "La Donuteria",
+        "brand:wikidata": "Q136734522",
+        "cuisine": "donut;coffee_shop",
+        "name": "La Donuteria",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "La Lucha Sangucheria Criolla",
       "id": "laluchasangucheriacriolla-1a06c0",
       "locationSet": {
@@ -5095,8 +6006,13 @@
     },
     {
       "displayName": "La Salsa",
-      "id": "lasalsa-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "lasalsa-3140ea",
+      "locationSet": {
+        "include": [
+          "us-ca.geojson",
+          "us-nv.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "La Salsa",
@@ -5133,6 +6049,24 @@
       }
     },
     {
+      "displayName": "Larry's Giant Subs",
+      "id": "larrysgiantsubs-7c9630",
+      "locationSet": {
+        "include": [
+          "us-fl.geojson",
+          "us-ga.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Larry's Giant Subs",
+        "brand:wikidata": "Q6489839",
+        "cuisine": "sandwich",
+        "name": "Larry's Giant Subs",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Laughing Planet",
       "id": "laughingplanet-959927",
       "locationSet": {
@@ -5148,6 +6082,20 @@
         "brand:wikidata": "Q61603998",
         "cuisine": "mexican",
         "name": "Laughing Planet",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Layne's Chicken Fingers",
+      "id": "layneschickenfingers-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Layne's Chicken Fingers",
+        "brand:wikidata": "Q138970746",
+        "cuisine": "chicken",
+        "diet:halal": "only",
+        "name": "Layne's Chicken Fingers",
         "takeaway": "yes"
       }
     },
@@ -5259,9 +6207,29 @@
       }
     },
     {
+      "displayName": "Lion's Choice",
+      "id": "lionschoice-0feecf",
+      "locationSet": {
+        "include": [
+          "us-il.geojson",
+          "us-mo.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Lion's Choice",
+        "brand:wikidata": "Q6555311",
+        "cuisine": "sandwich",
+        "name": "Lion's Choice",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Little Big Burger",
-      "id": "littlebigburger-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "littlebigburger-a39031",
+      "locationSet": {
+        "include": ["us-or.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Little Big Burger",
@@ -5365,10 +6333,10 @@
     },
     {
       "displayName": "Lotteria",
-      "id": "lotteria-9b2018",
+      "id": "lotteria-3a5dd9",
       "locationSet": {
         "include": ["001"],
-        "exclude": ["pl"]
+        "exclude": ["jp", "kr", "pl"]
       },
       "tags": {
         "amenity": "fast_food",
@@ -5394,18 +6362,26 @@
     },
     {
       "displayName": "Lviv Croissants",
-      "id": "lvivcroissants-091bb1",
-      "locationSet": {"include": ["pl", "ua"]},
+      "id": "lvivcroissants-1b3cb0",
+      "locationSet": {
+        "include": [
+          "cz",
+          "pl",
+          "sk",
+          "ua",
+          "us-ga.geojson"
+        ]
+      },
+      "matchNames": [
+        "lwowskie croissanty",
+        "львівські круасани"
+      ],
       "tags": {
         "amenity": "fast_food",
         "brand": "Lviv Croissants",
-        "brand:en": "Lviv Croissants",
-        "brand:uk": "Львівські Круасани",
         "brand:wikidata": "Q116871093",
         "cuisine": "sandwich",
         "name": "Lviv Croissants",
-        "name:en": "Lviv Croissants",
-        "name:uk": "Львівські Круасани",
         "takeaway": "yes"
       }
     },
@@ -5419,6 +6395,21 @@
         "brand:wikidata": "Q116898012",
         "cuisine": "poke",
         "name": "Ma'loa",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Mac's Sushi",
+      "id": "macssushi-72d462",
+      "locationSet": {
+        "include": ["ca-on.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Mac's Sushi",
+        "brand:wikidata": "Q133254906",
+        "cuisine": "sushi",
+        "name": "Mac's Sushi",
         "takeaway": "yes"
       }
     },
@@ -5555,12 +6546,29 @@
       "displayName": "Mary Brown's",
       "id": "marybrowns-e49d2e",
       "locationSet": {"include": ["ca"]},
+      "matchNames": [
+        "mary brown's famous chicken & taters"
+      ],
       "tags": {
         "amenity": "fast_food",
         "brand": "Mary Brown's",
         "brand:wikidata": "Q6779125",
         "cuisine": "chicken",
         "name": "Mary Brown's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Master Poulet",
+      "id": "masterpoulet-11ef38",
+      "locationSet": {"include": ["fx"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Master Poulet",
+        "brand:wikidata": "Q139504926",
+        "cuisine": "chicken",
+        "diet:halal": "only",
+        "name": "Master Poulet",
         "takeaway": "yes"
       }
     },
@@ -5581,7 +6589,7 @@
     },
     {
       "displayName": "McDonald's",
-      "id": "mcdonalds-d24be7",
+      "id": "mcdonalds-c9aa1b",
       "locationSet": {
         "include": ["001"],
         "exclude": [
@@ -5592,7 +6600,6 @@
           "eg",
           "fr",
           "ge",
-          "hk",
           "il",
           "iq",
           "jo",
@@ -5602,7 +6609,6 @@
           "kz",
           "lb",
           "ma",
-          "mo",
           "no",
           "om",
           "qa",
@@ -5610,7 +6616,8 @@
           "sa",
           "sy",
           "tn",
-          "tw"
+          "tw",
+          "ua"
         ]
       },
       "tags": {
@@ -5651,6 +6658,24 @@
       }
     },
     {
+      "displayName": "McDonald's (Україна)",
+      "id": "mcdonalds-50e0ae",
+      "locationSet": {"include": ["ua"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:en": "McDonald's",
+        "brand:uk": "МакДональдз",
+        "brand:wikidata": "Q4043856",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "McDonald's",
+        "name:en": "McDonald's",
+        "name:uk": "МакДональдз",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Mediterráneo",
       "id": "mediterraneo-654705",
       "locationSet": {"include": ["pe"]},
@@ -5677,28 +6702,11 @@
       }
     },
     {
-      "displayName": "Mendocino Farms",
-      "id": "mendocinofarms-c19f86",
-      "locationSet": {
-        "include": [
-          "us-ca.geojson",
-          "us-ga.geojson",
-          "us-tx.geojson"
-        ]
-      },
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Mendocino Farms",
-        "brand:wikidata": "Q110671982",
-        "cuisine": "sandwich",
-        "name": "Mendocino Farms",
-        "takeaway": "yes"
-      }
-    },
-    {
       "displayName": "Meson Sandwiches",
-      "id": "mesonsandwiches-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "mesonsandwiches-7afd19",
+      "locationSet": {
+        "include": ["pr", "us-fl.geojson"]
+      },
       "matchNames": ["el meson"],
       "tags": {
         "alt_name": "El Meson Sandwiches",
@@ -5725,9 +6733,28 @@
       }
     },
     {
+      "displayName": "Mezzo di Pasta",
+      "id": "mezzodipasta-e4dee6",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Mezzo di Pasta",
+        "brand:wikidata": "Q1926453",
+        "cuisine": "pasta",
+        "name": "Mezzo di Pasta",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Miami Grill",
-      "id": "miamigrill-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "miamigrill-1e2c00",
+      "locationSet": {
+        "include": [
+          "us-fl.geojson",
+          "us-nv.geojson",
+          "us-sc.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Miami Grill",
@@ -5739,8 +6766,10 @@
     },
     {
       "displayName": "Mighty Taco",
-      "id": "mightytaco-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "mightytaco-83b92e",
+      "locationSet": {
+        "include": ["us-ny.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Mighty Taco",
@@ -5764,9 +6793,30 @@
       }
     },
     {
+      "displayName": "Milano Pizzeria",
+      "id": "milanopizzeria-72d462",
+      "locationSet": {
+        "include": ["ca-on.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Milano Pizzeria",
+        "brand:wikidata": "Q133228353",
+        "cuisine": "pizza",
+        "name": "Milano Pizzeria",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Milio's Sandwiches",
-      "id": "milios-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "milios-8b3501",
+      "locationSet": {
+        "include": [
+          "us-ia.geojson",
+          "us-mn.geojson",
+          "us-wi.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Milio's",
@@ -5774,6 +6824,34 @@
         "cuisine": "sandwich",
         "name": "Milio's",
         "official_name": "Milio's Sandwiches",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Milky Moo",
+      "id": "milkymoo-ffb863",
+      "locationSet": {"include": ["br"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Milky Moo",
+        "brand:wikidata": "Q134983307",
+        "cuisine": "milkshake",
+        "name": "Milky Moo",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Milo's Hamburgers",
+      "id": "miloshamburgers-2ca1a0",
+      "locationSet": {
+        "include": ["us-al.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Milo's Hamburgers",
+        "brand:wikidata": "Q6860268",
+        "cuisine": "burger",
+        "name": "Milo's Hamburgers",
         "takeaway": "yes"
       }
     },
@@ -5843,6 +6921,20 @@
         "name:zh": "Mister Donut",
         "operator": "統一多拿滋股份有限公司",
         "operator:wikidata": "Q15934112",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Mister Garden",
+      "id": "mistergarden-e4dee6",
+      "locationSet": {"include": ["fr"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Mister Garden",
+        "brand:wikidata": "Q138312953",
+        "cuisine": "salad",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
         "takeaway": "yes"
       }
     },
@@ -6103,23 +7195,6 @@
       }
     },
     {
-      "displayName": "MrBeast Burger",
-      "id": "mrbeastburger-4d2ff4",
-      "locationSet": {"include": ["us"]},
-      "matchNames": [
-        "mister beast burger",
-        "mr. beast"
-      ],
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "MrBeast Burger",
-        "brand:wikidata": "Q106013567",
-        "cuisine": "burger",
-        "name": "MrBeast Burger",
-        "takeaway": "yes"
-      }
-    },
-    {
       "displayName": "Muchas Gracias Mexican Food",
       "id": "muchasgraciasmexicanfood-c26124",
       "locationSet": {
@@ -6157,14 +7232,13 @@
     },
     {
       "displayName": "Myungrang Hotdog",
-      "id": "myungranghotdog-e13ed7",
+      "id": "myungranghotdog-be64bb",
       "locationSet": {
         "include": [
           "au",
           "ca",
           "gb",
           "kh",
-          "kr",
           "ph",
           "tw",
           "us"
@@ -6173,9 +7247,13 @@
       "tags": {
         "amenity": "fast_food",
         "brand": "Myungrang Hotdog",
+        "brand:en": "Myungrang Hotdog",
+        "brand:ko": "명랑핫도그",
         "brand:wikidata": "Q130527587",
         "cuisine": "hot_dog",
         "name": "Myungrang Hotdog",
+        "name:en": "Myungrang Hotdog",
+        "name:ko": "명랑핫도그",
         "takeaway": "yes"
       }
     },
@@ -6190,6 +7268,24 @@
         "brand:wikidata": "Q1319505",
         "cuisine": "hot_dog",
         "name": "Nathan's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Nation's Giant Hamburgers",
+      "id": "nationsgianthamburgers-85e020",
+      "locationSet": {
+        "include": [
+          "us-ca.geojson",
+          "us-tx.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Nation's Giant Hamburgers",
+        "brand:wikidata": "Q17061887",
+        "cuisine": "burger",
+        "name": "Nation's Giant Hamburgers",
         "takeaway": "yes"
       }
     },
@@ -6227,19 +7323,6 @@
       }
     },
     {
-      "displayName": "Nestlé Toll House Café",
-      "id": "nestletollhousecafe-4d2ff4",
-      "locationSet": {"include": ["us"]},
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Nestlé Toll House Café",
-        "brand:wikidata": "Q6997922",
-        "cuisine": "dessert",
-        "name": "Nestlé Toll House Café",
-        "takeaway": "yes"
-      }
-    },
-    {
       "displayName": "New Deli",
       "id": "newdeli-dbdcb8",
       "locationSet": {"include": ["il"]},
@@ -6251,6 +7334,21 @@
         "diet:kosher": "yes",
         "name": "New Deli",
         "name:en": "New Deli",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "New Orleans Pizza",
+      "id": "neworleanspizza-72d462",
+      "locationSet": {
+        "include": ["ca-on.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "New Orleans Pizza",
+        "brand:wikidata": "Q133249464",
+        "cuisine": "pizza",
+        "name": "New Orleans Pizza",
         "takeaway": "yes"
       }
     },
@@ -6322,8 +7420,10 @@
     },
     {
       "displayName": "Noah's Bagels",
-      "id": "noahsbagels-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "noahsbagels-ffd771",
+      "locationSet": {
+        "include": ["us-ca.geojson"]
+      },
       "matchNames": ["noahs ny bagels"],
       "tags": {
         "amenity": "fast_food",
@@ -6426,8 +7526,13 @@
     },
     {
       "displayName": "Num Pang",
-      "id": "numpang-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "numpang-5ac802",
+      "locationSet": {
+        "include": [
+          "us-ma.geojson",
+          "us-ny-new_york_city.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Num Pang",
@@ -6562,6 +7667,25 @@
       }
     },
     {
+      "displayName": "OMG! Decadent Donuts",
+      "id": "omgdecadentdonuts-6ed0e2",
+      "locationSet": {
+        "include": ["au", "nz", "sg"]
+      },
+      "matchNames": ["omg"],
+      "preserveTags": ["^name"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "OMG! Decadent Donuts",
+        "brand:wikidata": "Q138388838",
+        "cuisine": "donut",
+        "diet:gluten_free": "only",
+        "diet:vegan": "only",
+        "name": "OMG! Decadent Donuts",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "One Price Coffee",
       "id": "onepricecoffee-7582d1",
       "locationSet": {"include": ["ru"]},
@@ -6681,8 +7805,10 @@
     },
     {
       "displayName": "P. Terry's",
-      "id": "pterrys-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "pterrys-1e257d",
+      "locationSet": {
+        "include": ["us-tx.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "P. Terry's",
@@ -6695,8 +7821,13 @@
     },
     {
       "displayName": "Pal's",
-      "id": "pals-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "pals-3146db",
+      "locationSet": {
+        "include": [
+          "us-tn.geojson",
+          "us-va.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Pal's",
@@ -6801,8 +7932,11 @@
     },
     {
       "displayName": "Papa John's",
-      "id": "papajohns-658eea",
-      "locationSet": {"include": ["001"]},
+      "id": "papajohns-715e2d",
+      "locationSet": {
+        "include": ["001"],
+        "exclude": ["by", "ru"]
+      },
       "matchNames": [
         "papa john",
         "papa john pizza",
@@ -6876,6 +8010,19 @@
         "brand:wikidata": "Q6057390",
         "cuisine": "pizza",
         "name": "Pasaport Pizza",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Pasibus",
+      "id": "pasibus-3eab78",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Pasibus",
+        "brand:wikidata": "Q110428053",
+        "cuisine": "burger",
+        "name": "Pasibus",
         "takeaway": "yes"
       }
     },
@@ -6995,6 +8142,26 @@
       }
     },
     {
+      "displayName": "Pick Up Stix",
+      "id": "pickupstix-cb7a0c",
+      "locationSet": {
+        "include": [
+          "us-ca.geojson",
+          "us-nv.geojson",
+          "us-tx.geojson",
+          "us-ut.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Pick Up Stix",
+        "brand:wikidata": "Q7190707",
+        "cuisine": "asian",
+        "name": "Pick Up Stix",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Pie City",
       "id": "piecity-7fdf05",
       "locationSet": {"include": ["za"]},
@@ -7017,6 +8184,21 @@
         "brand:wikidata": "Q62273613",
         "cuisine": "chicken",
         "name": "Pinulito",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Pita Land",
+      "id": "pitaland-72d462",
+      "locationSet": {
+        "include": ["ca-on.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Pita Land",
+        "brand:wikidata": "Q133249489",
+        "cuisine": "pita",
+        "name": "Pita Land",
         "takeaway": "yes"
       }
     },
@@ -7111,6 +8293,26 @@
       }
     },
     {
+      "displayName": "Pizza Depot",
+      "id": "pizzadepot-a3b89f",
+      "locationSet": {
+        "include": [
+          "ca-ab.geojson",
+          "ca-mb.geojson",
+          "ca-on.geojson",
+          "ca-sk.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Pizza Depot",
+        "brand:wikidata": "Q133254934",
+        "cuisine": "pizza",
+        "name": "Pizza Depot",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Pizza GoGo",
       "id": "pizzagogo-45095e",
       "locationSet": {"include": ["gb"]},
@@ -7125,10 +8327,10 @@
     },
     {
       "displayName": "Pizza Hut Delivery",
-      "id": "pizzahutdelivery-ff7864",
+      "id": "pizzahutdelivery-e0c6c1",
       "locationSet": {
         "include": ["001"],
-        "exclude": ["gb"]
+        "exclude": ["fr", "gb"]
       },
       "tags": {
         "amenity": "fast_food",
@@ -7168,9 +8370,9 @@
       }
     },
     {
-      "displayName": "Pizza Inn",
-      "id": "pizzainn-658eea",
-      "locationSet": {"include": ["001"]},
+      "displayName": "Pizza Inn (America)",
+      "id": "pizzainn-4d2ff4",
+      "locationSet": {"include": ["us"]},
       "tags": {
         "amenity": "fast_food",
         "brand": "Pizza Inn",
@@ -7255,6 +8457,24 @@
         "brand:wikidata": "Q3389501",
         "cuisine": "pizza",
         "name": "Pizza Paï",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Pizza Patrón",
+      "id": "pizzapatron-5d3d5e",
+      "locationSet": {
+        "include": [
+          "us-az.geojson",
+          "us-tx.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Pizza Patrón",
+        "brand:wikidata": "Q7199972",
+        "cuisine": "pizza",
+        "name": "Pizza Patrón",
         "takeaway": "yes"
       }
     },
@@ -7519,7 +8739,7 @@
       "tags": {
         "amenity": "fast_food",
         "brand": "Pollo Feliz",
-        "brand:wikidata": "Q113187047",
+        "brand:wikidata": "Q88788024",
         "cuisine": "chicken",
         "name": "Pollo Feliz",
         "takeaway": "yes"
@@ -7566,13 +8786,14 @@
     },
     {
       "displayName": "Pollolandia",
-      "id": "pollolandia-057a99",
+      "id": "pollolandia-5bda58",
       "locationSet": {
-        "include": ["cr", "gt", "hn"]
+        "include": ["cr", "gt", "hn", "sv"]
       },
       "tags": {
         "amenity": "fast_food",
         "brand": "Pollolandia",
+        "brand:wikidata": "Q134611065",
         "cuisine": "chicken",
         "name": "Pollolandia",
         "takeaway": "yes"
@@ -7606,8 +8827,11 @@
     },
     {
       "displayName": "Popeyes",
-      "id": "popeyes-658eea",
-      "locationSet": {"include": ["001"]},
+      "id": "popeyes-165c34",
+      "locationSet": {
+        "include": ["001"],
+        "exclude": ["kr"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Popeyes",
@@ -7700,7 +8924,7 @@
     },
     {
       "displayName": "Pret A Manger",
-      "id": "pretamanger-4f61b1",
+      "id": "pretamanger-a11118",
       "locationSet": {
         "include": [
           "ae",
@@ -7710,7 +8934,6 @@
           "es",
           "fr",
           "gb",
-          "hk",
           "ie",
           "in",
           "nl",
@@ -7745,6 +8968,19 @@
       }
     },
     {
+      "displayName": "PrimoHoagies",
+      "id": "primohoagies-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "PrimoHoagies",
+        "brand:wikidata": "Q54953929",
+        "cuisine": "sandwich",
+        "name": "PrimoHoagies",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Pure",
       "id": "pure-8bf212",
       "locationSet": {
@@ -7760,17 +8996,31 @@
       }
     },
     {
+      "displayName": "Qburger",
+      "id": "qburger-60a4d5",
+      "locationSet": {"include": ["tw"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Qburger",
+        "brand:wikidata": "Q131858964",
+        "cuisine": "american;breakfast",
+        "name": "Qburger",
+        "operator": "饗樂餐飲實業股份有限公司",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Qdoba",
       "id": "qdoba-d2abf0",
       "locationSet": {"include": ["ca", "us"]},
-      "matchNames": ["qdoba mexican eats"],
+      "matchNames": ["qdoba mexican grill"],
       "tags": {
         "amenity": "fast_food",
         "brand": "Qdoba",
         "brand:wikidata": "Q1363885",
         "cuisine": "mexican",
         "name": "Qdoba",
-        "official_name": "Qdoba Mexican Grill",
+        "official_name": "Qdoba Mexican Eats",
         "takeaway": "yes"
       }
     },
@@ -7822,8 +9072,10 @@
     },
     {
       "displayName": "Raising Cane's",
-      "id": "raisingcanes-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "raisingcanes-e4cf42",
+      "locationSet": {
+        "include": ["gb-eng", "us"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Raising Cane's",
@@ -7861,6 +9113,19 @@
       }
     },
     {
+      "displayName": "Richeese Factory",
+      "id": "richeesefactory-ca13a2",
+      "locationSet": {"include": ["id", "my"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Richeese Factory",
+        "brand:wikidata": "Q22915087",
+        "cuisine": "chicken",
+        "name": "Richeese Factory",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Risa Chicken",
       "id": "risachicken-6ea233",
       "locationSet": {"include": ["de"]},
@@ -7884,6 +9149,25 @@
         "brand:wikidata": "Q17029777",
         "cuisine": "juice",
         "name": "Robeks",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Roberto's Taco Shop",
+      "id": "robertostacoshop-94febc",
+      "locationSet": {
+        "include": [
+          "us-ca.geojson",
+          "us-nv.geojson",
+          "us-tx.geojson"
+        ]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Roberto's Taco Shop",
+        "brand:wikidata": "Q101109953",
+        "cuisine": "mexican",
+        "name": "Roberto's Taco Shop",
         "takeaway": "yes"
       }
     },
@@ -7972,7 +9256,11 @@
       "displayName": "Rostic's",
       "id": "rostics-7582d1",
       "locationSet": {"include": ["ru"]},
-      "matchNames": ["kfc", "ростикс"],
+      "matchNames": [
+        "kfc",
+        "rostiс's",
+        "ростикс"
+      ],
       "tags": {
         "amenity": "fast_food",
         "brand": "Rostic's",
@@ -8022,8 +9310,14 @@
     },
     {
       "displayName": "Rubio's",
-      "id": "rubios-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "rubios-63b571",
+      "locationSet": {
+        "include": [
+          "us-az.geojson",
+          "us-ca.geojson",
+          "us-nv.geojson"
+        ]
+      },
       "matchNames": [
         "rubios fresh mexican grill"
       ],
@@ -8039,8 +9333,14 @@
     },
     {
       "displayName": "Ruby's Diner",
-      "id": "rubysdiner-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "rubysdiner-620859",
+      "locationSet": {
+        "include": [
+          "us-ca.geojson",
+          "us-nj.geojson",
+          "us-nv.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Ruby's Diner",
@@ -8114,6 +9414,20 @@
         "brand:wikidata": "Q7403411",
         "cuisine": "salad",
         "name": "Saladworks",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Salsarita's Fresh Mexican Grill",
+      "id": "salsaritasfreshmexicangrill-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Salsarita's Fresh Mexican Grill",
+        "brand:wikidata": "Q85799275",
+        "cuisine": "mexican",
+        "name": "Salsarita's Fresh Mexican Grill",
+        "short_name": "Salsarita's",
         "takeaway": "yes"
       }
     },
@@ -8284,6 +9598,22 @@
       }
     },
     {
+      "displayName": "Shah's Halal Food",
+      "id": "shahshalalfood-5e3e19",
+      "locationSet": {
+        "include": ["ca", "gb", "se", "us"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Shah's Halal Food",
+        "brand:wikidata": "Q135009954",
+        "cuisine": "middle_eastern",
+        "diet:halal": "only",
+        "name": "Shah's Halal Food",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Shake Shack",
       "id": "shakeshack-658eea",
       "locationSet": {"include": ["001"]},
@@ -8338,6 +9668,21 @@
       }
     },
     {
+      "displayName": "Shiso Burger",
+      "id": "shisoburger-7d97e4",
+      "locationSet": {
+        "include": ["at", "ch", "de", "fr", "pt"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Shiso Burger",
+        "brand:wikidata": "Q132807422",
+        "cuisine": "burger",
+        "name": "Shiso Burger",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Sibylla",
       "id": "sibylla-bdca1d",
       "locationSet": {"include": ["fi", "se"]},
@@ -8347,6 +9692,21 @@
         "brand:wikidata": "Q488643",
         "cuisine": "burger",
         "name": "Sibylla",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Simon's Burger",
+      "id": "simonsburger-86e17d",
+      "locationSet": {
+        "include": ["at", "hu", "sk"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Simon's Burger",
+        "brand:wikidata": "Q134599642",
+        "cuisine": "burger",
+        "name": "Simon's Burger",
         "takeaway": "yes"
       }
     },
@@ -8488,14 +9848,36 @@
     },
     {
       "displayName": "Snarf's Sandwiches",
-      "id": "snarfssandwiches-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "snarfssandwiches-586527",
+      "locationSet": {
+        "include": [
+          "us-co.geojson",
+          "us-mo.geojson",
+          "us-tx.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Snarf's Sandwiches",
         "brand:wikidata": "Q113900887",
         "cuisine": "sandwich",
         "name": "Snarf's Sandwiches",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Sneaky Pete's",
+      "id": "sneakypetes-2ca1a0",
+      "locationSet": {
+        "include": ["us-al.geojson"]
+      },
+      "matchNames": ["sneaky pete's hotdogs"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Sneaky Pete's",
+        "brand:wikidata": "Q7547507",
+        "cuisine": "hot_dog",
+        "name": "Sneaky Pete's",
         "takeaway": "yes"
       }
     },
@@ -8524,6 +9906,19 @@
         "brand:wikidata": "Q110473093",
         "cuisine": "coffee_shop;salad;sandwich",
         "name": "Soul Origin",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Sourdough & Co.",
+      "id": "sourdoughandco-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Sourdough & Co.",
+        "brand:wikidata": "Q123566273",
+        "cuisine": "sandwich",
+        "name": "Sourdough & Co.",
         "takeaway": "yes"
       }
     },
@@ -8560,6 +9955,21 @@
       }
     },
     {
+      "displayName": "Spangles",
+      "id": "spangles-034fcd",
+      "locationSet": {
+        "include": ["us-ks.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Spangles",
+        "brand:wikidata": "Q7573095",
+        "cuisine": "burger;ice_cream",
+        "name": "Spangles",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Spare Rib Express",
       "id": "spareribexpress-60a83c",
       "locationSet": {"include": ["nl"]},
@@ -8573,15 +9983,15 @@
       }
     },
     {
-      "displayName": "Specialty's",
-      "id": "specialtys-4d2ff4",
+      "displayName": "Speedy Café",
+      "id": "speedycafe-4d2ff4",
       "locationSet": {"include": ["us"]},
       "tags": {
         "amenity": "fast_food",
-        "brand": "Specialty's",
-        "brand:wikidata": "Q64339210",
-        "cuisine": "sandwich;bakery",
-        "name": "Specialty's",
+        "brand": "Speedway",
+        "brand:wikidata": "Q7575683",
+        "cuisine": "sandwich;coffee_shop",
+        "name": "Speedy Café",
         "takeaway": "yes"
       }
     },
@@ -8667,8 +10077,16 @@
     },
     {
       "displayName": "Subway",
-      "id": "subway-658eea",
-      "locationSet": {"include": ["001"]},
+      "id": "subway-6a374d",
+      "locationSet": {
+        "include": ["001"],
+        "exclude": [
+          "ge",
+          "jp",
+          "kr",
+          "mainland china"
+        ]
+      },
       "matchNames": [
         "subway australia",
         "subway brasil",
@@ -8695,28 +10113,6 @@
         "brand:wikidata": "Q108413837",
         "cuisine": "japanese",
         "name": "Suki Hana",
-        "takeaway": "yes"
-      }
-    },
-    {
-      "displayName": "Sumo Salad",
-      "id": "sumosalad-474d0a",
-      "locationSet": {
-        "include": [
-          "ae",
-          "au",
-          "br",
-          "nz",
-          "sg",
-          "us"
-        ]
-      },
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Sumo Salad",
-        "brand:wikidata": "Q16951700",
-        "cuisine": "salad",
-        "name": "Sumo Salad",
         "takeaway": "yes"
       }
     },
@@ -8902,8 +10298,56 @@
     },
     {
       "displayName": "Taco Bell",
-      "id": "tacobell-658eea",
-      "locationSet": {"include": ["001"]},
+      "id": "tacobell-a1c9df",
+      "locationSet": {
+        "include": [
+          "ae",
+          "ar",
+          "au",
+          "aw",
+          "ba",
+          "br",
+          "ca",
+          "cl",
+          "co",
+          "cr",
+          "cy",
+          "de",
+          "do",
+          "dz",
+          "ec",
+          "es",
+          "fi",
+          "fr",
+          "gb",
+          "gt",
+          "gu",
+          "id",
+          "ie",
+          "in",
+          "is",
+          "it",
+          "jp",
+          "kr",
+          "kw",
+          "lk",
+          "mx",
+          "my",
+          "nl",
+          "nz",
+          "pa",
+          "pe",
+          "ph",
+          "pr",
+          "pt",
+          "ro",
+          "rs",
+          "se",
+          "sv",
+          "th",
+          "us"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Taco Bell",
@@ -8928,8 +10372,14 @@
     },
     {
       "displayName": "Taco Bueno",
-      "id": "tacobueno-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "tacobueno-8babf1",
+      "locationSet": {
+        "include": [
+          "us-ar.geojson",
+          "us-ok.geojson",
+          "us-tx.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Taco Bueno",
@@ -8941,8 +10391,10 @@
     },
     {
       "displayName": "Taco Cabana",
-      "id": "tacocabana-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "tacocabana-1e257d",
+      "locationSet": {
+        "include": ["us-tx.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Taco Cabana",
@@ -8998,8 +10450,14 @@
     },
     {
       "displayName": "Taco Mayo",
-      "id": "tacomayo-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "tacomayo-80c90e",
+      "locationSet": {
+        "include": [
+          "us-ar.geojson",
+          "us-ks.geojson",
+          "us-ok.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Taco Mayo",
@@ -9078,6 +10536,19 @@
       }
     },
     {
+      "displayName": "Tahini's",
+      "id": "tahinis-e49d2e",
+      "locationSet": {"include": ["ca"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Tahini's",
+        "brand:wikidata": "Q135991974",
+        "cuisine": "mediterranean",
+        "name": "Tahini's",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Takos King",
       "id": "takosking-11ef38",
       "locationSet": {"include": ["fx"]},
@@ -9134,6 +10605,35 @@
       }
     },
     {
+      "displayName": "Tasty Crousty",
+      "id": "tastycrousty-863c99",
+      "locationSet": {
+        "include": ["be", "dz", "fx"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Tasty Crousty",
+        "brand:wikidata": "Q135185035",
+        "cuisine": "chicken",
+        "diet:halal": "only",
+        "name": "Tasty Crousty",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Tasty Poke",
+      "id": "tastypoke-34e6e8",
+      "locationSet": {"include": ["es"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Tasty Poke",
+        "brand:wikidata": "Q134500927",
+        "cuisine": "poke",
+        "name": "Tasty Poke",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Tavuk Dünyası",
       "id": "tavukdunyasi-8ef00c",
       "locationSet": {"include": ["tr"]},
@@ -9162,8 +10662,13 @@
     },
     {
       "displayName": "Ted's Hot Dogs",
-      "id": "tedshotdogs-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "tedshotdogs-77bd27",
+      "locationSet": {
+        "include": [
+          "us-az.geojson",
+          "us-ny.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Ted's Hot Dogs",
@@ -9266,9 +10771,49 @@
       }
     },
     {
+      "displayName": "Tex's Chicken & Burgers",
+      "id": "texschickenandburgers-577b43",
+      "locationSet": {
+        "include": [
+          "us-ny.geojson",
+          "us-pa.geojson"
+        ]
+      },
+      "matchNames": [
+        "texas chicken & burgers",
+        "texas chicken and burger",
+        "texas chicken burger",
+        "texas chicken burgers"
+      ],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Tex's Chicken & Burgers",
+        "brand:wikidata": "Q107303396",
+        "cuisine": "burger;chicken",
+        "diet:halal": "yes",
+        "name": "Tex's Chicken & Burgers",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Texas Chicken",
-      "id": "texaschicken-658eea",
-      "locationSet": {"include": ["001"]},
+      "id": "texaschicken-a57bb7",
+      "locationSet": {
+        "include": [
+          "ae",
+          "bh",
+          "by",
+          "id",
+          "iq",
+          "my",
+          "nz",
+          "om",
+          "qa",
+          "sa",
+          "sg",
+          "th"
+        ]
+      },
       "matchNames": [
         "church's texas chicken",
         "church's texas chicken®"
@@ -9280,25 +10825,6 @@
         "brand:wikidata": "Q1089932",
         "cuisine": "chicken",
         "name": "Texas Chicken",
-        "takeaway": "yes"
-      }
-    },
-    {
-      "displayName": "Texas Chicken & Burgers",
-      "id": "texaschickenandburgers-4d2ff4",
-      "locationSet": {"include": ["us"]},
-      "matchNames": [
-        "texas chicken and burger",
-        "texas chicken burger",
-        "texas chicken burgers"
-      ],
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Texas Chicken & Burgers",
-        "brand:wikidata": "Q107303396",
-        "cuisine": "burger;chicken",
-        "diet:halal": "yes",
-        "name": "Texas Chicken & Burgers",
         "takeaway": "yes"
       }
     },
@@ -9413,22 +10939,6 @@
         "delivery": "yes",
         "name": "The Good Burger",
         "short_name": "TGB",
-        "takeaway": "yes"
-      }
-    },
-    {
-      "displayName": "The Habit Burger Grill",
-      "id": "thehabitburgergrill-4d2ff4",
-      "locationSet": {"include": ["us"]},
-      "matchNames": ["the habit burger"],
-      "tags": {
-        "alt_name": "Habit Burger Grill",
-        "amenity": "fast_food",
-        "brand": "The Habit Burger Grill",
-        "brand:wikidata": "Q18158741",
-        "cuisine": "burger",
-        "name": "The Habit Burger Grill",
-        "short_name": "Habit Burger",
         "takeaway": "yes"
       }
     },
@@ -9581,6 +11091,19 @@
       }
     },
     {
+      "displayName": "Topper's Pizza (Canada)",
+      "id": "topperspizza-e49d2e",
+      "locationSet": {"include": ["ca"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Topper's Pizza",
+        "brand:wikidata": "Q7825105",
+        "cuisine": "pizza",
+        "name": "Topper's Pizza",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Tops Pizza",
       "id": "topspizza-1abd07",
       "locationSet": {"include": ["gb-eng"]},
@@ -9666,8 +11189,15 @@
     },
     {
       "displayName": "Tudor's Biscuit World",
-      "id": "tudorsbiscuitworld-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "tudorsbiscuitworld-688252",
+      "locationSet": {
+        "include": [
+          "us-fl.geojson",
+          "us-ky.geojson",
+          "us-oh.geojson",
+          "us-wv.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Tudor's Biscuit World",
@@ -9728,6 +11258,10 @@
       "displayName": "Two Hands Corn Dog",
       "id": "twohands-4d2ff4",
       "locationSet": {"include": ["us"]},
+      "matchNames": [
+        "two hands corn dogs",
+        "two hands seoul fresh corn dogs"
+      ],
       "tags": {
         "amenity": "fast_food",
         "brand": "Two Hands Corn Dog",
@@ -9741,7 +11275,6 @@
       "displayName": "UGO",
       "id": "ugo-9b6fa9",
       "locationSet": {"include": ["cz", "sk"]},
-      "matchTags": ["shop/beverages"],
       "tags": {
         "amenity": "fast_food",
         "brand": "UGO",
@@ -9823,6 +11356,24 @@
       }
     },
     {
+      "displayName": "Usta Dönerci (Georgia)",
+      "id": "ustadonerci-90e404",
+      "locationSet": {"include": ["ge"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Usta Dönerci",
+        "brand:ka": "Usta Dönerci",
+        "brand:wikidata": "Q126723224",
+        "cuisine": "turkish",
+        "delivery": "yes",
+        "name": "Usta Dönerci",
+        "name:ka": "Usta Dönerci",
+        "name:ru": "Уста Дёнерджи",
+        "name:tr": "Usta Dönerci",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Valentine",
       "id": "valentine-e49d2e",
       "locationSet": {"include": ["ca"]},
@@ -9837,8 +11388,15 @@
     },
     {
       "displayName": "Veggie Grill",
-      "id": "veggiegrill-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "veggiegrill-02cb83",
+      "locationSet": {
+        "include": [
+          "us-ca.geojson",
+          "us-ma.geojson",
+          "us-or.geojson",
+          "us-wa.geojson"
+        ]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Veggie Grill",
@@ -9846,6 +11404,21 @@
         "cuisine": "american",
         "diet:vegan": "only",
         "name": "Veggie Grill",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Velvet Taco",
+      "id": "velvettaco-e4cf42",
+      "locationSet": {
+        "include": ["gb-eng", "us"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Velvet Taco",
+        "brand:wikidata": "Q136400358",
+        "cuisine": "mexican",
+        "name": "Velvet Taco",
         "takeaway": "yes"
       }
     },
@@ -9933,6 +11506,19 @@
       }
     },
     {
+      "displayName": "Waffle Cabin",
+      "id": "wafflecabin-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Waffle Cabin",
+        "brand:wikidata": "Q132455388",
+        "cuisine": "waffle",
+        "name": "Waffle Cabin",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Wahoo's Fish Taco",
       "id": "wahoosfishtaco-4d2ff4",
       "locationSet": {"include": ["us"]},
@@ -9995,8 +11581,11 @@
     },
     {
       "displayName": "Wendy's",
-      "id": "wendys-658eea",
-      "locationSet": {"include": ["001"]},
+      "id": "wendys-01b047",
+      "locationSet": {
+        "include": ["001"],
+        "exclude": ["au", "ge", "jp"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Wendy's",
@@ -10098,6 +11687,22 @@
       }
     },
     {
+      "displayName": "Williams Fresh Cafe",
+      "id": "williamsfreshcafe-72d462",
+      "locationSet": {
+        "include": ["ca-on.geojson"]
+      },
+      "matchNames": ["williams coffee pub"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Williams Fresh Cafe",
+        "brand:wikidata": "Q106195633",
+        "cuisine": "sandwich;salad",
+        "name": "Williams Fresh Cafe",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Wimpy",
       "id": "wimpy-658eea",
       "locationSet": {"include": ["001"]},
@@ -10126,6 +11731,35 @@
         "brand:wikidata": "Q8023756",
         "cuisine": "donut",
         "name": "Winchell's Donut House",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Wing Machine",
+      "id": "wingmachine-72d462",
+      "locationSet": {
+        "include": ["ca-on.geojson"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Wing Machine",
+        "brand:wikidata": "Q137363876",
+        "cuisine": "wings",
+        "delivery": "yes",
+        "name": "Wing Machine",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Wing Zone",
+      "id": "wingzone-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Wing Zone",
+        "brand:wikidata": "Q8025122",
+        "cuisine": "chicken;wings",
+        "name": "Wing Zone",
         "takeaway": "yes"
       }
     },
@@ -10170,6 +11804,20 @@
       }
     },
     {
+      "displayName": "WingsUp!",
+      "id": "wingsup-e49d2e",
+      "locationSet": {"include": ["ca"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "WingsUp!",
+        "brand:wikidata": "Q137167877",
+        "cuisine": "wings",
+        "delivery": "yes",
+        "name": "WingsUp!",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Wok a Holic",
       "id": "wokaholic-4d2ff4",
       "locationSet": {"include": ["us"]},
@@ -10180,6 +11828,19 @@
         "cuisine": "chinese",
         "name": "Wok a Holic",
         "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Wok Hey",
+      "id": "wokhey-6f8102",
+      "locationSet": {"include": ["sg"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Wok Hey",
+        "brand:wikidata": "Q137477009",
+        "cuisine": "stir_fry",
+        "name": "Wok Hey",
+        "takeaway": "only"
       }
     },
     {
@@ -10262,9 +11923,24 @@
       }
     },
     {
+      "displayName": "Wraps & Wings",
+      "id": "wrapsandwings-45095e",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Wraps & Wings",
+        "brand:wikidata": "Q137537572",
+        "cuisine": "burger",
+        "name": "Wraps & Wings",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Xi'an Famous Foods",
-      "id": "xianfamousfoods-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "xianfamousfoods-f2b0c3",
+      "locationSet": {
+        "include": ["us-ny-new_york_city.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Xi'an Famous Foods",
@@ -10355,8 +12031,10 @@
     },
     {
       "displayName": "Yum Yum Donuts",
-      "id": "yumyumdonuts-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "yumyumdonuts-ffd771",
+      "locationSet": {
+        "include": ["us-ca.geojson"]
+      },
       "matchNames": ["yum yum doughnuts"],
       "tags": {
         "amenity": "fast_food",
@@ -10364,6 +12042,20 @@
         "brand:wikidata": "Q8061011",
         "cuisine": "donut",
         "name": "Yum Yum Donuts",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Z!Eats",
+      "id": "zeats-4d2ff4",
+      "locationSet": {"include": ["us"]},
+      "matchNames": ["zoup!"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Z!Eats",
+        "brand:wikidata": "Q108606713",
+        "cuisine": "soup;sandwich",
+        "name": "Z!Eats",
         "takeaway": "yes"
       }
     },
@@ -10436,9 +12128,30 @@
       }
     },
     {
+      "displayName": "Zip's",
+      "id": "zips-9ef732",
+      "locationSet": {
+        "include": [
+          "us-id.geojson",
+          "us-wa.geojson"
+        ]
+      },
+      "matchNames": ["zip's drive-in"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Zip's",
+        "brand:wikidata": "Q28373904",
+        "cuisine": "burger",
+        "name": "Zip's",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Zippy's",
-      "id": "zippys-4d2ff4",
-      "locationSet": {"include": ["us"]},
+      "id": "zippys-d930e5",
+      "locationSet": {
+        "include": ["us-hi", "us-nv.geojson"]
+      },
       "tags": {
         "amenity": "fast_food",
         "brand": "Zippy's",
@@ -10458,20 +12171,6 @@
         "brand:wikidata": "Q8074747",
         "cuisine": "mediterranean",
         "name": "Zoës Kitchen",
-        "takeaway": "yes"
-      }
-    },
-    {
-      "displayName": "Zoup!",
-      "id": "zoup-4d2ff4",
-      "locationSet": {"include": ["us"]},
-      "tags": {
-        "alt_name": "Zoup! Eatery",
-        "amenity": "fast_food",
-        "brand": "Zoup!",
-        "brand:wikidata": "Q108606713",
-        "cuisine": "soup;sandwich",
-        "name": "Zoup!",
         "takeaway": "yes"
       }
     },
@@ -10518,19 +12217,6 @@
         "brand": "Автосуши Автопицца",
         "cuisine": "pizza;sushi",
         "name": "Автосуши Автопицца",
-        "takeaway": "yes"
-      }
-    },
-    {
-      "displayName": "Белоруснефть",
-      "id": "ed92ce-381458",
-      "locationSet": {"include": ["by"]},
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Белоруснефть",
-        "brand:wikidata": "Q4082693",
-        "cuisine": "hot_dog;burger",
-        "name": "Белоруснефть",
         "takeaway": "yes"
       }
     },
@@ -10636,6 +12322,22 @@
       }
     },
     {
+      "displayName": "Заўжды цікаVа",
+      "id": "8ea99d-381458",
+      "locationSet": {"include": ["by"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Заўжды цікаVа",
+        "brand:wikidata": "Q136565015",
+        "cuisine": "hot_dog;burger",
+        "name": "Заўжды цікаVа",
+        "name:be": "Заўжды цікава",
+        "operator": "Белоруснефть",
+        "operator:wikidata": "Q4082693",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Крошка Картошка",
       "id": "kroshkakartoshka-7582d1",
       "locationSet": {"include": ["ru"]},
@@ -10653,6 +12355,18 @@
       }
     },
     {
+      "displayName": "Милти",
+      "id": "619bdd-7582d1",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Милти",
+        "cuisine": "deli",
+        "name": "Милти",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "Моккано",
       "id": "a5c704-7582d1",
       "locationSet": {"include": ["ru"]},
@@ -10661,6 +12375,24 @@
         "brand": "Моккано",
         "cuisine": "sushi",
         "name": "Моккано",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Му-Му",
+      "id": "mumu-7582d1",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Му-Му",
+        "brand:wikidata": "Q6907053",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "diet:vegetarian": "yes",
+        "fast_food": "cafeteria",
+        "name": "Му-Му",
+        "name:en": "Mu-Mu",
+        "name:ru": "Му-Му",
         "takeaway": "yes"
       }
     },
@@ -10682,6 +12414,23 @@
       }
     },
     {
+      "displayName": "Пицца Харт (ex. Pizza Hut Russia)",
+      "id": "pizzaheart-7582d1",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Пицца Харт",
+        "brand:wikidata": "Q139555224",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Пицца Харт",
+        "name:en": "Pizza Heart",
+        "name:ru": "Пицца Харт",
+        "old_name": "Pizza Hut",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "ПиццаФабрика",
       "id": "bf3d0f-7582d1",
       "locationSet": {"include": ["ru"]},
@@ -10690,6 +12439,21 @@
         "brand": "ПиццаФабрика",
         "cuisine": "pizza",
         "name": "ПиццаФабрика",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Правда Кофе",
+      "id": "pravdacoffee-7582d1",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Правда Кофе",
+        "brand:wikidata": "Q139555237",
+        "cuisine": "coffee_shop",
+        "name": "Правда Кофе",
+        "name:en": "Pravda Coffee",
+        "name:ru": "Правда Кофе",
         "takeaway": "yes"
       }
     },
@@ -10760,7 +12524,20 @@
       }
     },
     {
-      "displayName": "Стардог!s",
+      "displayName": "Софийска баница",
+      "id": "ed9067-1fab0a",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Софийска баница",
+        "brand:wikidata": "Q136404664",
+        "cuisine": "banitsa",
+        "name": "Софийска баница",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Стардогs",
       "id": "stardogs-7582d1",
       "locationSet": {"include": ["ru"]},
       "matchNames": ["starsog!s"],
@@ -10805,6 +12582,19 @@
         "brand": "Суши маке",
         "cuisine": "sushi",
         "name": "Суши маке",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Суши-Маркет",
+      "id": "cdcc25-7582d1",
+      "locationSet": {"include": ["ru"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Суши-Маркет",
+        "brand:wikidata": "Q120268393",
+        "cuisine": "sushi",
+        "name": "Суши-Маркет",
         "takeaway": "yes"
       }
     },
@@ -10891,18 +12681,21 @@
     },
     {
       "displayName": "დანკინ დონათსი",
-      "id": "dunkindonuts-90e404",
+      "id": "dunkin-90e404",
       "locationSet": {"include": ["ge"]},
       "tags": {
+        "alt_name": "დანკინ დონათსი",
+        "alt_name:en": "Dunkin' Donuts",
+        "alt_name:ka": "დანკინ დონათსი",
         "amenity": "fast_food",
         "brand": "დანკინ დონათსი",
         "brand:ka": "დანკინ დონათსი",
         "brand:wikidata": "Q847743",
         "cuisine": "donut;bagel;pizza;hot_dog;burger",
         "delivery": "yes",
-        "name": "დანკინ დონათსი",
-        "name:en": "Dunkin' Donuts",
-        "name:ka": "დანკინ დონათსი",
+        "name": "დანკინ",
+        "name:en": "Dunkin'",
+        "name:ka": "დანკინ",
         "takeaway": "yes"
       }
     },
@@ -10916,6 +12709,7 @@
         "brand:en": "Degusto",
         "brand:ka": "დეგუსტო",
         "brand:ru": "Дегусто",
+        "brand:wikidata": "Q131469960",
         "cuisine": "georgian",
         "delivery": "yes",
         "fast_food": "cafeteria",
@@ -10927,12 +12721,53 @@
       }
     },
     {
+      "displayName": "დოდო პიცა",
+      "id": "dodopizza-90e404",
+      "locationSet": {"include": ["ge"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "დოდო პიცა",
+        "brand:en": "Dodo Pizza",
+        "brand:ka": "დოდო პიცა",
+        "brand:ru": "Додо Пицца",
+        "brand:wikidata": "Q61949318",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "დოდო პიცა",
+        "name:en": "Dodo Pizza",
+        "name:ka": "დოდო პიცა",
+        "name:ru": "Додо Пицца",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "დომინო'ს პიცა",
+      "id": "dominospizza-90e404",
+      "locationSet": {"include": ["ge"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "დომინო'ს პიცა",
+        "brand:en": "Domino's Pizza",
+        "brand:ka": "დომინო'ს პიცა",
+        "brand:ru": "Домино'с Пицца",
+        "brand:wikidata": "Q839466",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "დომინო'ს პიცა",
+        "name:en": "Domino's Pizza",
+        "name:ka": "დომინო'ს პიცა",
+        "name:ru": "Домино'с Пицца",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "ვენდი'ს",
       "id": "wendys-90e404",
       "locationSet": {"include": ["ge"]},
       "tags": {
         "amenity": "fast_food",
         "brand": "ვენდი'ს",
+        "brand:en": "Wendy's",
         "brand:ka": "ვენდი'ს",
         "brand:wikidata": "Q550258",
         "cuisine": "burger",
@@ -10944,19 +12779,20 @@
       }
     },
     {
-      "displayName": "ვსკა ჯუს ბარი",
-      "id": "skajuicebar-90e404",
+      "displayName": "კეი ეფ სი",
+      "id": "kfc-90e404",
       "locationSet": {"include": ["ge"]},
       "tags": {
+        "alt_name:en": "Kentucky Fried Chicken",
         "amenity": "fast_food",
-        "brand": "სკა ჯუს ბარი",
-        "brand:en": "Ska Juice Bar",
-        "brand:ka": "სკა ჯუს ბარი",
-        "cuisine": "juice;smoothie;sandwich",
+        "brand": "კეი ეფ სი",
+        "brand:ka": "კეი ეფ სი",
+        "brand:wikidata": "Q524757",
+        "cuisine": "burger;wings;chicken",
         "delivery": "yes",
-        "name": "სკა ჯუს ბარი",
-        "name:en": "Ska Juice Bar",
-        "name:ka": "სკა ჯუს ბარი",
+        "name": "კეი ეფ სი",
+        "name:en": "KFC",
+        "name:ka": "კეი ეფ სი",
         "takeaway": "yes"
       }
     },
@@ -10988,12 +12824,53 @@
         "amenity": "fast_food",
         "brand": "მაკშაურმა",
         "brand:ka": "მაკშაურმა",
+        "brand:wikidata": "Q131469956",
         "cuisine": "shawarma",
         "delivery": "yes",
         "name": "მაკშაურმა",
         "name:en": "MacShaurma",
         "name:ka": "მაკშაურმა",
         "name:ru": "МакШаурма",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "მარგე",
+      "id": "marge-90e404",
+      "locationSet": {"include": ["ge"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "მარგე",
+        "brand:en": "Marge",
+        "brand:ka": "მარგე",
+        "brand:ru": "Марге",
+        "brand:wikidata": "Q134735223",
+        "cuisine": "shawarma",
+        "delivery": "yes",
+        "name": "მარგე",
+        "name:en": "Marge",
+        "name:ka": "მარგე",
+        "name:ru": "Марге",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "პიცა ჰატი",
+      "id": "pizzahut-90e404",
+      "locationSet": {"include": ["ge"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "პიცა ჰატი",
+        "brand:en": "Pizza Hut",
+        "brand:ka": "პიცა ჰატი",
+        "brand:ru": "Пицца Хат",
+        "brand:wikidata": "Q191615",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "პიცა ჰატი",
+        "name:en": "Pizza Hut",
+        "name:ka": "პიცა ჰატი",
+        "name:ru": "Пицца Хат",
         "takeaway": "yes"
       }
     },
@@ -11015,20 +12892,56 @@
       }
     },
     {
-      "displayName": "ქიიეფსი",
-      "id": "kfc-90e404",
+      "displayName": "სკა ჯუს ბარი",
+      "id": "skajuicebar-90e404",
       "locationSet": {"include": ["ge"]},
       "tags": {
-        "alt_name:en": "Kentucky Fried Chicken",
         "amenity": "fast_food",
-        "brand": "კეი ეფ სი",
-        "brand:ka": "კეი ეფ სი",
-        "brand:wikidata": "Q524757",
-        "cuisine": "burger;wings;chicken",
+        "brand": "სკა ჯუს ბარი",
+        "brand:en": "Ska Juice Bar",
+        "brand:ka": "სკა ჯუს ბარი",
+        "brand:wikidata": "Q131469954",
+        "cuisine": "juice;smoothie;sandwich",
         "delivery": "yes",
-        "name": "კეი ეფ სი",
-        "name:en": "KFC",
-        "name:ka": "კეი ეფ სი",
+        "name": "სკა ჯუს ბარი",
+        "name:en": "Ska Juice Bar",
+        "name:ka": "სკა ჯუს ბარი",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "ტემპო",
+      "id": "tempo-90e404",
+      "locationSet": {"include": ["ge"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "ტემპო",
+        "brand:en": "Tempo",
+        "brand:ka": "ტემპო",
+        "brand:wikidata": "Q131469961",
+        "cuisine": "coffee_shop;sandwich",
+        "name": "ტემპო",
+        "name:en": "Tempo",
+        "name:ka": "ტემპო",
+        "name:ru": "Темпо",
+        "takeaway": "only"
+      }
+    },
+    {
+      "displayName": "შაურმა ქლაბი",
+      "id": "shaurmaclub-90e404",
+      "locationSet": {"include": ["ge"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "შაურმა ქლაბი",
+        "brand:ka": "შაურმა ქლაბი",
+        "brand:wikidata": "Q133886965",
+        "cuisine": "shawarma",
+        "delivery": "yes",
+        "name": "შაურმა ქლაბი",
+        "name:en": "Shaurma Club",
+        "name:ka": "შაურმა ქლაბი",
+        "name:ru": "Шаурма Клаб",
         "takeaway": "yes"
       }
     },
@@ -11188,7 +13101,7 @@
       }
     },
     {
-      "displayName": "دانكن دونتس'",
+      "displayName": "دانكن دونتس",
       "id": "dunkindonuts-07d3e5",
       "locationSet": {
         "include": [
@@ -11266,6 +13179,18 @@
         "name": "شاورمر",
         "name:ar": "شاورمر",
         "name:en": "Shawarmer",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "كانتون",
+      "id": "b9e93d-ade864",
+      "locationSet": {"include": ["sa"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "كانتون",
+        "cuisine": "chinese",
+        "name": "كانتون",
         "takeaway": "yes"
       }
     },
@@ -11375,6 +13300,44 @@
       }
     },
     {
+      "displayName": "교촌치킨",
+      "id": "kyochon-c56583",
+      "locationSet": {"include": ["kr"]},
+      "matchNames": ["kyochon chicken"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "교촌치킨",
+        "brand:en": "KyoChon",
+        "brand:ko": "교촌치킨",
+        "brand:ko-Latn": "Gyochonchikin",
+        "brand:wikidata": "Q6451885",
+        "cuisine": "chicken",
+        "name": "교촌치킨",
+        "name:en": "KyoChon",
+        "name:ko": "교촌치킨",
+        "name:ko-Latn": "Gyochonchikin",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "굽네치킨",
+      "id": "goobnechicken-c56583",
+      "locationSet": {"include": ["kr"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "굽네치킨",
+        "brand:en": "Goobne Chicken",
+        "brand:ko": "굽네치킨",
+        "brand:ko-Latn": "Gumnechikin",
+        "cuisine": "chicken",
+        "name": "굽네치킨",
+        "name:en": "Goobne Chicken",
+        "name:ko": "굽네치킨",
+        "name:ko-Latn": "Gumnechikin",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "롯데리아",
       "id": "lotteria-c56583",
       "locationSet": {"include": ["kr"]},
@@ -11426,6 +13389,59 @@
       }
     },
     {
+      "displayName": "명랑핫도그",
+      "id": "myungranghotdog-c56583",
+      "locationSet": {"include": ["kr"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "명랑핫도그",
+        "brand:en": "Myungrang Hotdog",
+        "brand:ko": "명랑핫도그",
+        "brand:ko:": "명랑핫도그",
+        "brand:wikidata": "Q130527587",
+        "cuisine": "hot_dog",
+        "name": "명랑핫도그",
+        "name:en": "Myungrang Hotdog",
+        "name:ko": "명랑핫도그",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "버거킹",
+      "id": "burgerking-c56583",
+      "locationSet": {"include": ["kr"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "버거킹",
+        "brand:en": "Burger King",
+        "brand:ko": "버거킹",
+        "brand:wikidata": "Q177054",
+        "cuisine": "burger",
+        "name": "버거킹",
+        "name:en": "Burger King",
+        "name:ko": "버거킹",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "써브웨이",
+      "id": "subway-c56583",
+      "locationSet": {"include": ["kr"]},
+      "matchNames": ["서브웨이"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "써브웨이",
+        "brand:en": "Subway",
+        "brand:ko": "써브웨이",
+        "brand:wikidata": "Q244457",
+        "cuisine": "sandwich",
+        "name": "써브웨이",
+        "name:en": "Subway",
+        "name:ko": "써브웨이",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "청춘감성쌀핫도그",
       "id": "chungchun-c56583",
       "locationSet": {"include": ["kr"]},
@@ -11439,6 +13455,40 @@
         "name": "청춘감성쌀핫도그",
         "name:en": "Chungchun",
         "name:ko": "청춘감성쌀핫도그",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "크리스피크림도넛",
+      "id": "krispykreme-c56583",
+      "locationSet": {"include": ["kr"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "크리스피크림도넛",
+        "brand:en": "Krispy Kreme",
+        "brand:ko": "크리스피크림도넛",
+        "brand:wikidata": "Q1192805",
+        "cuisine": "donut",
+        "name": "크리스피크림도넛",
+        "name:en": "Krispy Kreme",
+        "name:ko": "크리스피크림도넛",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "파파이스",
+      "id": "popeyes-c56583",
+      "locationSet": {"include": ["kr"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "파파이스",
+        "brand:en": "Popeyes",
+        "brand:ko": "파파이스",
+        "brand:wikidata": "Q1330910",
+        "cuisine": "chicken",
+        "name": "파파이스",
+        "name:en": "Popeyes",
+        "name:ko": "파파이스",
         "takeaway": "yes"
       }
     },
@@ -11481,6 +13531,23 @@
         "name": "ウェンディーズ",
         "name:en": "Wendy's",
         "name:ja": "ウェンディーズ",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "おむすび権米衛",
+      "id": "omusubigonbei-3e7699",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "おむすび権米衛",
+        "brand:en": "Omusubi Gonbei",
+        "brand:ja": "おむすび権米衛",
+        "brand:wikidata": "Q119082407",
+        "cuisine": "japanese",
+        "name": "おむすび権米衛",
+        "name:en": "Omusubi Gonbei",
+        "name:ja": "おむすび権米衛",
         "takeaway": "yes"
       }
     },
@@ -11726,6 +13793,23 @@
       }
     },
     {
+      "displayName": "ゼッテリア",
+      "id": "zetteria-3e7699",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "ゼッテリア",
+        "brand:en": "Zetteria",
+        "brand:ja": "ゼッテリア",
+        "brand:wikidata": "Q136796344",
+        "cuisine": "burger",
+        "name": "ゼッテリア",
+        "name:en": "Zetteria",
+        "name:ja": "ゼッテリア",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "ちよだ鮨",
       "id": "chiyodasushi-3e7699",
       "locationSet": {"include": ["jp"]},
@@ -11751,7 +13835,7 @@
         "brand": "てんや",
         "brand:en": "Tenya",
         "brand:ja": "てんや",
-        "brand:wikidata": "Q11319830",
+        "brand:wikidata": "Q124282698",
         "cuisine": "fries",
         "name": "てんや",
         "name:en": "Tenya",
@@ -12096,6 +14180,26 @@
       }
     },
     {
+      "displayName": "ラーメン魁力屋",
+      "id": "ramenkairikiya-3e7699",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "ラーメン魁力屋",
+        "brand:en": "Ramen Kairikiya",
+        "brand:ja": "ラーメン魁力屋",
+        "brand:wikidata": "Q11347773",
+        "cuisine": "ramen",
+        "name": "ラーメン魁力屋",
+        "name:en": "Ramen Kairikiya",
+        "name:ja": "ラーメン魁力屋",
+        "short_name": "魁力屋",
+        "short_name:en": "Kairikiya",
+        "short_name:ja": "魁力屋",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "ロッテリア",
       "id": "lotteria-3e7699",
       "locationSet": {"include": ["jp"]},
@@ -12155,6 +14259,28 @@
         "operator:en": "Mercuries Group",
         "operator:wikidata": "Q130214438",
         "operator:zh": "三商企業集團",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "临榆炸鸡腿",
+      "id": "6f7bab-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "临榆炸鸡腿",
+        "brand:wikidata": "Q136192743",
+        "brand:zh-Hans": "临榆炸鸡腿",
+        "brand:zh-Hant": "臨榆炸雞腿",
+        "cuisine": "fried_chicken",
+        "delivery": "yes",
+        "name": "临榆炸鸡腿",
+        "name:zh": "临榆炸鸡腿",
+        "name:zh-Hans": "临榆炸鸡腿",
+        "name:zh-Hant": "臨榆炸雞腿",
         "takeaway": "yes"
       }
     },
@@ -12226,7 +14352,7 @@
     },
     {
       "displayName": "八方雲集",
-      "id": "eightway-70aa35",
+      "id": "bafangdumpling-70aa35",
       "locationSet": {
         "include": ["cn", "tw"],
         "exclude": ["hk", "mo"]
@@ -12234,12 +14360,12 @@
       "tags": {
         "amenity": "fast_food",
         "brand": "八方雲集",
-        "brand:en": "Eight Way",
+        "brand:en": "Bafang Dumpling",
         "brand:wikidata": "Q28417381",
         "brand:zh": "八方雲集",
         "cuisine": "dumplings",
         "name": "八方雲集",
-        "name:en": "Eight Way",
+        "name:en": "Bafang Dumpling",
         "name:zh": "八方雲集",
         "takeaway": "yes"
       }
@@ -12267,18 +14393,24 @@
     },
     {
       "displayName": "华莱士",
-      "id": "cnhls-65b4e8",
+      "id": "wallace-65b4e8",
       "locationSet": {"include": ["cn"]},
-      "matchNames": ["华莱士快餐", "华莱士炸鸡汉堡"],
+      "matchNames": [
+        "cnhls",
+        "wallace | burger & chicken",
+        "wallace burger & chicken",
+        "华莱士快餐",
+        "华莱士炸鸡汉堡"
+      ],
       "tags": {
         "amenity": "fast_food",
         "brand": "华莱士",
-        "brand:en": "CNHLS",
+        "brand:en": "Wallace",
         "brand:wikidata": "Q15939607",
         "brand:zh": "华莱士",
         "cuisine": "burger;chicken",
         "name": "华莱士",
-        "name:en": "CNHLS",
+        "name:en": "Wallace",
         "name:zh": "华莱士",
         "takeaway": "yes"
       }
@@ -12368,6 +14500,74 @@
       }
     },
     {
+      "displayName": "喜姐炸串",
+      "id": "5fb15a-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "喜姐炸串",
+        "brand:wikidata": "Q136401501",
+        "brand:zh": "喜姐炸串",
+        "brand:zh-Hans": "喜姐炸串",
+        "brand:zh-Hant": "喜姐炸串",
+        "cuisine": "fried_skewers",
+        "delivery": "yes",
+        "name": "喜姐炸串",
+        "name:zh": "喜姐炸串",
+        "name:zh-Hans": "喜姐炸串",
+        "name:zh-Hant": "喜姐炸串",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "塔可钟",
+      "id": "tacobell-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "塔可钟",
+        "brand:en": "Taco Bell",
+        "brand:wikidata": "Q752941",
+        "brand:zh-Hans": "塔可钟",
+        "brand:zh-Hant": "塔可鐘",
+        "cuisine": "tex-mex",
+        "delivery": "yes",
+        "name": "塔可钟",
+        "name:en": "Taco Bell",
+        "name:zh-Hans": "塔可钟",
+        "name:zh-Hant": "塔可鐘",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "塔斯汀",
+      "id": "tastien-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "matchNames": ["tasiting", "塔斯汀中国汉堡"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "塔斯汀",
+        "brand:en": "Tastien",
+        "brand:wikidata": "Q117191831",
+        "brand:zh": "塔斯汀",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "塔斯汀",
+        "name:en": "Tastien",
+        "name:zh": "塔斯汀",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "大家乐",
       "id": "cafedecoral-19ae3c",
       "locationSet": {
@@ -12426,6 +14626,31 @@
         "name:zh": "大快活",
         "name:zh-Hans": "大快活",
         "name:zh-Hant": "大快活",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "夸父炸串",
+      "id": "kuafood-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "夸父炸串",
+        "brand:en": "Kuafood",
+        "brand:wikidata": "Q136402151",
+        "brand:zh": "夸父炸串",
+        "brand:zh-Hans": "夸父炸串",
+        "brand:zh-Hant": "夸父炸串",
+        "cuisine": "fried_skewers",
+        "delivery": "yes",
+        "name": "夸父炸串",
+        "name:en": "Kuafood",
+        "name:zh": "夸父炸串",
+        "name:zh-Hans": "夸父炸串",
+        "name:zh-Hant": "夸父炸串",
         "takeaway": "yes"
       }
     },
@@ -12506,6 +14731,30 @@
       }
     },
     {
+      "displayName": "尊宝比萨",
+      "id": "championpizza-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "matchNames": ["尊宝", "尊宝披萨"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "尊宝比萨",
+        "brand:en": "Champion Pizza",
+        "brand:wikidata": "Q135167309",
+        "brand:zh-Hans": "尊宝比萨",
+        "brand:zh-Hant": "尊寶比薩",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "尊宝比萨",
+        "name:en": "Champion Pizza",
+        "name:zh-Hans": "尊宝比萨",
+        "name:zh-Hant": "尊寶比薩",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "小僧寿し",
       "id": "kozosushi-3e7699",
       "locationSet": {"include": ["jp"]},
@@ -12521,6 +14770,23 @@
         "name:en": "Kozosushi",
         "name:ja": "小僧寿し",
         "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "崎陽軒",
+      "id": "kiyoken-3e7699",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "崎陽軒",
+        "brand:en": "Kiyoken",
+        "brand:ja": "崎陽軒",
+        "brand:wikidata": "Q11477145",
+        "cuisine": "dumplings",
+        "name": "崎陽軒",
+        "name:en": "Kiyoken",
+        "name:ja": "崎陽軒",
+        "takeaway": "only"
       }
     },
     {
@@ -12709,11 +14975,8 @@
     },
     {
       "displayName": "摩斯漢堡",
-      "id": "mosburger-c9f110",
-      "locationSet": {
-        "include": ["tw"],
-        "exclude": ["hk", "mo"]
-      },
+      "id": "mosburger-60a4d5",
+      "locationSet": {"include": ["tw"]},
       "tags": {
         "amenity": "fast_food",
         "brand": "摩斯漢堡",
@@ -12745,6 +15008,23 @@
         "name:zh": "摩斯漢堡",
         "name:zh-Hans": "摩斯汉堡",
         "name:zh-Hant": "摩斯漢堡",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "日乃屋カレー",
+      "id": "hinoyacurry-3e7699",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "日乃屋カレー",
+        "brand:en": "Hinoya Curry",
+        "brand:ja": "日乃屋カレー",
+        "brand:wikidata": "Q102276225",
+        "cuisine": "curry",
+        "name": "日乃屋カレー",
+        "name:en": "Hinoya Curry",
+        "name:ja": "日乃屋カレー",
         "takeaway": "yes"
       }
     },
@@ -12799,6 +15079,23 @@
         "name": "本家かまどや",
         "name:en": "Honke Kamadoya",
         "name:ja": "本家かまどや",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "杵屋麦丸",
+      "id": "kineyamugimaru-3e7699",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "杵屋麦丸",
+        "brand:en": "Kineya Mugimaru",
+        "brand:ja": "杵屋麦丸",
+        "brand:wikidata": "Q117213524",
+        "cuisine": "udon",
+        "name": "杵屋麦丸",
+        "name:en": "Kineya Mugimaru",
+        "name:ja": "杵屋麦丸",
         "takeaway": "yes"
       }
     },
@@ -12860,12 +15157,12 @@
       "tags": {
         "amenity": "fast_food",
         "brand": "正新鸡排",
-        "brand:en": "ZHENGXIN CHICKEN STEAK",
+        "brand:en": "Zhengxin Chicken Steak",
         "brand:wikidata": "Q104093084",
         "brand:zh": "正新鸡排",
         "cuisine": "chicken_steak",
         "name": "正新鸡排",
-        "name:en": "ZHENGXIN CHICKEN STEAK",
+        "name:en": "Zhengxin Chicken Steak",
         "name:zh": "正新鸡排",
         "takeaway": "yes"
       }
@@ -12905,6 +15202,29 @@
       }
     },
     {
+      "displayName": "滨寿司",
+      "id": "hamasushi-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "alt_name:en": "Hamazushi",
+        "amenity": "fast_food",
+        "brand": "滨寿司",
+        "brand:en": "HAMA-SUSHI",
+        "brand:ja": "はま寿司",
+        "brand:wikidata": "Q17220385",
+        "brand:zh": "滨寿司",
+        "cuisine": "sushi",
+        "name": "滨寿司",
+        "name:en": "Hamasushi",
+        "name:ja": "はま寿司",
+        "name:zh": "滨寿司",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "漢堡王",
       "id": "burgerking-60a4d5",
       "locationSet": {"include": ["tw"]},
@@ -12925,6 +15245,30 @@
       }
     },
     {
+      "displayName": "玛格利塔",
+      "id": "magrittapizza-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "matchNames": ["玛格丽塔"],
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "玛格利塔",
+        "brand:en": "Magritta Pizza",
+        "brand:wikidata": "Q135652045",
+        "brand:zh-Hans": "玛格利塔",
+        "brand:zh-Hant": "瑪格利塔",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "玛格利塔",
+        "name:en": "Magritta Pizza",
+        "name:zh-Hans": "玛格利塔",
+        "name:zh-Hant": "瑪格利塔",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "瑞麟美而美",
       "id": "rueilinmeiandmei-60a4d5",
       "locationSet": {"include": ["tw"]},
@@ -12933,7 +15277,7 @@
         "amenity": "fast_food",
         "brand": "瑞麟美而美",
         "brand:en": "Rueilin Mei & Mei",
-        "brand:wikidata": "Q56197246",
+        "brand:wikidata": "Q105722191",
         "brand:zh": "瑞麟美而美",
         "cuisine": "breakfast",
         "name": "瑞麟美而美",
@@ -13010,6 +15354,47 @@
         "name": "築地銀だこ Gindaco",
         "name:en": "Gindaco",
         "name:ja": "築地銀だこ",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "米村拌饭",
+      "id": "micunbibimbap-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "米村拌饭",
+        "brand:en": "Micun Bibimbap",
+        "brand:ko": "미촌 비빔밥",
+        "brand:wikidata": "Q135677988",
+        "brand:zh-Hans": "米村拌饭",
+        "brand:zh-Hant": "米村拌飯",
+        "cuisine": "korean",
+        "delivery": "yes",
+        "name": "米村拌饭",
+        "name:en": "Micun Bibimbap",
+        "name:ko": "미촌 비빔밥",
+        "name:zh-Hans": "米村拌饭",
+        "name:zh-Hant": "米村拌飯",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "粉之都",
+      "id": "2f79f4-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "note": "ISO 3166-2 CN-GX",
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "粉之都",
+        "cuisine": "rice_noodle",
+        "name": "粉之都",
         "takeaway": "yes"
       }
     },
@@ -13188,6 +15573,48 @@
       }
     },
     {
+      "displayName": "胖老爹美式炸雞",
+      "id": "fatdaddyamericanfriedchicken-60a4d5",
+      "locationSet": {"include": ["tw"]},
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "胖老爹美式炸雞",
+        "brand:en": "Fat Daddy American Fried Chicken",
+        "brand:wikidata": "Q66768745",
+        "brand:zh": "胖老爹美式炸雞",
+        "cuisine": "chicken",
+        "name": "胖老爹美式炸雞",
+        "name:en": "Fat Daddy American Fried Chicken",
+        "name:zh": "胖老爹美式炸雞",
+        "takeaway": "only"
+      }
+    },
+    {
+      "displayName": "芝根芝底",
+      "id": "zipizza-19ae3c",
+      "locationSet": {
+        "include": ["cn"],
+        "exclude": ["hk", "mo"]
+      },
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "芝根芝底",
+        "brand:en": "Zi Pizza",
+        "brand:wikidata": "Q135677957",
+        "brand:zh": "芝根芝底",
+        "brand:zh-Hans": "芝根芝底",
+        "brand:zh-Hant": "芝根芝底",
+        "cuisine": "pizza;pasta",
+        "delivery": "yes",
+        "name": "芝根芝底",
+        "name:en": "Zi Pizza",
+        "name:zh": "芝根芝底",
+        "name:zh-Hans": "芝根芝底",
+        "name:zh-Hant": "芝根芝底",
+        "takeaway": "yes"
+      }
+    },
+    {
       "displayName": "芳珍蔬食",
       "id": "fjveggie-60a4d5",
       "locationSet": {"include": ["tw"]},
@@ -13197,12 +15624,13 @@
         "brand:en": "FJ Veggie",
         "brand:wikidata": "Q130458837",
         "brand:zh": "芳珍蔬食",
-        "cuisine": "vegetarian",
+        "cuisine": "dumplings",
+        "diet:vegetarian": "yes",
         "name": "芳珍蔬食",
         "name:en": "FJ Veggie",
         "name:zh": "芳珍蔬食",
         "operator": "八方雲集",
-        "operator:en": "Eight Way",
+        "operator:en": "Bafang Dumpling",
         "operator:wikidata": "Q28417381",
         "operator:zh": "八方雲集",
         "takeaway": "yes"

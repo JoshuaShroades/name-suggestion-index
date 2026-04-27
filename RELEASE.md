@@ -1,29 +1,24 @@
-## Release Checklist
+# Release Checklist
 
-### Update version, tag, and publish
+## Tag and publish
 
 ```bash
+# Make sure your main branch is up to date and all tests pass
 git checkout main
 git pull origin
-npm install
-npm run build
-npm run wikidata
-npm run dist      # version number updates automatically and will print to console
-git add . && git commit -m 'vA.B.C'
-git tag vA.B.C
-git push origin main vA.B.C
-npm publish
-```
+bun install
+bun run all
 
-### Purge JSDelivr CDN cache
-Include any URLs that iD/Rapid/others might request.
+# Update CHANGELOG.md - for major releases only
 
-```bash
-curl 'https://purge.jsdelivr.net/npm/name-suggestion-index@6.0/dist/nsi.min.json'
-curl 'https://purge.jsdelivr.net/npm/name-suggestion-index@6.0/dist/dissolved.min.json'
-curl 'https://purge.jsdelivr.net/npm/name-suggestion-index@6.0/dist/featureCollection.min.json'
-curl 'https://purge.jsdelivr.net/npm/name-suggestion-index@6.0/dist/genericWords.min.json'
-curl 'https://purge.jsdelivr.net/npm/name-suggestion-index@6.0/dist/presets/nsi-id-presets.min.json'
-curl 'https://purge.jsdelivr.net/npm/name-suggestion-index@6.0/dist/replacements.min.json'
-curl 'https://purge.jsdelivr.net/npm/name-suggestion-index@6.0/dist/trees.min.json'
+# These scripts prepare the files in the dist folder
+bun run wikidata    # slow, about 10 minutes
+bun run dist        # fast, version number updates automatically and will print to console
+
+export VERSION=vA.B.C
+git add . && git commit -m "$VERSION"
+git tag "$VERSION"
+git push origin main "$VERSION"
+npm login    # if needed, session tokens last 2 hours
+bun publish
 ```

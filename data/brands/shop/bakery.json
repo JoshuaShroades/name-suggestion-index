@@ -89,6 +89,17 @@
       }
     },
     {
+      "displayName": "Asprod",
+      "id": "asprod-839c38",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Asprod",
+        "brand:wikidata": "Q111784377",
+        "name": "Asprod",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Au Pain de mon Grand-Père",
       "id": "aupaindemongrandpere-09ad2c",
       "locationSet": {"include": ["fx"]},
@@ -320,6 +331,16 @@
       }
     },
     {
+      "displayName": "Bagietka",
+      "id": "bagietka-839c38",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Bagietka",
+        "name": "Bagietka",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Baguette",
       "id": "baguette-2e087b",
       "locationSet": {"include": ["at"]},
@@ -426,6 +447,17 @@
       }
     },
     {
+      "displayName": "Bayne's",
+      "id": "baynes-384d80",
+      "locationSet": {"include": ["gb-sct"]},
+      "tags": {
+        "brand": "Bayne's",
+        "brand:wikidata": "Q131864367",
+        "name": "Bayne's",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Beechworth Bakery",
       "id": "beechworthbakery-c119fa",
       "locationSet": {"include": ["au"]},
@@ -449,12 +481,35 @@
       }
     },
     {
+      "displayName": "Biržų duona",
+      "id": "birzuduona-607181",
+      "locationSet": {"include": ["lt"]},
+      "tags": {
+        "brand": "Biržų duona",
+        "brand:wikidata": "Q136814388",
+        "name": "Biržų duona",
+        "shop": "bakery"
+      }
+    },
+    {
+      "displayName": "Borek",
+      "id": "borek-839c38",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Borek",
+        "brand:wikidata": "Q133856049",
+        "name": "Borek",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Boulangerie Feuillette",
       "id": "boulangeriefeuillette-09ad2c",
       "locationSet": {"include": ["fx"]},
       "matchNames": ["feuillette"],
       "tags": {
         "brand": "Boulangerie Feuillette",
+        "brand:wikidata": "Q136205449",
         "name": "Boulangerie Feuillette",
         "shop": "bakery"
       }
@@ -490,6 +545,17 @@
         "brand": "Bread Ahead",
         "brand:wikidata": "Q110984949",
         "name": "Bread Ahead",
+        "shop": "bakery"
+      }
+    },
+    {
+      "displayName": "BreadLife",
+      "id": "breadlife-a78b8f",
+      "locationSet": {"include": ["id"]},
+      "tags": {
+        "brand": "BreadLife",
+        "brand:wikidata": "Q12477245",
+        "name": "BreadLife",
         "shop": "bakery"
       }
     },
@@ -534,7 +600,7 @@
       "matchNames": ["bröd och salt"],
       "tags": {
         "brand": "Bröd & Salt",
-        "brand:wikidata": "Q124048835",
+        "brand:wikidata": "Q131369998",
         "name": "Bröd & Salt",
         "shop": "bakery"
       }
@@ -633,6 +699,17 @@
       }
     },
     {
+      "displayName": "Cinnaholic",
+      "id": "cinnaholic-03cd91",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "brand": "Cinnaholic",
+        "brand:wikidata": "Q48965480",
+        "name": "Cinnaholic",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "COBS Bread",
       "id": "cobsbread-515502",
       "locationSet": {"include": ["ca", "us"]},
@@ -707,6 +784,7 @@
       "displayName": "De Echte Bakker",
       "id": "deechtebakker-8eaf6b",
       "locationSet": {"include": ["nl"]},
+      "preserveTags": ["^name"],
       "tags": {
         "brand": "De Echte Bakker",
         "brand:wikidata": "Q16920716",
@@ -822,6 +900,18 @@
       }
     },
     {
+      "displayName": "Dubielak",
+      "id": "dubielak-839c38",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "alt_name": "Bracia Dubielak",
+        "brand": "Dubielak",
+        "brand:wikidata": "Q138197645",
+        "name": "Dubielak",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Emil Reimann",
       "id": "emilreimann-3f448e",
       "locationSet": {"include": ["de"]},
@@ -879,6 +969,17 @@
         "brand": "Fabrique",
         "brand:wikidata": "Q110533127",
         "name": "Fabrique",
+        "shop": "bakery"
+      }
+    },
+    {
+      "displayName": "Familijna",
+      "id": "familijna-839c38",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Familijna",
+        "brand:wikidata": "Q133596647",
+        "name": "Familijna",
         "shop": "bakery"
       }
     },
@@ -1062,6 +1163,17 @@
       }
     },
     {
+      "displayName": "Grochola",
+      "id": "grochola-839c38",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Grochola",
+        "brand:wikidata": "Q133272217",
+        "name": "Grochola",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Gromulski",
       "id": "gromulski-839c38",
       "locationSet": {"include": ["pl"]},
@@ -1091,6 +1203,23 @@
       "tags": {
         "brand": "Haubis",
         "name": "Haubis",
+        "shop": "bakery"
+      }
+    },
+    {
+      "displayName": "Helbing",
+      "id": "helbing-3f448e",
+      "locationSet": {"include": ["de"]},
+      "matchNames": [
+        "helbing mein lieblingsbäcker",
+        "lieblingsbäcker",
+        "mein lieblingsbäcker"
+      ],
+      "preserveTags": ["^name"],
+      "tags": {
+        "brand": "Helbing",
+        "brand:wikidata": "Q136006094",
+        "name": "Helbing",
         "shop": "bakery"
       }
     },
@@ -1298,6 +1427,21 @@
       }
     },
     {
+      "displayName": "Keim",
+      "id": "keim-3f448e",
+      "locationSet": {"include": ["de"]},
+      "matchNames": [
+        "bäckerei keim",
+        "keim gmbh"
+      ],
+      "tags": {
+        "brand": "Keim",
+        "brand:wikidata": "Q134360343",
+        "name": "Keim",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Klein's Backstube",
       "id": "kleinsbackstube-3f448e",
       "locationSet": {"include": ["de"]},
@@ -1486,6 +1630,17 @@
       }
     },
     {
+      "displayName": "Levaduramadre",
+      "id": "levaduramadre-0ef3f4",
+      "locationSet": {"include": ["es"]},
+      "tags": {
+        "brand": "Levaduramadre",
+        "brand:wikidata": "Q134515949",
+        "name": "Levaduramadre",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Lila Bäcker",
       "id": "lilabacker-3f448e",
       "locationSet": {"include": ["de"]},
@@ -1614,6 +1769,23 @@
       }
     },
     {
+      "displayName": "Markt-Bäckerei",
+      "id": "marktbackerei-bcfc22",
+      "locationSet": {
+        "include": [
+          "de-bw.geojson",
+          "de-he.geojson",
+          "de-rp.geojson"
+        ]
+      },
+      "tags": {
+        "brand": "Markt-Bäckerei",
+        "brand:wikidata": "Q1719433",
+        "name": "Markt-Bäckerei",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Martin Auer",
       "id": "martinauer-2e087b",
       "locationSet": {"include": ["at"]},
@@ -1696,6 +1868,18 @@
       }
     },
     {
+      "displayName": "Mistrz Piekarz",
+      "id": "mistrzpiekarz-839c38",
+      "locationSet": {"include": ["pl"]},
+      "matchNames": ["piekarnia mistrz piekarz"],
+      "tags": {
+        "brand": "Mistrz Piekarz",
+        "brand:wikidata": "Q138412294",
+        "name": "Mistrz Piekarz",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Mlinar",
       "id": "mlinar-f94504",
       "locationSet": {
@@ -1720,17 +1904,6 @@
         "brand": "Müller & Egerer",
         "brand:wikidata": "Q64140618",
         "name": "Müller & Egerer",
-        "shop": "bakery"
-      }
-    },
-    {
-      "displayName": "MultiVlaai",
-      "id": "multivlaai-8eaf6b",
-      "locationSet": {"include": ["nl"]},
-      "tags": {
-        "brand": "MultiVlaai",
-        "brand:wikidata": "Q5439846",
-        "name": "MultiVlaai",
         "shop": "bakery"
       }
     },
@@ -1820,12 +1993,35 @@
       }
     },
     {
+      "displayName": "Otrębusy",
+      "id": "otrebusy-839c38",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Otrębusy",
+        "brand:wikidata": "Q136806617",
+        "name": "Otrębusy",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Pan de Manila",
       "id": "pandemanila-b6c45f",
       "locationSet": {"include": ["ph"]},
       "tags": {
         "brand": "Pan de Manila",
+        "brand:wikidata": "Q130382308",
         "name": "Pan de Manila",
+        "shop": "bakery"
+      }
+    },
+    {
+      "displayName": "Pan Pa' Ya!",
+      "id": "panpaya-db8524",
+      "locationSet": {"include": ["co"]},
+      "tags": {
+        "brand": "Pan Pa' Ya!",
+        "brand:wikidata": "Q131744932",
+        "name": "Pan Pa' Ya!",
         "shop": "bakery"
       }
     },
@@ -1868,9 +2064,9 @@
     },
     {
       "displayName": "Paris Baguette",
-      "id": "parisbaguette-e1a226",
+      "id": "parisbaguette-f87f10",
       "locationSet": {
-        "include": ["sg", "us", "vn"]
+        "include": ["ca", "sg", "us", "vn"]
       },
       "matchNames": ["paris baguette cafe"],
       "tags": {
@@ -2072,6 +2268,16 @@
       }
     },
     {
+      "displayName": "Rose Bakeshop",
+      "id": "rosebakeshop-4f9c7f",
+      "locationSet": {"include": ["001"]},
+      "tags": {
+        "brand": "Rose Bakeshop",
+        "name": "Rose Bakeshop",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Roti'O",
       "id": "rotio-a78b8f",
       "locationSet": {"include": ["id"]},
@@ -2144,6 +2350,19 @@
       }
     },
     {
+      "displayName": "Schwälmer Brotladen",
+      "id": "schwalmerbrotladen-3aeac5",
+      "locationSet": {
+        "include": ["de-he.geojson"]
+      },
+      "tags": {
+        "brand": "Schwälmer Brotladen",
+        "brand:wikidata": "Q133461373",
+        "name": "Schwälmer Brotladen",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Schwerdtner",
       "id": "schwerdtner-3f448e",
       "locationSet": {"include": ["de"]},
@@ -2178,6 +2397,17 @@
         "name": "Semeur聖娜",
         "name:en": "Semeur",
         "name:zh": "聖娜",
+        "shop": "bakery"
+      }
+    },
+    {
+      "displayName": "Simit Sarayı",
+      "id": "simitsarayi-a32269",
+      "locationSet": {"include": ["tr"]},
+      "tags": {
+        "brand": "Simit Sarayı",
+        "brand:wikidata": "Q28042608",
+        "name": "Simit Sarayı",
         "shop": "bakery"
       }
     },
@@ -2555,6 +2785,17 @@
       }
     },
     {
+      "displayName": "Ziarenko",
+      "id": "ziarenko-839c38",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Ziarenko",
+        "brand:wikidata": "Q133855957",
+        "name": "Ziarenko",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Βενέτη",
       "id": "veneti-ec42d9",
       "locationSet": {"include": ["gr"]},
@@ -2699,6 +2940,54 @@
       }
     },
     {
+      "displayName": "Скроз добра пекара",
+      "id": "skrozdobrapekara-969464",
+      "locationSet": {"include": ["rs"]},
+      "tags": {
+        "brand": "Скроз добра пекара",
+        "brand:sr": "Скроз добра пекара",
+        "brand:sr-Latn": "Skroz dobra pekara",
+        "brand:wikidata": "Q136090835",
+        "name": "Скроз добра пекара",
+        "name:sr": "Скроз добра пекара",
+        "name:sr-Latn": "Skroz dobra pekara",
+        "opening_hours": "24/7",
+        "shop": "bakery"
+      }
+    },
+    {
+      "displayName": "Франс.уа",
+      "id": "ad3ee0-3664c0",
+      "locationSet": {"include": ["ua"]},
+      "matchNames": ["frans.ua"],
+      "tags": {
+        "brand": "Франс.уа",
+        "brand:wikidata": "Q122361953",
+        "name": "Франс.уа",
+        "shop": "bakery",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "displayName": "Хлеб & Кифле",
+      "id": "hlebandkifle-969464",
+      "locationSet": {"include": ["rs"]},
+      "matchNames": [
+        "hleb i kifle",
+        "хлеб и кифле"
+      ],
+      "tags": {
+        "brand": "Хлеб & Кифле",
+        "brand:sr": "Хлеб & Кифле",
+        "brand:sr-Latn": "Hleb & Kifle",
+        "brand:wikidata": "Q136523699",
+        "name": "Хлеб & Кифле",
+        "name:sr": "Хлеб & Кифле",
+        "name:sr-Latn": "Hleb & Kifle",
+        "shop": "bakery"
+      }
+    },
+    {
       "displayName": "Хлеб Насущный",
       "id": "d1829c-44faa4",
       "locationSet": {"include": ["ru"]},
@@ -2813,7 +3102,7 @@
       }
     },
     {
-      "displayName": "파리바게뜨 (South Korea)",
+      "displayName": "파리바게뜨 (대한민국)",
       "id": "parisbaguette-e38a76",
       "locationSet": {"include": ["kr"]},
       "matchNames": ["paris baguette cafe"],
@@ -2972,6 +3261,7 @@
         "brand": "味多美",
         "brand:en": "Wedome",
         "brand:wikidata": "Q96323645",
+        "brand:zh": "味多美",
         "name": "味多美",
         "name:en": "Wedome",
         "name:zh": "味多美",
@@ -3143,6 +3433,22 @@
         "name": "樂田麵包屋",
         "name:en": "GAKUDEN",
         "name:zh": "樂田麵包屋",
+        "shop": "bakery"
+      }
+    },
+    {
+      "displayName": "爱达乐",
+      "id": "addlove-c0ca1d",
+      "locationSet": {"include": ["cn"]},
+      "matchNames": ["爱达乐蛋糕", "爱达乐食品"],
+      "tags": {
+        "brand": "爱达乐",
+        "brand:en": "Addlove",
+        "brand:wikidata": "Q20312234",
+        "brand:zh": "爱达乐",
+        "name": "爱达乐",
+        "name:en": "Addlove",
+        "name:zh": "爱达乐",
         "shop": "bakery"
       }
     },

@@ -4,7 +4,11 @@
     "exclude": {
       "generic": ["^train$"],
       "named": [
-        "^(city|international|local|mtb|municipal|national|rail|regional|urban)$"
+        "^(city|international|local|mtb|national|rail|regional|urban)$",
+        "^(entur|rfi|trenitalia)$",
+        "^(municipal|τοπική)$",
+        "^코레일$",
+        "^名古屋地区$"
       ]
     }
   },
@@ -40,7 +44,7 @@
       "locationSet": {"include": ["nl"]},
       "tags": {
         "network": "Achterhoek-Rivierenland",
-        "network:wikidata": "Q108716027",
+        "network:wikidata": "Q136479765",
         "route": "train"
       }
     },
@@ -62,6 +66,7 @@
       "locationSet": {
         "include": ["us-ca.geojson"]
       },
+      "matchNames": ["altamont corridor express"],
       "tags": {
         "network": "ACE",
         "network:wikidata": "Q434302",
@@ -81,13 +86,31 @@
       }
     },
     {
+      "displayName": "Arabako Aldiriak / Cercanías Álava",
+      "id": "arabakoaldiriakcercaniasalava-c9c2c6",
+      "locationSet": {
+        "include": ["es-vi.geojson"]
+      },
+      "note": "around Q14318",
+      "tags": {
+        "network": "Arabako Aldiriak / Cercanías Álava",
+        "network:es": "Cercanías Álava",
+        "network:eu": "Arabako Aldiriak",
+        "network:wikidata": "Q134617299",
+        "operator": "Renfe",
+        "operator:wikidata": "Q2476154",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "Arnhem-Nijmegen",
       "id": "arnhemnijmegen-948004",
       "locationSet": {"include": ["nl"]},
       "tags": {
         "network": "Arnhem-Nijmegen",
         "network:wikidata": "Q108716067",
-        "operator": "Breng",
+        "operator": "Hermes",
+        "operator:wikidata": "Q1030145",
         "route": "train"
       }
     },
@@ -137,17 +160,15 @@
       "locationSet": {"include": ["ar"]},
       "tags": {
         "network": "Belgrano",
+        "network:wikidata": "Q2962336",
         "route": "train"
       }
     },
     {
       "displayName": "Bilboko Aldiriak / Cercanías Bilbao",
-      "id": "bilbokoaldiriakcercaniasbilbao-7d4fdb",
+      "id": "bilbokoaldiriakcercaniasbilbao-a4f257",
       "locationSet": {
-        "include": [
-          [-2.8, 43.1, 30],
-          [-3, 43.3, 30]
-        ]
+        "include": ["es-bi.geojson"]
       },
       "note": "around Q31913753",
       "tags": {
@@ -194,8 +215,10 @@
     },
     {
       "displayName": "Cercanías Asturias",
-      "id": "cercaniasasturias-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "cercaniasasturias-4dd046",
+      "locationSet": {
+        "include": ["es-o.geojson"]
+      },
       "tags": {
         "network": "Cercanías Asturias",
         "network:wikidata": "Q1054739",
@@ -206,8 +229,10 @@
     },
     {
       "displayName": "Cercanías Cádiz",
-      "id": "cercaniascadiz-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "cercaniascadiz-2a8694",
+      "locationSet": {
+        "include": ["es-ca.geojson"]
+      },
       "tags": {
         "network": "Cercanías Cádiz",
         "network:wikidata": "Q1054745",
@@ -217,9 +242,84 @@
       }
     },
     {
+      "displayName": "Cercanías Cantabria",
+      "id": "cercaniascantabria-f28461",
+      "locationSet": {
+        "include": ["es-s.geojson"]
+      },
+      "matchNames": ["cercanías santander"],
+      "tags": {
+        "network": "Cercanías Cantabria",
+        "network:wikidata": "Q1054773",
+        "operator": "Renfe",
+        "operator:wikidata": "Q2476154",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Cercanías Cartagena",
+      "id": "cercaniascartagena-d69803",
+      "locationSet": {
+        "include": ["es-mu.geojson"]
+      },
+      "matchNames": ["feve", "renfe feve"],
+      "tags": {
+        "network": "Cercanías Cartagena",
+        "network:wikidata": "Q28181968",
+        "operator": "Renfe Cercanías AM",
+        "operator:wikidata": "Q3109506",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Cercanías Ferrol",
+      "id": "cercaniasferrol-171d67",
+      "locationSet": {
+        "include": ["es-c.geojson"]
+      },
+      "matchNames": [
+        "cercanías galicia",
+        "feve",
+        "proximidades",
+        "renfe feve"
+      ],
+      "tags": {
+        "network": "Cercanías Ferrol",
+        "network:wikidata": "Q107428536",
+        "operator": "Renfe Cercanías AM",
+        "operator:wikidata": "Q3109506",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Cercanías León",
+      "id": "cercaniasleon-cc5d06",
+      "locationSet": {
+        "include": [
+          "es-le.geojson",
+          "es-p.geojson"
+        ]
+      },
+      "matchNames": ["feve", "renfe feve"],
+      "tags": {
+        "network": "Cercanías León",
+        "network:wikidata": "Q107428854",
+        "operator": "Renfe Cercanías AM",
+        "operator:wikidata": "Q3109506",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "Cercanías Madrid",
-      "id": "cercaniasmadrid-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "cercaniasmadrid-2b07e3",
+      "locationSet": {
+        "include": [
+          "es-gu.geojson",
+          "es-m.geojson",
+          "es-sg.geojson",
+          "es-to.geojson"
+        ]
+      },
       "tags": {
         "network": "Cercanías Madrid",
         "network:wikidata": "Q1054785",
@@ -230,8 +330,10 @@
     },
     {
       "displayName": "Cercanías Málaga",
-      "id": "cercaniasmalaga-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "cercaniasmalaga-b25b91",
+      "locationSet": {
+        "include": ["es-ma.geojson"]
+      },
       "tags": {
         "network": "Cercanías Málaga",
         "network:wikidata": "Q167503",
@@ -242,8 +344,14 @@
     },
     {
       "displayName": "Cercanías Murcia/Alicante",
-      "id": "cercaniasmurciaalicante-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "cercaniasmurciaalicante-ec7a72",
+      "locationSet": {
+        "include": [
+          "es-a.geojson",
+          "es-al.geojson",
+          "es-mu.geojson"
+        ]
+      },
       "tags": {
         "network": "Cercanías Murcia/Alicante",
         "network:wikidata": "Q650688",
@@ -253,21 +361,11 @@
       }
     },
     {
-      "displayName": "Cercanías Santander",
-      "id": "cercaniassantander-8dd936",
-      "locationSet": {"include": ["es"]},
-      "tags": {
-        "network": "Cercanías Santander",
-        "network:wikidata": "Q1054773",
-        "operator": "Renfe",
-        "operator:wikidata": "Q2476154",
-        "route": "train"
-      }
-    },
-    {
       "displayName": "Cercanías Sevilla",
-      "id": "cercaniassevilla-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "cercaniassevilla-6aae9e",
+      "locationSet": {
+        "include": ["es-se.geojson"]
+      },
       "tags": {
         "network": "Cercanías Sevilla",
         "network:wikidata": "Q2747014",
@@ -278,8 +376,13 @@
     },
     {
       "displayName": "Cercanías València",
-      "id": "cercaniasvalencia-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "cercaniasvalencia-9c1d09",
+      "locationSet": {
+        "include": [
+          "es-cs.geojson",
+          "es-v.geojson"
+        ]
+      },
       "matchNames": [
         "rodalia de valència",
         "rodalia valència"
@@ -294,9 +397,9 @@
     },
     {
       "displayName": "Cercanías Zaragoza",
-      "id": "cercaniaszaragoza-cab0e1",
+      "id": "cercaniaszaragoza-7be0c4",
       "locationSet": {
-        "include": [[-0.9, 41.7, 25]]
+        "include": ["es-z.geojson"]
       },
       "tags": {
         "network": "Cercanías Zaragoza",
@@ -319,20 +422,9 @@
       }
     },
     {
-      "displayName": "CN-railway",
-      "id": "cnrailway-61c516",
-      "locationSet": {"include": ["cn"]},
-      "tags": {
-        "network": "CN-railway",
-        "route": "train"
-      }
-    },
-    {
       "displayName": "Commuter",
-      "id": "commuter-91413c",
-      "locationSet": {
-        "include": ["ie-d.geojson"]
-      },
+      "id": "commuter-73b98a",
+      "locationSet": {"include": ["ie"]},
       "matchNames": ["dublin commuter"],
       "tags": {
         "network": "Commuter",
@@ -448,8 +540,10 @@
     },
     {
       "displayName": "Donostiako Aldiriak / Cercanías San Sebastián",
-      "id": "donostiakoaldiriakcercaniassansebastian-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "donostiakoaldiriakcercaniassansebastian-1cde0a",
+      "locationSet": {
+        "include": ["es-ss.geojson"]
+      },
       "tags": {
         "network": "Donostiako Aldiriak / Cercanías San Sebastián",
         "network:es": "Cercanías San Sebastián",
@@ -469,6 +563,19 @@
         "network:wikidata": "Q108716138",
         "operator": "Qbuzz",
         "operator:wikidata": "Q3146926",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "DÚK",
+      "id": "dopravausteckehokraje-ef4abb",
+      "locationSet": {
+        "include": ["cz-42.geojson"]
+      },
+      "tags": {
+        "network": "Doprava Ústeckého kraje",
+        "network:short": "DÚK",
+        "network:wikidata": "Q12021691",
         "route": "train"
       }
     },
@@ -545,9 +652,14 @@
     },
     {
       "displayName": "Euskotren Trena",
-      "id": "euskotrentrena-4b3475",
+      "id": "euskotrentrena-4d1b4f",
       "locationSet": {
-        "include": ["es", "fr-naq.geojson"]
+        "include": [
+          "es-bi.geojson",
+          "es-ss.geojson",
+          "es-vi.geojson",
+          "fr-naq.geojson"
+        ]
       },
       "tags": {
         "network": "Euskotren Trena",
@@ -568,6 +680,32 @@
       "tags": {
         "network": "exo",
         "network:wikidata": "Q392496",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Express Intercity",
+      "id": "expressintercity-7a26af",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "network": "Express Intercity",
+        "network:short": "EIC",
+        "network:wikidata": "Q1440014",
+        "operator": "PKP Intercity",
+        "operator:wikidata": "Q590406",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Express Intercity Premium",
+      "id": "expressintercitypremium-7a26af",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "network": "Express Intercity Premium",
+        "network:short": "EIP",
+        "network:wikidata": "Q18084630",
+        "operator": "PKP Intercity",
+        "operator:wikidata": "Q590406",
         "route": "train"
       }
     },
@@ -695,6 +833,19 @@
       }
     },
     {
+      "displayName": "Heilbronner Hohenloher Haller Nahverkehr",
+      "id": "heilbronnerhohenloherhallernahverkehr-24c8a1",
+      "locationSet": {
+        "include": ["de-bw.geojson"]
+      },
+      "tags": {
+        "network": "Heilbronner Hohenloher Haller Nahverkehr",
+        "network:short": "HNV",
+        "network:wikidata": "Q1594788",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "Hoofdrailnet Nederland",
       "id": "hoofdrailnetnederland-6fd908",
       "locationSet": {"include": ["be", "nl"]},
@@ -716,6 +867,18 @@
       }
     },
     {
+      "displayName": "Hyderabad MMTS",
+      "id": "hyderabadmmts-69eb16",
+      "locationSet": {
+        "include": ["in-ts.geojson"]
+      },
+      "tags": {
+        "network": "Hyderabad MMTS",
+        "network:wikidata": "Q1952301",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "IC",
       "id": "ic-88d47b",
       "locationSet": {
@@ -728,9 +891,36 @@
       }
     },
     {
+      "displayName": "IDOL",
+      "id": "integrovanadopravalibereckehokraje-592d43",
+      "locationSet": {
+        "include": ["cz-51.geojson"]
+      },
+      "tags": {
+        "network": "Integrovaná doprava Libereckého kraje",
+        "network:short": "IDOL",
+        "network:wikidata": "Q12021686",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "IDPK",
+      "id": "integrovanadopravaplzenskehokraje-1a7f41",
+      "locationSet": {
+        "include": ["cz-32.geojson"]
+      },
+      "tags": {
+        "network": "Integrovaná doprava Plzeňského kraje",
+        "network:short": "IDPK",
+        "network:wikidata": "Q12021682",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "IDS BK",
-      "id": "idsbk-b6707b",
-      "locationSet": {"include": ["sk"]},
+      "id": "idsbk-62fcf4",
+      "locationSet": {"include": ["hu", "sk"]},
+      "note": "ISO 3166-2 SK-BL, SK-TA",
       "tags": {
         "network": "IDS BK",
         "network:wikidata": "Q4241634",
@@ -738,9 +928,33 @@
       }
     },
     {
+      "displayName": "IDS JMK",
+      "id": "integrovanydopravnisystemjihomoravskehokraje-cc6cef",
+      "locationSet": {"include": ["cz"]},
+      "tags": {
+        "network": "Integrovaný dopravní systém Jihomoravského kraje",
+        "network:short": "IDS JMK",
+        "network:wikidata": "Q12020731",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "IDS PLUS",
+      "id": "integrovanydopravnysystemplus-b6707b",
+      "locationSet": {"include": ["sk"]},
+      "note": "ISO 3166-2 SK-ZI",
+      "tags": {
+        "network": "Integrovaný dopravný systém PLUS",
+        "network:short": "IDS PLUS",
+        "network:wikidata": "Q105957236",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "IDS Východ",
       "id": "idsvychod-b6707b",
       "locationSet": {"include": ["sk"]},
+      "note": "ISO 3166-2 SK-KI, SK-PV",
       "tags": {
         "network": "IDS Východ",
         "network:wikidata": "Q105226836",
@@ -748,9 +962,28 @@
       }
     },
     {
+      "displayName": "IDSOK",
+      "id": "integrovanydopravnisystemolomouckehokraje-eb732a",
+      "locationSet": {
+        "include": ["cz-71.geojson"]
+      },
+      "tags": {
+        "network": "Integrovaný dopravní systém Olomouckého kraje",
+        "network:short": "IDSOK",
+        "network:wikidata": "Q12021688",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "IDZK",
-      "id": "integrovanadopravazlinskehokraje-cc6cef",
-      "locationSet": {"include": ["cz"]},
+      "id": "integrovanadopravazlinskehokraje-e2fb0f",
+      "locationSet": {
+        "include": [
+          "cz-71.geojson",
+          "cz-72.geojson",
+          "cz-80.geojson"
+        ]
+      },
       "tags": {
         "network": "Integrovaná doprava Zlínského kraje",
         "network:short": "IDZK",
@@ -767,7 +1000,21 @@
       "tags": {
         "network": "Intercités",
         "network:wikidata": "Q1968198",
-        "operator": "SNCF",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Intercity",
+      "id": "intercity-7a26af",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "network": "Intercity",
+        "network:short": "IC",
+        "network:wikidata": "Q590406",
+        "operator": "PKP Intercity",
+        "operator:wikidata": "Q590406",
         "route": "train"
       }
     },
@@ -786,6 +1033,23 @@
       }
     },
     {
+      "displayName": "IREDO",
+      "id": "integrovanaregionalnidopravakralovehradeckehoapardubickehokraje-3c56f0",
+      "locationSet": {
+        "include": [
+          "cz-52.geojson",
+          "cz-53.geojson",
+          "pl-02.geojson"
+        ]
+      },
+      "tags": {
+        "network": "Integrovaná regionální doprava Královéhradeckého a Pardubického kraje",
+        "network:short": "IREDO",
+        "network:wikidata": "Q12021384",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "Iryo",
       "id": "iryo-8dd936",
       "locationSet": {"include": ["es"]},
@@ -798,6 +1062,44 @@
         "operator": "Intermodalidad de Levante",
         "operator:short": "ILSA",
         "operator:wikidata": "Q111296380",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "ITX-마음",
+      "id": "itxmaum-96baee",
+      "locationSet": {"include": ["kr"]},
+      "matchNames": ["마음", "한국철도"],
+      "tags": {
+        "network": "ITX-마음",
+        "network:en": "ITX-Maum",
+        "network:ko": "ITX-마음",
+        "network:wikidata": "Q122238452",
+        "operator": "한국철도공사",
+        "operator:en": "Korea Railroad Corporation",
+        "operator:ko": "한국철도공사",
+        "operator:short": "KORAIL",
+        "operator:type": "public",
+        "operator:wikidata": "Q18169",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "ITX-새마을",
+      "id": "itxsaemaeul-96baee",
+      "locationSet": {"include": ["kr"]},
+      "matchNames": ["새마을", "한국철도"],
+      "tags": {
+        "network": "ITX-새마을",
+        "network:en": "ITX-Saemaeul",
+        "network:ko": "ITX-새마을",
+        "network:wikidata": "Q13707875",
+        "operator": "한국철도공사",
+        "operator:en": "Korea Railroad Corporation",
+        "operator:ko": "한국철도공사",
+        "operator:short": "KORAIL",
+        "operator:type": "public",
+        "operator:wikidata": "Q18169",
         "route": "train"
       }
     },
@@ -825,8 +1127,10 @@
     },
     {
       "displayName": "KAI",
-      "id": "kai-305460",
-      "locationSet": {"include": ["id"]},
+      "id": "kai-b7b423",
+      "locationSet": {
+        "include": ["id-jw", "id-sm"]
+      },
       "tags": {
         "network": "KAI",
         "network:wikidata": "Q2745027",
@@ -835,8 +1139,10 @@
     },
     {
       "displayName": "KAI Bandara",
-      "id": "kaibandara-305460",
-      "locationSet": {"include": ["id"]},
+      "id": "kaibandara-b7b423",
+      "locationSet": {
+        "include": ["id-jw", "id-sm"]
+      },
       "tags": {
         "network": "KAI Bandara",
         "network:wikidata": "Q19752643",
@@ -845,8 +1151,8 @@
     },
     {
       "displayName": "KAI Commuter",
-      "id": "kaicommuter-305460",
-      "locationSet": {"include": ["id"]},
+      "id": "kaicommuter-38d4cf",
+      "locationSet": {"include": ["id-jw"]},
       "tags": {
         "network": "KAI Commuter",
         "network:wikidata": "Q12501611",
@@ -884,10 +1190,16 @@
     },
     {
       "displayName": "Koleje Dolnośląskie",
-      "id": "kolejedolnoslaskie-aa16a7",
+      "id": "kolejedolnoslaskie-259af7",
       "locationSet": {
-        "include": ["cz", "de", "pl"]
+        "include": [
+          "cz-52.geojson",
+          "cz-53.geojson",
+          "de-sn.geojson",
+          "pl"
+        ]
       },
+      "note": "ISO 3166-2 PL-02, PL-08, PL-32",
       "tags": {
         "network": "Koleje Dolnośląskie",
         "network:short": "KD",
@@ -910,8 +1222,11 @@
     },
     {
       "displayName": "Koleje Śląskie",
-      "id": "kolejeslaskie-163923",
-      "locationSet": {"include": ["cz", "pl"]},
+      "id": "kolejeslaskie-f1205f",
+      "locationSet": {
+        "include": ["cz-80.geojson", "pl"]
+      },
+      "note": "ISO 3166-2 PL-12, PL-24",
       "tags": {
         "network": "Koleje Śląskie",
         "network:short": "KSl",
@@ -966,8 +1281,11 @@
         "network": "KTX",
         "network:wikidata": "Q167674",
         "operator": "한국철도공사",
-        "operator:en": "Korea Railroad",
+        "operator:en": "Korea Railroad Corporation",
         "operator:ko": "한국철도공사",
+        "operator:short": "KORAIL",
+        "operator:type": "public",
+        "operator:wikidata": "Q18169",
         "route": "train"
       }
     },
@@ -1125,8 +1443,10 @@
     },
     {
       "displayName": "Metro del Baix Llobregat",
-      "id": "metrodelbaixllobregat-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "metrodelbaixllobregat-ad7890",
+      "locationSet": {
+        "include": ["es-b.geojson"]
+      },
       "tags": {
         "network": "Metro del Baix Llobregat",
         "network:wikidata": "Q2381339",
@@ -1292,8 +1612,10 @@
     },
     {
       "displayName": "Mumbai Suburban Railway",
-      "id": "mumbaisuburbanrailway-7147b7",
-      "locationSet": {"include": ["in"]},
+      "id": "mumbaisuburbanrailway-9f379e",
+      "locationSet": {
+        "include": ["in-mh.geojson"]
+      },
       "matchNames": [
         "mumbai suburban rail network"
       ],
@@ -1454,6 +1776,18 @@
       }
     },
     {
+      "displayName": "ÖBB Nightjet",
+      "id": "obbnightjet-f5a1d8",
+      "locationSet": {
+        "include": ["at", "be", "de", "it"]
+      },
+      "tags": {
+        "network": "ÖBB Nightjet",
+        "network:wikidata": "Q28127371",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "Oberösterreichischer Verkehrsverbund",
       "id": "oberosterreichischerverkehrsverbund-e51205",
       "locationSet": {
@@ -1473,11 +1807,34 @@
     },
     {
       "displayName": "ODIS",
-      "id": "odis-cc6cef",
-      "locationSet": {"include": ["cz"]},
+      "id": "odis-e2fb0f",
+      "locationSet": {
+        "include": [
+          "cz-71.geojson",
+          "cz-72.geojson",
+          "cz-80.geojson"
+        ]
+      },
       "tags": {
         "network": "ODIS",
         "network:wikidata": "Q12043044",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Onde Verte",
+      "id": "ondeverte-542ecf",
+      "locationSet": {
+        "include": [
+          "ch-be.geojson",
+          "ch-ne.geojson",
+          "ch-vd.geojson",
+          "fr-bfc.geojson"
+        ]
+      },
+      "tags": {
+        "network": "Onde Verte",
+        "network:wikidata": "Q30744145",
         "route": "train"
       }
     },
@@ -1604,13 +1961,38 @@
       }
     },
     {
+      "displayName": "Rajdhani Express",
+      "id": "rajdhaniexpress-7147b7",
+      "locationSet": {"include": ["in"]},
+      "tags": {
+        "network": "Rajdhani Express",
+        "network:wikidata": "Q379605",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "Regio-Verkehrsverbund Freiburg",
-      "id": "regioverkehrsverbundfreiburg-da20e0",
-      "locationSet": {"include": ["de"]},
+      "id": "regioverkehrsverbundfreiburg-24c8a1",
+      "locationSet": {
+        "include": ["de-bw.geojson"]
+      },
       "tags": {
         "network": "Regio-Verkehrsverbund Freiburg",
         "network:short": "RVF",
         "network:wikidata": "Q972037",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "RegioJet",
+      "id": "regiojet-c8ffba",
+      "locationSet": {
+        "include": ["be", "cz", "lu", "pl"]
+      },
+      "tags": {
+        "network": "RegioJet",
+        "network:short": "RJ",
+        "network:wikidata": "Q221186",
         "route": "train"
       }
     },
@@ -1742,16 +2124,6 @@
       }
     },
     {
-      "displayName": "RFI",
-      "id": "rfi-66b763",
-      "locationSet": {"include": ["it"]},
-      "tags": {
-        "network": "RFI",
-        "network:wikidata": "Q1060049",
-        "route": "train"
-      }
-    },
-    {
       "displayName": "RhB",
       "id": "rhb-0c66c7",
       "locationSet": {
@@ -1762,7 +2134,7 @@
       },
       "tags": {
         "network": "RhB",
-        "network:wikidata": "Q2204412",
+        "network:wikidata": "Q135619095",
         "route": "train"
       }
     },
@@ -1807,9 +2179,15 @@
     },
     {
       "displayName": "Rodalies de Catalunya",
-      "id": "rodaliesdecatalunya-922827",
+      "id": "rodaliesdecatalunya-3b6e4f",
       "locationSet": {
-        "include": ["es", "fr-occ.geojson"]
+        "include": [
+          "es-b.geojson",
+          "es-gi.geojson",
+          "es-l.geojson",
+          "es-t.geojson",
+          "fr-occ.geojson"
+        ]
       },
       "matchNames": [
         "cercanías de cataluña",
@@ -1840,6 +2218,18 @@
       "id": "s-6fd908",
       "locationSet": {"include": ["be", "nl"]},
       "tags": {"network": "S", "route": "train"}
+    },
+    {
+      "displayName": "S-Bahn Chur",
+      "id": "sbahnchur-8826ff",
+      "locationSet": {
+        "include": ["ch-gr.geojson"]
+      },
+      "tags": {
+        "network": "S-Bahn Chur",
+        "network:wikidata": "Q2204412",
+        "route": "train"
+      }
     },
     {
       "displayName": "S-Bahn Steiermark",
@@ -1904,8 +2294,8 @@
     },
     {
       "displayName": "Serveis Ferroviaris de Mallorca",
-      "id": "serveisferroviarisdemallorca-8dd936",
-      "locationSet": {"include": ["es"]},
+      "id": "serveisferroviarisdemallorca-4a0481",
+      "locationSet": {"include": ["es-ib"]},
       "matchNames": [
         "servicios ferroviarios de mallorca"
       ],
@@ -1947,12 +2337,12 @@
       }
     },
     {
-      "displayName": "Société Nationale des Chemins de Fer Luxembourgeois",
-      "id": "societenationaledescheminsdeferluxembourgeois-7e5466",
+      "displayName": "Société Nationale des Chemins de fer Luxembourgeois",
+      "id": "societenationaledescheminsdeferluxembourgeois-aaa49e",
       "locationSet": {
         "include": [
-          "be",
-          "de",
+          "be-wlx.geojson",
+          "de-rp.geojson",
           "fr-ges.geojson",
           "lu"
         ]
@@ -2045,6 +2435,10 @@
       "locationSet": {
         "include": ["au-nsw.geojson"]
       },
+      "matchNames": [
+        "tfnsw",
+        "transport for nsw"
+      ],
       "tags": {
         "network": "Sydney Trains",
         "network:wikidata": "Q7660181",
@@ -2061,6 +2455,19 @@
       }
     },
     {
+      "displayName": "Tarifverbund Ortenau",
+      "id": "tarifverbundortenau-24c8a1",
+      "locationSet": {
+        "include": ["de-bw.geojson"]
+      },
+      "tags": {
+        "network": "Tarifverbund Ortenau",
+        "network:short": "TGO",
+        "network:wikidata": "Q1525084",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "TER Auvergne-Rhône-Alpes",
       "id": "terauvergnerhonealpes-15997b",
       "locationSet": {
@@ -2069,8 +2476,8 @@
       "tags": {
         "network": "TER Auvergne-Rhône-Alpes",
         "network:wikidata": "Q41585492",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2087,8 +2494,22 @@
       "tags": {
         "network": "TER Bourgogne-Franche-Comté",
         "network:wikidata": "Q43082620",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "TER Bourgogne-Ouest-Nivernais",
+      "id": "terbourgogneouestnivernais-75a404",
+      "locationSet": {
+        "include": ["fr-bfc.geojson"]
+      },
+      "tags": {
+        "network": "TER Bourgogne-Ouest-Nivernais",
+        "network:wikidata": "Q43082620",
+        "operator": "SNCF Voyageurs Bourgogne Ouest",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2101,8 +2522,8 @@
       "tags": {
         "network": "TER Bretagne",
         "network:wikidata": "Q975369",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2116,8 +2537,8 @@
       "tags": {
         "network": "TER Centre – Val de Loire",
         "network:wikidata": "Q912775",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2130,8 +2551,8 @@
       "tags": {
         "network": "TER Grand Est",
         "network:wikidata": "Q37800073",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2144,8 +2565,22 @@
       "tags": {
         "network": "TER Hauts-de-France",
         "network:wikidata": "Q38223166",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "TER Hauts-de-France Étoile d'Amiens",
+      "id": "terhautsdefranceetoiledamiens-6daada",
+      "locationSet": {
+        "include": ["fr-hdf.geojson"]
+      },
+      "tags": {
+        "network": "TER Hauts-de-France Étoile d'Amiens",
+        "network:wikidata": "Q38223166",
+        "operator": "SNCF Voyageurs Étoile d'Amiens",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2158,8 +2593,8 @@
       "tags": {
         "network": "TER Normandie",
         "network:wikidata": "Q30740754",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2172,8 +2607,8 @@
       "tags": {
         "network": "TER Nouvelle-Aquitaine",
         "network:wikidata": "Q47519663",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2190,8 +2625,8 @@
       "tags": {
         "network": "TER Occitanie",
         "network:wikidata": "Q37941081",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2204,13 +2639,27 @@
       "tags": {
         "network": "TER Pays de la Loire",
         "network:wikidata": "Q3512113",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
     {
-      "displayName": "TER Provence-Alpes-Côte d'Azur",
+      "displayName": "TER Pays de la Loire Loire Océan",
+      "id": "terpaysdelaloireloireocean-04c37d",
+      "locationSet": {
+        "include": ["fr-pdl.geojson"]
+      },
+      "tags": {
+        "network": "TER Pays de la Loire Loire Océan",
+        "network:wikidata": "Q3512113",
+        "operator": "SNCF Voyageurs Loire Océan",
+        "operator:wikidata": "Q93090957",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "TER ZOU!",
       "id": "terprovencealpescotedazur-89ac8f",
       "locationSet": {
         "include": ["fr-pac.geojson"]
@@ -2218,8 +2667,22 @@
       "tags": {
         "network": "TER Provence-Alpes-Côte d'Azur",
         "network:wikidata": "Q3512123",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "TER ZOU! Étoile de Nice",
+      "id": "terprovencealpescotedazuretoiledenice-89ac8f",
+      "locationSet": {
+        "include": ["fr-pac.geojson"]
+      },
+      "tags": {
+        "network": "TER Provence-Alpes-Côte d'Azur Étoile de Nice",
+        "network:wikidata": "Q3512123",
+        "operator": "SNCF Voyageurs Sud Azur",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2243,8 +2706,8 @@
       "tags": {
         "network": "TGV",
         "network:wikidata": "Q129337",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2256,8 +2719,8 @@
       "tags": {
         "network": "TGV InOui",
         "network:wikidata": "Q30754613",
-        "operator": "SNCF",
-        "operator:wikidata": "Q13646",
+        "operator": "SNCF Voyageurs",
+        "operator:wikidata": "Q93090957",
         "route": "train"
       }
     },
@@ -2286,7 +2749,7 @@
         "network:nan-Latn-pehoeji": "Tâi-thih",
         "network:nan-Latn-tailo": "Tâi-thih",
         "network:short": "TRA",
-        "network:wikidata": "Q697926",
+        "network:wikidata": "Q112151129",
         "network:zh": "臺鐵",
         "operator": "臺灣鐵路管理局",
         "operator:en": "Taiwan Railway Administration",
@@ -2295,27 +2758,23 @@
         "operator:nan-Latn-pehoeji": "Tâi-oân Thih-lō͘ Koán-lí-kio̍k",
         "operator:nan-Latn-tailo": "Tâi-uân Thih-lōo Kuán-lí-kio̍k",
         "operator:short": "台鐵局",
-        "operator:wikidata": "Q697926",
+        "operator:wikidata": "Q112151129",
         "operator:zh": "臺灣鐵路管理局",
         "route": "train"
       }
     },
     {
-      "displayName": "TRAM Metropolità d'Alcant",
-      "id": "trammetropolitadalacant-2f7cc7",
+      "displayName": "TRAM Metropolità d'Alacant",
+      "id": "trammetropolitadalacant-ed9d53",
       "locationSet": {
-        "include": [
-          [-0.129, 38.53, 25],
-          [-0.4881, 38.3436, 25],
-          [0.0812, 38.7742, 20]
-        ]
+        "include": ["es-a.geojson"]
       },
       "matchNames": [
         "tram",
         "tram alicante",
         "tram metropolitano de alicante"
       ],
-      "note": "This entry is in Alcant, Benidorm and Gata de Gorgos",
+      "note": "This entry is in Alacant, Benidorm and Gata de Gorgos",
       "tags": {
         "network": "TRAM Metropolità d'Alacant",
         "network:wikidata": "Q2063567",
@@ -2372,15 +2831,6 @@
       }
     },
     {
-      "displayName": "transport kolejowy województwa lubelskiego",
-      "id": "transportkolejowywojewodztwalubelskiego-7a26af",
-      "locationSet": {"include": ["pl"]},
-      "tags": {
-        "network": "transport kolejowy województwa lubelskiego",
-        "route": "train"
-      }
-    },
-    {
       "displayName": "Treindienst Amersfoort - Ede-Wageningen",
       "id": "treindienstamersfoortedewageningen-948004",
       "locationSet": {"include": ["nl"]},
@@ -2415,21 +2865,6 @@
       }
     },
     {
-      "displayName": "Trenitalia",
-      "id": "trenitalia-66b763",
-      "locationSet": {"include": ["it"]},
-      "matchNames": ["trenitalia s.p.a"],
-      "tags": {
-        "network": "Trenitalia",
-        "network:short": "TI",
-        "network:wikidata": "Q286650",
-        "operator": "Trenitalia",
-        "operator:short": "TI",
-        "operator:wikidata": "Q286650",
-        "route": "train"
-      }
-    },
-    {
       "displayName": "Türkiye Cumhuriyeti Devlet Demiryolları",
       "id": "turkiyecumhuriyetidevletdemiryollari-764b53",
       "locationSet": {"include": ["tr"]},
@@ -2452,6 +2887,20 @@
         "network:wikidata": "Q115122964",
         "operator": "Arriva",
         "operator:wikidata": "Q2581356",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Twoje Linie Kolejowe",
+      "id": "twojeliniekolejowe-7a26af",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "colour": "purple",
+        "network": "Twoje Linie Kolejowe",
+        "network:short": "TLK",
+        "network:wikidata": "Q9363378",
+        "operator": "PKP Intercity",
+        "operator:wikidata": "Q590406",
         "route": "train"
       }
     },
@@ -2585,6 +3034,20 @@
         "network": "Verkehrsverbund Mainfranken",
         "network:short": "VVM",
         "network:wikidata": "Q2516466",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Verkehrsverbund Mittelthüringen",
+      "id": "verkehrsverbundmittelthuringen-c1de8d",
+      "locationSet": {
+        "include": ["de-th.geojson"]
+      },
+      "tags": {
+        "network": "Verkehrsverbund Mittelthüringen",
+        "network:guid": "DE-TH-VMT",
+        "network:short": "VMT",
+        "network:wikidata": "Q2516468",
         "route": "train"
       }
     },
@@ -2726,20 +3189,6 @@
       }
     },
     {
-      "displayName": "VMT",
-      "id": "verkehrsverbundmittelthuringen-c1de8d",
-      "locationSet": {
-        "include": ["de-th.geojson"]
-      },
-      "tags": {
-        "network": "Verkehrsverbund Mittelthüringen",
-        "network:guid": "DE-TH-VMT",
-        "network:short": "VMT",
-        "network:wikidata": "Q2516468",
-        "route": "train"
-      }
-    },
-    {
       "displayName": "VN:railway",
       "id": "vnrailway-a36065",
       "locationSet": {"include": ["vn"]},
@@ -2750,9 +3199,15 @@
     },
     {
       "displayName": "VOR",
-      "id": "vor-5316b2",
+      "id": "vor-5a3457",
       "locationSet": {
-        "include": ["at", "cz", "hu", "sk"]
+        "include": [
+          "at",
+          "cz-31.geojson",
+          "cz-64.geojson",
+          "hu",
+          "sk-bl.geojson"
+        ]
       },
       "tags": {
         "network": "VOR",
@@ -2767,6 +3222,22 @@
       "tags": {
         "network": "VR",
         "network:wikidata": "Q913248",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "Warszawska Kolej Dojazdowa",
+      "id": "warszawskakolejdojazdowa-8d7802",
+      "locationSet": {
+        "include": ["pl-14.geojson"]
+      },
+      "tags": {
+        "network": "Warszawska Kolej Dojazdowa",
+        "network:short": "WKD",
+        "network:wikidata": "Q773832",
+        "operator": "Warszawska Kolej Dojazdowa",
+        "operator:short": "WKD",
+        "operator:wikidata": "Q137943194",
         "route": "train"
       }
     },
@@ -2815,27 +3286,38 @@
       }
     },
     {
-      "displayName": "WKD",
-      "id": "wkd-7a26af",
-      "locationSet": {"include": ["pl"]},
-      "tags": {"network": "WKD", "route": "train"}
-    },
-    {
-      "displayName": "ZSSK",
-      "id": "zssk-b6707b",
-      "locationSet": {"include": ["sk"]},
+      "displayName": "Železničná spoločnosť Slovensko",
+      "id": "zeleznicnaspolocnostslovensko-62fcf4",
+      "locationSet": {"include": ["hu", "sk"]},
       "tags": {
-        "network": "ZSSK",
-        "network:wikidata": "Q837019",
-        "operator": "ZSSK",
+        "network": "Železničná spoločnosť Slovensko",
+        "network:short": "ZSSK",
+        "network:wikidata": "Q393557",
+        "operator": "Železničná spoločnosť Slovensko",
+        "operator:short": "ZSSK",
         "operator:wikidata": "Q393557",
         "route": "train"
       }
     },
     {
+      "displayName": "ZID",
+      "id": "zlinskaintegrovanadoprava-6cad4b",
+      "locationSet": {
+        "include": ["cz-72.geojson"]
+      },
+      "tags": {
+        "network": "Zlínská integrovaná doprava",
+        "network:short": "ZID",
+        "network:wikidata": "Q10861159",
+        "route": "train"
+      }
+    },
+    {
       "displayName": "ZTM Warszawa",
-      "id": "ztmwarszawa-7a26af",
-      "locationSet": {"include": ["pl"]},
+      "id": "ztmwarszawa-8d7802",
+      "locationSet": {
+        "include": ["pl-14.geojson"]
+      },
       "tags": {
         "network": "ZTM Warszawa",
         "network:wikidata": "Q8066998",
@@ -2844,9 +3326,15 @@
     },
     {
       "displayName": "ZVON",
-      "id": "zvon-aa16a7",
+      "id": "zvon-84ea36",
       "locationSet": {
-        "include": ["cz", "de", "pl"]
+        "include": [
+          "cz-42.geojson",
+          "cz-51.geojson",
+          "de-bb.geojson",
+          "de-sn.geojson",
+          "pl-02.geojson"
+        ]
       },
       "tags": {
         "network": "ZVON",
@@ -2902,9 +3390,13 @@
     },
     {
       "displayName": "БЧ",
-      "id": "277604-4f6875",
-      "locationSet": {"include": ["ru"]},
-      "tags": {"network": "БЧ", "route": "train"}
+      "id": "277604-a6e217",
+      "locationSet": {"include": ["by", "ru"]},
+      "tags": {
+        "network": "БЧ",
+        "network:wikidata": "Q76987",
+        "route": "train"
+      }
     },
     {
       "displayName": "МЦД",
@@ -2944,17 +3436,22 @@
       "displayName": "Укрзалізниця",
       "id": "ukrainianrailways-216244",
       "locationSet": {"include": ["ua"]},
-      "matchNames": ["ukrzaliznytsia"],
       "tags": {
         "network": "Укрзалізниця",
         "network:en": "Ukrainian Railways",
         "network:short": "УЗ",
+        "network:short:uk": "УЗ",
+        "network:short:uk-Latn": "UZ",
         "network:uk": "Укрзалізниця",
+        "network:uk-Latn": "Ukrzaliznytsia",
         "network:wikidata": "Q923337",
         "operator": "Укрзалізниця",
         "operator:en": "Ukrainian Railways",
         "operator:short": "УЗ",
+        "operator:short:uk": "УЗ",
+        "operator:short:uk-Latn": "UZ",
         "operator:uk": "Укрзалізниця",
+        "operator:uk-Latn": "Ukrzaliznytsia",
         "operator:wikidata": "Q923337",
         "route": "train"
       }
@@ -3003,18 +3500,93 @@
       }
     },
     {
-      "displayName": "코레일",
-      "id": "korail-96baee",
+      "displayName": "대구권 광역전철",
+      "id": "daegumetropolitansubway-96baee",
+      "locationSet": {"include": ["kr"]},
+      "matchNames": [
+        "광역전철",
+        "광역철도",
+        "전철",
+        "한국철도"
+      ],
+      "tags": {
+        "network": "대구권 전철",
+        "network:en": "Daegu Metropolitan Subway",
+        "network:ko": "대구권 전철",
+        "network:wikidata": "Q49458",
+        "operator": "한국철도공사",
+        "operator:en": "Korea Railroad Corporation",
+        "operator:ko": "한국철도공사",
+        "operator:short": "KORAIL",
+        "operator:type": "public",
+        "operator:wikidata": "Q18169",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "동남권 광역전철",
+      "id": "busanmetro-96baee",
+      "locationSet": {"include": ["kr"]},
+      "matchNames": [
+        "광역전철",
+        "광역철도",
+        "전철",
+        "한국철도"
+      ],
+      "tags": {
+        "network": "부산 도시철도",
+        "network:en": "Busan Metro",
+        "network:ko": "부산 도시철도",
+        "network:wikidata": "Q51972",
+        "operator": "한국철도공사",
+        "operator:en": "Korea Railroad Corporation",
+        "operator:ko": "한국철도공사",
+        "operator:short": "KORAIL",
+        "operator:type": "public",
+        "operator:wikidata": "Q18169",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "무궁화호",
+      "id": "mugunghwatrain-96baee",
       "locationSet": {"include": ["kr"]},
       "matchNames": ["한국철도"],
       "tags": {
-        "network": "코레일",
-        "network:en": "Korail",
-        "network:ko": "코레일",
-        "network:wikidata": "Q18169",
+        "network": "무궁화호",
+        "network:en": "Mugunghwa Train",
+        "network:ko": "무궁화호",
+        "network:wikidata": "Q489480",
         "operator": "한국철도공사",
-        "operator:en": "Korea Railroad",
+        "operator:en": "Korea Railroad Corporation",
         "operator:ko": "한국철도공사",
+        "operator:short": "KORAIL",
+        "operator:type": "public",
+        "operator:wikidata": "Q18169",
+        "route": "train"
+      }
+    },
+    {
+      "displayName": "수도권 광역전철",
+      "id": "seoulmetropolitansubway-96baee",
+      "locationSet": {"include": ["kr"]},
+      "matchNames": [
+        "광역전철",
+        "광역철도",
+        "전철",
+        "한국철도"
+      ],
+      "tags": {
+        "network": "수도권 전철",
+        "network:en": "Seoul Metropolitan Subway",
+        "network:ko": "수도권 전철",
+        "network:wikidata": "Q16950",
+        "operator": "한국철도공사",
+        "operator:en": "Korea Railroad Corporation",
+        "operator:ko": "한국철도공사",
+        "operator:short": "KORAIL",
+        "operator:type": "public",
+        "operator:wikidata": "Q18169",
         "route": "train"
       }
     },
@@ -3022,6 +3594,7 @@
       "displayName": "アーバンネットワーク",
       "id": "b8f89f-717a77",
       "locationSet": {"include": ["jp"]},
+      "note": "近畿エリア or 関西エリア",
       "tags": {
         "network": "アーバンネットワーク",
         "network:ja": "アーバンネットワーク",
@@ -3031,8 +3604,13 @@
     },
     {
       "displayName": "京成電鉄",
-      "id": "keiseielectricrailway-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "keiseielectricrailway-364a6d",
+      "locationSet": {
+        "include": [
+          "jp-12.geojson",
+          "jp-13.geojson"
+        ]
+      },
       "matchNames": ["京成"],
       "tags": {
         "network": "京成電鉄",
@@ -3052,6 +3630,7 @@
         "北京城铁",
         "北京都市铁路"
       ],
+      "note": "ISO 3166-2 CN-BJ, CN-HE",
       "tags": {
         "network": "北京市郊铁路",
         "network:en": "Beijing Suburban Railway",
@@ -3077,8 +3656,13 @@
     },
     {
       "displayName": "南海電鉄",
-      "id": "nankaielectricrailway-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "nankaielectricrailway-9cabf3",
+      "locationSet": {
+        "include": [
+          "jp-27.geojson",
+          "jp-30.geojson"
+        ]
+      },
       "matchNames": ["南海"],
       "tags": {
         "network": "南海電鉄",
@@ -3115,18 +3699,14 @@
       }
     },
     {
-      "displayName": "名古屋地区",
-      "id": "3631f6-717a77",
-      "locationSet": {"include": ["jp"]},
-      "tags": {
-        "network": "名古屋地区",
-        "route": "train"
-      }
-    },
-    {
       "displayName": "名鉄線路線",
-      "id": "eaa612-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "eaa612-011ceb",
+      "locationSet": {
+        "include": [
+          "jp-21.geojson",
+          "jp-23.geojson"
+        ]
+      },
       "tags": {
         "network": "名鉄線路線",
         "route": "train"
@@ -3134,28 +3714,48 @@
     },
     {
       "displayName": "大阪・名古屋線系",
-      "id": "4d2590-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "osakanagoyaline-377237",
+      "locationSet": {
+        "include": [
+          "jp-23.geojson",
+          "jp-24.geojson",
+          "jp-27.geojson",
+          "jp-29.geojson"
+        ]
+      },
       "tags": {
         "network": "大阪・名古屋線系",
+        "network:en": "Osaka-Nagoya Line",
         "network:ja": "大阪・名古屋線系",
         "route": "train"
       }
     },
     {
       "displayName": "奈良・京都線系",
-      "id": "ae1c2c-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "narakyotoline-5a6b8c",
+      "locationSet": {
+        "include": [
+          "jp-26.geojson",
+          "jp-27.geojson",
+          "jp-29.geojson"
+        ]
+      },
       "tags": {
         "network": "奈良・京都線系",
+        "network:en": "Nara-Kyoto Line",
         "network:ja": "奈良・京都線系",
         "route": "train"
       }
     },
     {
       "displayName": "小田急電鉄",
-      "id": "odakyuelectricrailway-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "odakyuelectricrailway-792b7d",
+      "locationSet": {
+        "include": [
+          "jp-13.geojson",
+          "jp-14.geojson"
+        ]
+      },
       "tags": {
         "network": "小田急電鉄",
         "network:en": "Odakyu Electric Railway",
@@ -3166,18 +3766,27 @@
     },
     {
       "displayName": "岡山・福山エリア",
-      "id": "3cd138-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "okayamafukuyamaarea-48ecc3",
+      "locationSet": {
+        "include": [
+          "jp-28.geojson",
+          "jp-33.geojson",
+          "jp-34.geojson"
+        ]
+      },
       "tags": {
         "network": "岡山・福山エリア",
+        "network:en": "Okayama-Fukuyama area",
         "network:ja": "岡山・福山エリア",
         "route": "train"
       }
     },
     {
       "displayName": "札幌近郊",
-      "id": "3290b6-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "3290b6-530c9c",
+      "locationSet": {
+        "include": ["jp-01.geojson"]
+      },
       "tags": {
         "network": "札幌近郊",
         "route": "train"
@@ -3189,13 +3798,19 @@
       "locationSet": {"include": ["jp"]},
       "tags": {
         "network": "東京近郊区間",
+        "network:wikidata": "Q73063992",
         "route": "train"
       }
     },
     {
       "displayName": "東急電鉄",
-      "id": "tokyurailways-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "tokyurailways-792b7d",
+      "locationSet": {
+        "include": [
+          "jp-13.geojson",
+          "jp-14.geojson"
+        ]
+      },
       "tags": {
         "network": "東急電鉄",
         "network:en": "Tokyu Railways",
@@ -3206,8 +3821,14 @@
     },
     {
       "displayName": "東武本線",
-      "id": "2cbbed-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "2cbbed-bbf51f",
+      "locationSet": {
+        "include": [
+          "jp-09.geojson",
+          "jp-10.geojson",
+          "jp-11.geojson"
+        ]
+      },
       "tags": {
         "network": "東武本線",
         "network:wikidata": "Q11527535",
@@ -3216,8 +3837,16 @@
     },
     {
       "displayName": "東武鉄道",
-      "id": "toburailway-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "toburailway-02b271",
+      "locationSet": {
+        "include": [
+          "jp-09.geojson",
+          "jp-10.geojson",
+          "jp-11.geojson",
+          "jp-12.geojson",
+          "jp-13.geojson"
+        ]
+      },
       "tags": {
         "network": "東武鉄道",
         "network:en": "Tobu Railway",
@@ -3228,8 +3857,13 @@
     },
     {
       "displayName": "池袋線系統",
-      "id": "89a7db-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "89a7db-f51a76",
+      "locationSet": {
+        "include": [
+          "jp-11.geojson",
+          "jp-13.geojson"
+        ]
+      },
       "tags": {
         "network": "池袋線系統",
         "route": "train"
@@ -3237,8 +3871,13 @@
     },
     {
       "displayName": "西武鉄道",
-      "id": "seiburailway-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "seiburailway-f51a76",
+      "locationSet": {
+        "include": [
+          "jp-11.geojson",
+          "jp-13.geojson"
+        ]
+      },
       "tags": {
         "network": "西武鉄道",
         "network:en": "Seibu Railway",
@@ -3248,18 +3887,15 @@
       }
     },
     {
-      "displayName": "通勤五方面作戦",
-      "id": "f51aac-717a77",
-      "locationSet": {"include": ["jp"]},
-      "tags": {
-        "network": "通勤五方面作戦",
-        "route": "train"
-      }
-    },
-    {
       "displayName": "阪急電鉄",
-      "id": "hankyurailway-717a77",
-      "locationSet": {"include": ["jp"]},
+      "id": "hankyurailway-7e2fa8",
+      "locationSet": {
+        "include": [
+          "jp-26.geojson",
+          "jp-27.geojson",
+          "jp-28.geojson"
+        ]
+      },
       "matchNames": ["阪急電車"],
       "tags": {
         "network": "阪急電鉄",

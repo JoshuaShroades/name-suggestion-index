@@ -129,6 +129,37 @@
       }
     },
     {
+      "displayName": "Charita Česká republika",
+      "id": "charitaceskarepublika-16d48f",
+      "locationSet": {"include": ["cz"]},
+      "tags": {
+        "amenity": "recycling",
+        "brand": "Charita Česká republika",
+        "brand:cs": "Charita Česká republika",
+        "brand:en": "Caritas Czech Republic",
+        "brand:wikidata": "Q11723065",
+        "recycling_type": "container"
+      }
+    },
+    {
+      "displayName": "Consignaction",
+      "id": "consignaction-a73b99",
+      "locationSet": {
+        "include": ["ca-qc.geojson"]
+      },
+      "tags": {
+        "amenity": "recycling",
+        "brand": "Consignaction",
+        "brand:wikidata": "Q132858940",
+        "name": "Consignaction",
+        "recycling_type": "centre",
+        "recycling:beverage_cartons": "yes",
+        "recycling:cans": "yes",
+        "recycling:glass_bottles": "yes",
+        "recycling:plastic_bottles": "yes"
+      }
+    },
+    {
       "displayName": "Containers for Change",
       "id": "containersforchange-00629f",
       "locationSet": {
@@ -205,6 +236,47 @@
         "name": "ecoATM",
         "recycling_type": "vending_machine",
         "recycling:mobile_phones": "yes"
+      }
+    },
+    {
+      "displayName": "Ecobattery",
+      "id": "ecobattery-312544",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "amenity": "recycling",
+        "brand": "Ecobattery",
+        "brand:wikidata": "Q136764783",
+        "recycling_type": "bin",
+        "recycling:batteries": "yes"
+      }
+    },
+    {
+      "displayName": "ecoco",
+      "id": "ecoco-d37f05",
+      "locationSet": {"include": ["tw"]},
+      "tags": {
+        "amenity": "recycling",
+        "brand": "ecoco",
+        "brand:en": "ecoco",
+        "brand:wikidata": "Q131689024",
+        "brand:zh": "宜可可",
+        "name": "ecoco",
+        "name:en": "ecoco",
+        "name:zh": "宜可可",
+        "operator": "凡立橙股份有限公司",
+        "operator:en": "Fun Lead Chabge Co., Ltd",
+        "operator:zh": "凡立橙股份有限公司",
+        "recycling_type": "container"
+      }
+    },
+    {
+      "displayName": "Goodwill",
+      "id": "goodwill-f8d7ba",
+      "locationSet": {"include": ["us"]},
+      "tags": {
+        "amenity": "recycling",
+        "brand": "Goodwill",
+        "brand:wikidata": "Q5583655"
       }
     },
     {
@@ -308,11 +380,38 @@
       "tags": {
         "amenity": "recycling",
         "brand": "Saint Vincent de Paul",
-        "brand:wikidata": "Q66581837",
+        "brand:wikidata": "Q7592120",
         "name": "Saint Vincent de Paul",
         "recycling:clothes": "yes",
         "recycling:shoes": "yes",
         "short_name": "SVdP"
+      }
+    },
+    {
+      "displayName": "TextilEco",
+      "id": "textileco-7f5fab",
+      "locationSet": {"include": ["cz", "sk"]},
+      "tags": {
+        "amenity": "recycling",
+        "brand": "TextilEco",
+        "brand:wikidata": "Q137507665",
+        "operator": "TextilEco",
+        "operator:wikidata": "Q137507665",
+        "recycling_type": "container"
+      }
+    },
+    {
+      "displayName": "Textileco (Český červený kříž)",
+      "id": "textileco-16d48f",
+      "locationSet": {"include": ["cz"]},
+      "note": "Recycling project in cooperation with the Czech Red Cross.",
+      "tags": {
+        "amenity": "recycling",
+        "brand": "Textileco",
+        "brand:wikidata": "Q19602750",
+        "operator": "Coretex CZ",
+        "operator:wikidata": "Q137507932",
+        "recycling_type": "container"
       }
     },
     {
@@ -374,6 +473,42 @@
       }
     },
     {
+      "displayName": "Аз вярвам и помагам",
+      "id": "3b0b79-312544",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "amenity": "recycling",
+        "brand": "Аз вярвам и помагам",
+        "brand:wikidata": "Q139304739",
+        "recycling_type": "container",
+        "recycling:plastic_bottle_caps": "yes"
+      }
+    },
+    {
+      "displayName": "Елтехресурс",
+      "id": "f8add0-312544",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "amenity": "recycling",
+        "brand": "Елтехресурс",
+        "brand:wikidata": "Q131896432",
+        "recycling_type": "bin",
+        "recycling:small_appliances": "yes"
+      }
+    },
+    {
+      "displayName": "Капачки за бъдеще",
+      "id": "ea1edf-312544",
+      "locationSet": {"include": ["bg"]},
+      "tags": {
+        "amenity": "recycling",
+        "brand": "Капачки за бъдеще",
+        "brand:wikidata": "Q139304730",
+        "recycling_type": "container",
+        "recycling:plastic_bottle_caps": "yes"
+      }
+    },
+    {
       "displayName": "Лѣпта",
       "id": "b6327b-f85e9d",
       "locationSet": {"include": ["ru"]},
@@ -407,6 +542,19 @@
         "recycling:books": "yes",
         "recycling:clothes": "yes",
         "recycling:shoes": "yes"
+      }
+    },
+    {
+      "displayName": "УОН",
+      "id": "a1f00b-312544",
+      "locationSet": {"include": ["bg"]},
+      "matchNames": ["won"],
+      "tags": {
+        "amenity": "recycling",
+        "brand": "УОН",
+        "brand:wikidata": "Q129167135",
+        "recycling_type": "container",
+        "recycling:cooking_oil": "yes"
       }
     },
     {

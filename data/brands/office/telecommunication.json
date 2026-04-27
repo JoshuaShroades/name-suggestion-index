@@ -156,6 +156,17 @@
       }
     },
     {
+      "displayName": "Megacable",
+      "id": "megacable-66ddc0",
+      "locationSet": {"include": ["mx"]},
+      "tags": {
+        "brand": "Megacable",
+        "brand:wikidata": "Q6808160",
+        "name": "Megacable",
+        "office": "telecommunication"
+      }
+    },
+    {
       "displayName": "NTT",
       "id": "ntt-54abba",
       "locationSet": {"include": ["jp"]},
@@ -192,30 +203,13 @@
       }
     },
     {
-      "displayName": "R",
-      "id": "r-b26dcd",
-      "locationSet": {"include": ["es"]},
+      "displayName": "PLDT",
+      "id": "pldt-d1c0a3",
+      "locationSet": {"include": ["ph"]},
       "tags": {
-        "brand": "R",
-        "brand:wikidata": "Q3326234",
-        "name": "R",
-        "office": "telecommunication"
-      }
-    },
-    {
-      "displayName": "Rostelecom",
-      "id": "rostelecom-2921eb",
-      "locationSet": {"include": ["am"]},
-      "tags": {
-        "brand": "Ռոստելեկոմ",
-        "brand:en": "Rostelecom",
-        "brand:hy": "Ռոստելեկոմ",
-        "brand:ru": "Ростелеком",
-        "brand:wikidata": "Q1477012",
-        "name": "Ռոստելեկոմ",
-        "name:en": "Rostelecom",
-        "name:hy": "Ռոստելեկոմ",
-        "name:ru": "Ростелеком",
+        "brand": "PLDT",
+        "brand:wikidata": "Q644167",
+        "name": "PLDT",
         "office": "telecommunication"
       }
     },
@@ -229,7 +223,7 @@
         "brand:en": "Team Telecom Armenia",
         "brand:hy": "Թիմ Տելեկոմ Արմենիա",
         "brand:ru": "Тим Телеком Армения",
-        "brand:wikidata": "Q97125249",
+        "brand:wikidata": "Q487164",
         "name": "Թիմ Տելեկոմ Արմենիա",
         "name:en": "Team Telecom Armenia",
         "name:hy": "Թիմ Տելեկոմ Արմենիա",
@@ -244,7 +238,7 @@
       "matchNames": ["telecomm"],
       "tags": {
         "brand": "Telecomm-Telégrafos",
-        "brand:wikidata": "Q9082442",
+        "brand:wikidata": "Q125290403",
         "name": "Telecomm-Telégrafos",
         "office": "telecommunication"
       }
@@ -310,19 +304,20 @@
       }
     },
     {
-      "displayName": "Viva MTS",
-      "id": "vivamts-2921eb",
+      "displayName": "Viva",
+      "id": "viva-2921eb",
       "locationSet": {"include": ["am"]},
+      "matchNames": ["վիվա մտս"],
       "tags": {
-        "brand": "Վիվա ՄՏՍ",
-        "brand:en": "Viva MTS",
-        "brand:hy": "Վիվա ՄՏՍ",
-        "brand:ru": "Вива МТС",
+        "brand": "Viva",
+        "brand:en": "Viva",
+        "brand:hy": "Վիվա",
+        "brand:ru": "Вива",
         "brand:wikidata": "Q16486896",
-        "name": "Վիվա ՄՏՍ",
-        "name:en": "Viva MTS",
-        "name:hy": "Վիվա ՄՏՍ",
-        "name:ru": "Вива МТС",
+        "name": "Viva",
+        "name:en": "Viva",
+        "name:hy": "Վիվա",
+        "name:ru": "Вива",
         "office": "telecommunication"
       }
     },
@@ -417,6 +412,7 @@
       "displayName": "სილქნეტი",
       "id": "silknet-0ca315",
       "locationSet": {"include": ["ge"]},
+      "matchNames": ["geocell", "ჯეოსელი"],
       "tags": {
         "brand": "სილქნეტი",
         "brand:en": "Silknet",
@@ -427,9 +423,7 @@
         "name:en": "Silknet",
         "name:ka": "სილქნეტი",
         "name:ru": "Силкнет",
-        "office": "telecommunication",
-        "old_name:en": "Geocell",
-        "old_name:ka": "ჯეოსელი"
+        "office": "telecommunication"
       }
     },
     {

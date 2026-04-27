@@ -6,10 +6,7 @@
         "^(gift|souvenirs?)( shop)?$",
         "^(подарки|сувениры)$"
       ],
-      "named": [
-        "^(papyrus)$",
-        "^(things remembered)$"
-      ]
+      "named": ["^papyrus$"]
     }
   },
   "items": [
@@ -107,6 +104,17 @@
       }
     },
     {
+      "displayName": "Calendar Club",
+      "id": "calendarclub-bc6b6c",
+      "locationSet": {"include": ["ca"]},
+      "tags": {
+        "brand": "Calendar Club",
+        "brand:wikidata": "Q132798539",
+        "name": "Calendar Club",
+        "shop": "gift"
+      }
+    },
+    {
       "displayName": "Card Centre",
       "id": "cardcentre-da52c2",
       "locationSet": {"include": ["gb"]},
@@ -132,8 +140,8 @@
     },
     {
       "displayName": "Cards Direct",
-      "id": "cardsdirect-53f2de",
-      "locationSet": {"include": ["gb-eng"]},
+      "id": "cardsdirect-da52c2",
+      "locationSet": {"include": ["gb"]},
       "tags": {
         "brand": "Cards Direct",
         "brand:wikidata": "Q114826765",
@@ -294,6 +302,18 @@
       }
     },
     {
+      "displayName": "Menkind",
+      "id": "menkind-da52c2",
+      "locationSet": {"include": ["gb"]},
+      "matchTags": ["shop/toys"],
+      "tags": {
+        "brand": "Menkind",
+        "brand:wikidata": "Q66725844",
+        "name": "Menkind",
+        "shop": "gift"
+      }
+    },
+    {
       "displayName": "Mooch",
       "id": "mooch-da52c2",
       "locationSet": {"include": ["gb"]},
@@ -321,21 +341,11 @@
       "locationSet": {
         "include": ["ad", "es", "it", "pt"]
       },
+      "matchTags": ["shop/clothes"],
       "tags": {
         "brand": "Natura",
         "brand:wikidata": "Q123564924",
         "name": "Natura",
-        "shop": "gift"
-      }
-    },
-    {
-      "displayName": "Neon Sheep",
-      "id": "neonsheep-da52c2",
-      "locationSet": {"include": ["gb"]},
-      "tags": {
-        "brand": "Neon Sheep",
-        "brand:wikidata": "Q99938913",
-        "name": "Neon Sheep",
         "shop": "gift"
       }
     },
@@ -387,6 +397,17 @@
       }
     },
     {
+      "displayName": "TGJones",
+      "id": "tgjones-da52c2",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "brand": "TGJones",
+        "brand:wikidata": "Q133575797",
+        "name": "TGJones",
+        "shop": "gift"
+      }
+    },
+    {
       "displayName": "The Paper Store",
       "id": "thepaperstore-0b1107",
       "locationSet": {
@@ -405,17 +426,6 @@
         "brand": "The Paper Store",
         "brand:wikidata": "Q65068381",
         "name": "The Paper Store",
-        "shop": "gift"
-      }
-    },
-    {
-      "displayName": "ThinkGeek",
-      "id": "thinkgeek-43d507",
-      "locationSet": {"include": ["us"]},
-      "tags": {
-        "brand": "ThinkGeek",
-        "brand:wikidata": "Q2191265",
-        "name": "ThinkGeek",
         "shop": "gift"
       }
     },

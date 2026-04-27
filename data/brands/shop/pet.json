@@ -13,6 +13,17 @@
   },
   "items": [
     {
+      "displayName": "Akvazoo",
+      "id": "akvazoo-381fdf",
+      "locationSet": {"include": ["cz"]},
+      "tags": {
+        "brand": "Akvazoo",
+        "brand:wikidata": "Q132130358",
+        "name": "Akvazoo",
+        "shop": "pet"
+      }
+    },
+    {
       "displayName": "AlphaZoo",
       "id": "alphazoo-28b0e3",
       "locationSet": {"include": ["hu"]},
@@ -112,6 +123,20 @@
       }
     },
     {
+      "displayName": "Dogman",
+      "id": "dogman-f4a9b7",
+      "locationSet": {
+        "include": ["fi", "no", "se"]
+      },
+      "matchNames": ["dogman and friends"],
+      "tags": {
+        "brand": "Dogman",
+        "brand:wikidata": "Q132752615",
+        "name": "Dogman",
+        "shop": "pet"
+      }
+    },
+    {
       "displayName": "EarthWise Pet",
       "id": "earthwisepet-81a22d",
       "locationSet": {"include": ["us"]},
@@ -119,6 +144,17 @@
         "brand": "EarthWise Pet",
         "brand:wikidata": "Q108193626",
         "name": "EarthWise Pet",
+        "shop": "pet"
+      }
+    },
+    {
+      "displayName": "Fajn Zoo",
+      "id": "fajnzoo-381fdf",
+      "locationSet": {"include": ["cz"]},
+      "tags": {
+        "brand": "Fajn Zoo",
+        "brand:wikidata": "Q132818404",
+        "name": "Fajn Zoo",
         "shop": "pet"
       }
     },
@@ -166,6 +202,17 @@
       }
     },
     {
+      "displayName": "Happy Pets",
+      "id": "happypets-84da5c",
+      "locationSet": {"include": ["sk"]},
+      "tags": {
+        "brand": "Happy Pets",
+        "brand:wikidata": "Q131413956",
+        "name": "Happy Pets",
+        "shop": "pet"
+      }
+    },
+    {
       "displayName": "Heads Up for Tails",
       "id": "headsupfortails-4d0def",
       "locationSet": {"include": ["in"]},
@@ -191,17 +238,6 @@
       }
     },
     {
-      "displayName": "Jumper",
-      "id": "jumper-734485",
-      "locationSet": {"include": ["nl"]},
-      "tags": {
-        "brand": "Jumper",
-        "brand:wikidata": "Q87338743",
-        "name": "Jumper",
-        "shop": "pet"
-      }
-    },
-    {
       "displayName": "Kahoots",
       "id": "kahoots-ae290d",
       "locationSet": {
@@ -215,6 +251,17 @@
         "brand": "Kahoots",
         "brand:wikidata": "Q110028564",
         "name": "Kahoots",
+        "shop": "pet"
+      }
+    },
+    {
+      "displayName": "Kakadu Zoo",
+      "id": "kakaduzoo-c2bada",
+      "locationSet": {"include": ["pl"]},
+      "tags": {
+        "brand": "Kakadu Zoo",
+        "brand:wikidata": "Q133733697",
+        "name": "Kakadu Zoo",
         "shop": "pet"
       }
     },
@@ -325,9 +372,25 @@
       }
     },
     {
+      "displayName": "Mondou",
+      "id": "mondou-4f78bb",
+      "locationSet": {"include": ["ca"]},
+      "tags": {
+        "brand": "Mondou",
+        "brand:wikidata": "Q130223796",
+        "name": "Mondou",
+        "shop": "pet"
+      }
+    },
+    {
       "displayName": "Mud Bay",
-      "id": "mudbay-81a22d",
-      "locationSet": {"include": ["us"]},
+      "id": "mudbay-92d036",
+      "locationSet": {
+        "include": [
+          "us-or.geojson",
+          "us-wa.geojson"
+        ]
+      },
       "tags": {
         "brand": "Mud Bay",
         "brand:wikidata": "Q30324179",
@@ -359,12 +422,32 @@
     },
     {
       "displayName": "Pet Food Express",
-      "id": "petfoodexpress-81a22d",
-      "locationSet": {"include": ["us"]},
+      "id": "petfoodexpress-ae290d",
+      "locationSet": {
+        "include": ["us-ca.geojson"]
+      },
       "tags": {
         "brand": "Pet Food Express",
         "brand:wikidata": "Q7171541",
         "name": "Pet Food Express",
+        "shop": "pet"
+      }
+    },
+    {
+      "displayName": "Pet Planet",
+      "id": "petplanet-852051",
+      "locationSet": {
+        "include": [
+          "ca-ab.geojson",
+          "ca-bc.geojson",
+          "ca-sk.geojson",
+          "us-az.geojson"
+        ]
+      },
+      "tags": {
+        "brand": "Pet Planet",
+        "brand:wikidata": "Q133566481",
+        "name": "Pet Planet",
         "shop": "pet"
       }
     },
@@ -414,8 +497,8 @@
     },
     {
       "displayName": "Petco",
-      "id": "petco-81a22d",
-      "locationSet": {"include": ["us"]},
+      "id": "petco-1d9238",
+      "locationSet": {"include": ["mx", "us"]},
       "tags": {
         "brand": "Petco",
         "brand:wikidata": "Q7171798",
@@ -431,17 +514,6 @@
         "brand": "Petland",
         "brand:wikidata": "Q17111474",
         "name": "Petland",
-        "shop": "pet"
-      }
-    },
-    {
-      "displayName": "Petland Discounts",
-      "id": "petlanddiscounts-81a22d",
-      "locationSet": {"include": ["us"]},
-      "tags": {
-        "brand": "Petland Discounts",
-        "brand:wikidata": "Q7178463",
-        "name": "Petland Discounts",
         "shop": "pet"
       }
     },
@@ -468,6 +540,17 @@
       }
     },
     {
+      "displayName": "Petmark",
+      "id": "petmark-fc1a4b",
+      "locationSet": {"include": ["it"]},
+      "tags": {
+        "brand": "Petmark",
+        "brand:wikidata": "Q133849688",
+        "name": "Petmark",
+        "shop": "pet"
+      }
+    },
+    {
       "displayName": "PetPeople",
       "id": "petpeople-81a22d",
       "locationSet": {"include": ["us"]},
@@ -483,6 +566,7 @@
       "id": "petsathome-8ec028",
       "locationSet": {"include": ["gb"]},
       "matchNames": ["pets at home ltd"],
+      "matchTags": ["shop/pet_grooming"],
       "tags": {
         "brand": "Pets at Home",
         "brand:wikidata": "Q7179258",
@@ -625,13 +709,13 @@
       }
     },
     {
-      "displayName": "SUPER ZOO",
+      "displayName": "Super zoo",
       "id": "superzoo-09e3e7",
       "locationSet": {"include": ["cz", "sk"]},
       "tags": {
-        "brand": "SUPER ZOO",
+        "brand": "Super zoo",
         "brand:wikidata": "Q93998805",
-        "name": "SUPER ZOO",
+        "name": "Super zoo",
         "shop": "pet"
       }
     },
@@ -710,6 +794,7 @@
       "locationSet": {"include": ["by"]},
       "tags": {
         "brand": "ZOObazar",
+        "brand:wikidata": "Q128693988",
         "name": "ZOObazar",
         "shop": "pet"
       }
@@ -733,7 +818,19 @@
       "locationSet": {"include": ["by"]},
       "tags": {
         "brand": "ZOOмаркет",
+        "brand:wikidata": "Q136821517",
         "name": "ZOOмаркет",
+        "shop": "pet"
+      }
+    },
+    {
+      "displayName": "Zvěrokruh",
+      "id": "zverokruh-381fdf",
+      "locationSet": {"include": ["cz"]},
+      "tags": {
+        "brand": "Zvěrokruh",
+        "brand:wikidata": "Q54980452",
+        "name": "Zvěrokruh",
         "shop": "pet"
       }
     },
@@ -745,6 +842,24 @@
         "brand": "Бетховен",
         "brand:wikidata": "Q62390798",
         "name": "Бетховен",
+        "shop": "pet"
+      }
+    },
+    {
+      "displayName": "Дома ждут",
+      "id": "domazhdut-3053c4",
+      "locationSet": {"include": ["by"]},
+      "tags": {
+        "brand": "Дома ждут",
+        "brand:wikidata": "Q136821483",
+        "name": "Дома ждут",
+        "name:be": "Дома ждуць",
+        "name:be-Latn": "Doma žduć",
+        "name:en": "Doma zhdut",
+        "name:ru": "Дома ждут",
+        "name:uk": "Дома ждуть",
+        "operator": "ОАО \"Продтовары\"",
+        "ref:vatin": "200019837",
         "shop": "pet"
       }
     },
@@ -827,6 +942,7 @@
         "brand": "ზოოლაიფი",
         "brand:en": "ZooLife",
         "brand:ka": "ზოოლაიფი",
+        "brand:wikidata": "Q131470023",
         "name": "ზოოლაიფი",
         "name:en": "ZooLife",
         "name:ka": "ზოოლაიფი",
@@ -841,6 +957,7 @@
         "brand": "ზოომარტი",
         "brand:en": "Zoomart",
         "brand:ka": "ზოომარტი",
+        "brand:wikidata": "Q131470021",
         "name": "ზოომარტი",
         "name:en": "Zoomart",
         "name:ka": "ზოომარტი",
@@ -855,6 +972,7 @@
         "brand": "ზოოსითი",
         "brand:en": "ZooCity",
         "brand:ka": "ზოოსითი",
+        "brand:wikidata": "Q131470020",
         "name": "ზოოსითი",
         "name:en": "ZooCity",
         "name:ka": "ზოოსითი",
@@ -869,6 +987,7 @@
         "brand": "ზოოჰაბი",
         "brand:en": "Zoohub",
         "brand:ka": "ზოოჰაბი",
+        "brand:wikidata": "Q131470022",
         "name": "ზოოჰაბი",
         "name:en": "Zoohub",
         "name:ka": "ზოოჰაბი",
@@ -883,6 +1002,7 @@
         "brand": "პეტ სპოტი",
         "brand:en": "Pet Spot",
         "brand:ka": "პეტ სპოტი",
+        "brand:wikidata": "Q131470019",
         "name": "პეტ სპოტი",
         "name:en": "Pet Spot",
         "name:ka": "პეტ სპოტი",

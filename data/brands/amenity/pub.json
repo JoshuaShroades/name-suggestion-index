@@ -18,7 +18,8 @@
         "^the ((black )?bull|(golden|white) lion)$",
         "^the (anchor|angel|beehive|castle|chequers|cricketers|crown|fox|globe|green man|greyhound|pub|railway|rising sun|victoria|wheatsheaf|white swan|windmill)$",
         "^the (bell|george|plough|ship|star|swan)( inn)?$",
-        "^the (sun|village) inn$"
+        "^the (railway|sun|village) inn$",
+        "^toddy shop$"
       ]
     }
   },
@@ -125,6 +126,18 @@
       }
     },
     {
+      "displayName": "Castle Pubs",
+      "id": "castle-f71e9b",
+      "locationSet": {
+        "include": ["gb-lon.geojson"]
+      },
+      "tags": {
+        "amenity": "pub",
+        "brand": "Castle",
+        "brand:wikidata": "Q133280052"
+      }
+    },
+    {
       "displayName": "Castle Rock",
       "id": "castlerock-eaed91",
       "locationSet": {"include": ["gb"]},
@@ -145,6 +158,19 @@
         "amenity": "pub",
         "brand": "Chef & Brewer",
         "brand:wikidata": "Q5089491"
+      }
+    },
+    {
+      "displayName": "Craft Union",
+      "id": "craftunion-9b8a53",
+      "locationSet": {
+        "include": ["gb-eng", "gb-wls"]
+      },
+      "note": "Each pub is named differently.",
+      "tags": {
+        "amenity": "pub",
+        "brand": "Craft Union",
+        "brand:wikidata": "Q124956771"
       }
     },
     {
@@ -238,6 +264,19 @@
         "amenity": "pub",
         "brand": "Hive Pubs",
         "brand:wikidata": "Q115594794"
+      }
+    },
+    {
+      "displayName": "Hub",
+      "id": "hub-0435b9",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "Hub",
+        "brand:en": "Hub",
+        "brand:wikidata": "Q11326653",
+        "name": "Hub",
+        "name:en": "Hub"
       }
     },
     {
@@ -361,6 +400,16 @@
         "brand:wikidata": "Q65930663",
         "cuisine": "british",
         "name": "Pitcher & Piano"
+      }
+    },
+    {
+      "displayName": "Premium Country Pubs",
+      "id": "premiumcountrypubs-eaed91",
+      "locationSet": {"include": ["gb"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "Premium Country Pubs",
+        "brand:wikidata": "Q118606900"
       }
     },
     {
@@ -515,18 +564,6 @@
       }
     },
     {
-      "displayName": "Toddy Shop",
-      "id": "toddyshop-fb2db4",
-      "locationSet": {"include": ["in"]},
-      "tags": {
-        "amenity": "pub",
-        "brand": "Toddy Shop",
-        "brand:wikidata": "Q7812761",
-        "drink:palm_wine": "yes",
-        "name": "Toddy Shop"
-      }
-    },
-    {
       "displayName": "Vintage Inns",
       "id": "vintageinns-eaed91",
       "locationSet": {"include": ["gb"]},
@@ -550,6 +587,7 @@
     {
       "displayName": "Wetherspoon",
       "id": "wetherspoon-eaed91",
+      "issues": [10071, 4183],
       "locationSet": {"include": ["gb"]},
       "matchNames": [
         "jd wetherspoon",
@@ -572,6 +610,19 @@
         "amenity": "pub",
         "brand": "Young's",
         "brand:wikidata": "Q8057802"
+      }
+    },
+    {
+      "displayName": "くいもの屋わん",
+      "id": "11eb8d-0435b9",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "くいもの屋わん",
+        "brand:ja": "くいもの屋わん",
+        "brand:wikidata": "Q109653563",
+        "name": "くいもの屋わん",
+        "name:ja": "くいもの屋わん"
       }
     },
     {
@@ -602,6 +653,49 @@
         "name": "はなの舞",
         "name:en": "Hananomai",
         "name:ja": "はなの舞"
+      }
+    },
+    {
+      "displayName": "や台ずし",
+      "id": "737a1e-0435b9",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "や台ずし",
+        "brand:ja": "や台ずし",
+        "brand:wikidata": "Q99574019",
+        "name": "や台ずし",
+        "name:ja": "や台ずし"
+      }
+    },
+    {
+      "displayName": "串かつでんがな",
+      "id": "kushikatsudengana-0435b9",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "串かつでんがな",
+        "brand:en": "Kushikatsu Dengana",
+        "brand:ja": "串かつでんがな",
+        "brand:wikidata": "Q95556503",
+        "name": "串かつでんがな",
+        "name:en": "Kushikatsu Dengana",
+        "name:ja": "串かつでんがな"
+      }
+    },
+    {
+      "displayName": "串カツ田中",
+      "id": "kushikatsutanaka-0435b9",
+      "locationSet": {"include": ["jp"]},
+      "tags": {
+        "amenity": "pub",
+        "brand": "串カツ田中",
+        "brand:en": "Kushikatsu Tanaka",
+        "brand:ja": "串カツ田中",
+        "brand:wikidata": "Q27017115",
+        "name": "串カツ田中",
+        "name:en": "Kushikatsu Tanaka",
+        "name:ja": "串カツ田中"
       }
     },
     {
@@ -636,13 +730,16 @@
     },
     {
       "displayName": "庄や",
-      "id": "5d7ca5-0435b9",
+      "id": "shoya-0435b9",
       "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "pub",
         "brand": "庄や",
+        "brand:en": "Shoya",
         "brand:ja": "庄や",
+        "brand:wikidata": "Q122964078",
         "name": "庄や",
+        "name:en": "Shoya",
         "name:ja": "庄や"
       }
     },
@@ -663,13 +760,16 @@
     },
     {
       "displayName": "目利きの銀次",
-      "id": "bc257c-0435b9",
+      "id": "mekikinoginji-0435b9",
       "locationSet": {"include": ["jp"]},
       "tags": {
         "amenity": "pub",
         "brand": "目利きの銀次",
+        "brand:en": "Mekiki-no-Ginji",
         "brand:ja": "目利きの銀次",
+        "brand:wikidata": "Q109653557",
         "name": "目利きの銀次",
+        "name:en": "Mekiki-no-Ginji",
         "name:ja": "目利きの銀次"
       }
     },

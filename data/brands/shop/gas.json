@@ -40,6 +40,17 @@
       }
     },
     {
+      "displayName": "Aygaz",
+      "id": "aygaz-d3d4a5",
+      "locationSet": {"include": ["tr"]},
+      "tags": {
+        "brand": "Aygaz",
+        "brand:wikidata": "Q4831225",
+        "name": "Aygaz",
+        "shop": "gas"
+      }
+    },
+    {
       "displayName": "Ferrellgas",
       "id": "ferrellgas-666f52",
       "locationSet": {"include": ["us"]},
@@ -72,6 +83,7 @@
       "displayName": "Messer",
       "id": "messer-65a0f8",
       "locationSet": {"include": ["001"]},
+      "preserveTags": ["^name"],
       "tags": {
         "brand": "Messer",
         "brand:wikidata": "Q1924132",
